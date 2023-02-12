@@ -2,9 +2,9 @@
 import Intro from "../../components/intro/Intro";
 const Home = () => {
   return (
-    <div>
+    <main>
       <Intro />
-    </div>
+    </main>
   );
 };
 

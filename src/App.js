@@ -1,13 +1,12 @@
-
-import Header from "./components/header/Header";
+import Layout from "./components/layout/Layout";
 import Routes from "./routes/index";
-
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Routes/>
+      <Layout>
+        <Routes />
+      </Layout>
     </div>
   );
 }
