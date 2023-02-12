@@ -1,10 +1,10 @@
+// components
+import Intro from "../../components/intro/Intro";
 const Home = () => {
   return (
-    <section>
-      <div className="container">
-        <h1>Home</h1>
-      </div>
-    </section>
+    <div>
+      <Intro />
+    </div>
   );
 };
 

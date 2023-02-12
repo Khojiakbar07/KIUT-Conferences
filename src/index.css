@@ -37,6 +37,19 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./assets/fonts/CenturyGothic-Bold.eot");
+  src: url("./assets/fonts/CenturyGothic-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/CenturyGothic-Bold.woff2") format("woff2"),
+    url("./assets/fonts/CenturyGothic-Bold.woff") format("woff"),
+    url("./assets/fonts/CenturyGothic-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *::after,
 *::before {
@@ -55,8 +68,8 @@
 }
 
 :root {
-  --primary-blue-c: #007BFF;
-  --white-c: #FFFFFF;
+  --primary-blue-c: #007bff;
+  --white-c: #ffffff;
   --black-c: #000000;
 }
 
@@ -67,6 +80,10 @@
   --text-lg: 18px;
   --text-xl: 20px;
   --text-2xl: 24px;
+}
+
+:root {
+  --ff-gothic: "Century Gothic", sans-serif;
 }
 
 body,
