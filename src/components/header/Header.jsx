@@ -1,26 +1,44 @@
-
+// tools
+import { Link } from "react-router-dom";
 // Images
-import logo from '../../assets/logo/KiutLogo.svg';
+import logo from "../../assets/logo/KiutLogo.svg";
 // SCSS
 import "./Header.scss";
 
 const Header = () => {
   return (
-    <header className='header'>
+    <header className="header">
       <div className="container">
         <div className="header-logo">
-          <img src={logo} alt="Site logo" />
+          <Link to="/">
+            <img src={logo} alt="Site logo" />
+          </Link>
         </div>
         <nav className="header-nav">
-          <ul>
-            <li>
-              
+          <ul className="nav-list">
+            <li className="nav-list__item">
+              <Link className="nav__link" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-list__item">
+              <Link className="nav__link" to="/about">
+                About
+              </Link>
+            </li>
+            <li className="nav-list__item">
+              <Link className="nav__link" to="/conference">
+                News
+              </Link>
             </li>
           </ul>
-        </nav>  
+        </nav>
+        <div className="sign-in">
+          <button className="sign-in__btn">conference</button>
+        </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
