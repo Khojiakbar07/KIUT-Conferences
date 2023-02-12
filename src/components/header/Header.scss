@@ -24,12 +24,16 @@
     line-height: 24px;
     letter-spacing: -0.03em;
     padding: 32px 30px;
+    transition: 0.3s;
 
+    &.active,
     &:hover {
       background-color: #F7F6FA;
       border-bottom: 3px solid var(--primary-blue-c);
+      transition: 0.3s;
     }
   }
+
 
   .join-conference__link {
     color: var(--black-c);

@@ -1,5 +1,5 @@
 // tools
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 // Images
 import logo from "../../assets/logo/KiutLogo.svg";
 // SCSS
@@ -17,19 +17,19 @@ const Header = () => {
         <nav className="header-nav">
           <ul className="nav-list">
             <li className="nav-list__item">
-              <Link className="nav__link" to="/">
+              <NavLink className={({isActive}) => isActive ? "nav__link active" : "nav__link"} to="/">
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-list__item">
-              <Link className="nav__link" to="/about">
+              <NavLink className="nav__link" to="/about">
                 About
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-list__item">
-              <Link className="nav__link" to="/conference">
-                News
-              </Link>
+              <NavLink className="nav__link" to="/conference">
+                Conference
+              </NavLink>
             </li>
           </ul>
         </nav>
