@@ -45,6 +45,7 @@
     &:hover {
       background-color: var(--primary-blue-c);
       color: var(--white-c);
+      transition: 0.3s;
     }
   }
 }
