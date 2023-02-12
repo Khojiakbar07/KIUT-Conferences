@@ -33,8 +33,8 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="sign-in">
-          <button className="sign-in__btn">conference</button>
+        <div className="join-conference">
+          <Link className="join-conference__link">Join to conference</Link>
         </div>
       </div>
     </header>

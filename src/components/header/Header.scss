@@ -24,21 +24,27 @@
     line-height: 24px;
     letter-spacing: -0.03em;
     padding: 32px 30px;
-    
+
     &:hover {
       background-color: #F7F6FA;
-      border-bottom: 3px solid var(--primary-blue-c);    
+      border-bottom: 3px solid var(--primary-blue-c);
     }
   }
 
-  .sign-in__btn {
+  .join-conference__link {
     color: var(--black-c);
     font-size: var(--text-xl);
     font-weight: 600;
     letter-spacing: -0.02em;
-    padding: 13px 17px;
+    padding: 12px;
     background-color: #DFF6FF;
     border-radius: 90px;
     border-bottom-right-radius: 0;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--primary-blue-c);
+      color: var(--white-c);
+    }
   }
 }
