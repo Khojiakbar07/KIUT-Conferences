@@ -1,0 +1,8 @@
+.header {
+  padding: 12px 0;
+  &-logo img {
+    width: 328px;
+    height: 67px;
+    object-fit: cover;
+  }
+}

@@ -10,8 +10,15 @@ const Header = () => {
       <div className="container">
         <div className="header-logo">
           <img src={logo} alt="Site logo" />
-        </div>  
-      </div>      
+        </div>
+        <nav className="header-nav">
+          <ul>
+            <li>
+              
+            </li>
+          </ul>
+        </nav>  
+      </div>
     </header>
   )
 }
