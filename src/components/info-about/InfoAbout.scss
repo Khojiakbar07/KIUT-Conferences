@@ -1,0 +1,29 @@
+.about-info {
+  padding: 46px 0 77px;
+
+  &__title {
+    text-align: center;
+    font-family: var(--ff-gothic);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 61px;
+    letter-spacing: -0.03em;
+    margin-bottom: 65px;
+  }
+  &__content {
+    display: flex;
+    column-gap: 45px;
+  }
+  &__text {
+    font-family: var(--ff-gothic);
+    font-size: var(--text-xl);
+    color: var(--black-c);
+    font-weight: 700;
+    line-height: 125%;
+  }
+
+  .map-location {
+    display: flex;
+    align-items: center;
+  }
+}
