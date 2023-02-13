@@ -80,10 +80,21 @@
   --text-lg: 18px;
   --text-xl: 20px;
   --text-2xl: 24px;
+  --s-title: 100px;
 }
 
 :root {
   --ff-gothic: "Century Gothic", sans-serif;
+}
+
+.section-title {
+  font-family: var(--ff-gothic);
+  color: var(--white-c);
+  font-size: var(--s-title);
+  font-weight: 700;
+  line-height: 125%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 body,
