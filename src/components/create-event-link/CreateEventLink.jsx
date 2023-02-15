@@ -17,7 +17,9 @@ const CreateEventLink = () => {
           <p className="create-event__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
           </p>
-          <Link to="/" className="create-event__link">Create Events</Link>
+          <Link to="/" className="create-event__link">
+            Create Events
+          </Link>
         </div>
       </div>
     </section>

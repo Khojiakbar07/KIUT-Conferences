@@ -1,0 +1,41 @@
+.partners {
+  padding: 66px 0 175px;
+
+  &-title {
+    text-align: center;
+    color: var(--black-c);
+    font-size: var(--sm-title);
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    position: relative;
+    margin-bottom: 114px;
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 475px;
+      background-color: var(--primary-blue-c);
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+}
+
+.partners-swiper {
+  &__item {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
