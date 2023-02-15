@@ -1,11 +1,14 @@
 // components
 import Intro from "../../components/intro/Intro";
 import PartnersSlider from "../../components/partners-slider/PartnersSlider";
+import Speakers from "../../components/speakers/Speakers";
+
 const Home = () => {
   return (
     <main>
       <Intro title={"kiut"} />
-      <PartnersSlider/>
+      <Speakers />
+      <PartnersSlider />
     </main>
   );
 };
