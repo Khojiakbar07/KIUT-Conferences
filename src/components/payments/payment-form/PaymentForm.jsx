@@ -1,3 +1,8 @@
+import { useState } from "react";
+//react phone number
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+
 //SCSS
 import "./PaymentForm.scss";
 
@@ -5,6 +10,8 @@ import "./PaymentForm.scss";
 import { FiPlus } from "react-icons/fi";
 
 const PaymentForm = () => {
+  const [phoneNumber, setPhoneNumber] = useState("");
+
   return (
     <form className="payment-form">
       <h5 className="payment-form__title">
@@ -40,14 +47,16 @@ const PaymentForm = () => {
         </div>
         <div className="payment-form__input">
           <label htmlFor="phoneNumber">Phone Number</label>
-          <input
-            type="number"
-            placeholder="Phone Number"
-            id="phoneNumber"
+          <PhoneInput
+            placeholder="Enter phone number"
+            value={phoneNumber}
+            onChange={setPhoneNumber}
             required
           />
         </div>
       </div>
+      <p className="payment-form__accept-text">You can attach (.zip, .pdf, .doc, .docx, .png, .jpg, .jpeg that are less than 5MB/file, limit 3 files)</p>
+      <button className="payment-form__btn-submit" type="submit">Submit</button>
     </form>
   );
 };

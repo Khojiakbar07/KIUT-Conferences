@@ -17,7 +17,8 @@
   &__inputs-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px 80px
+    gap: 20px 80px;
+    margin-bottom: 38px;
   }
 
   &__input {
@@ -40,7 +41,8 @@
       outline: none;
       color: var(--black-c);
 
-      &:focus, &:valid {
+      &:focus,
+      &:valid {
         border-color: var(--black-c);
       }
     }
@@ -64,5 +66,22 @@
     right: 15px;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  &__accept-text {
+    font-size: var(--text-sm);
+    letter-spacing: 0.005em;
+    color: #0A0A0A;
+    line-height: 20px;
+    margin-bottom: 44px;
+  }
+
+  &__btn-submit {
+    padding: 11px 100px;
+    background-color: var(--primary-blue-c);
+    border-radius: 20px;
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--white-c);
   }
 }
