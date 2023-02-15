@@ -1,0 +1,25 @@
+.recent-conferences {
+  max-width: 538px;
+  padding: 35px 10px 37px 26px;
+  background-image: url("../../assets/images/recent-conferences-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+
+  &__title {
+    white-space: nowrap;
+    font-size: 30px;
+    line-height: 25px;
+    color: var(--black-c);
+    position: relative;
+    &::after {
+      content: "";
+      width: 85%;
+      height: 2px;
+      background-color: var(--green-c);
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+    }
+  }
+}

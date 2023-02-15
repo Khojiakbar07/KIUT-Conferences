@@ -1,27 +1,27 @@
 .home-info {
-  padding-top: 40px;
+  padding-top: 45px;
 
-  &__title {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 45px;
+  .container{
+    display: flex;
+    column-gap: 95px;
   }
 
   &__content {
-    display: grid;
-    row-gap: 50px;
-  }
-
-  &__content-box {
     display: flex;
-    gap: 50px;
+    column-gap: 20px;
   }
 
-  &__img {
-    height: 360px;
-    width: 530px;
+  .dean-name {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--black-c);
+    margin-bottom: 15px;
+  }
+
+  .dean-img {
+    width: 617px;
+    height: 650px;
     overflow: hidden;
 
     img {
@@ -31,8 +31,11 @@
     }
   }
 
-  &__text {
+  &__info {
     flex: 1;
+  }
+
+  &__text {
     color: var(--black-c);
     font-size: 28px;
     line-height: 34px;

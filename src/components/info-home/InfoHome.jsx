@@ -1,6 +1,7 @@
+//component
+import RecentConferences from "../recent-conferences/RecentConferences"
 //images
-import homeInfoImg1 from "../../assets/images/home-info-img1.jpg";
-import homeInfoImg2 from "../../assets/images/home-info-img2.jpg";
+import deanImg from "../../assets/images/dean1.jpg";
 //SCSS
 import "./InfoHome.scss";
 
@@ -8,40 +9,31 @@ const InfoHome = () => {
   return (
     <section className="home-info">
       <div className="container">
-        <h2 className="home-info__title">Let's Grow Together</h2>
         <div className="home-info__content">
-          <div className="home-info__content-box">
-            <div className="home-info__img">
-              <img src={homeInfoImg1} alt="" />
-            </div>
-            <p className="home-info__text">
-              Considering the current COVID-19 pandemic situation, ICEF 2022
-              will be held as a hybrid event; a combination of "live" face to
-              face event and a "virtual" online component. ICEF 2022
-              Registration can be done on-line, and both USD and KRW are
-              accepted.The participants are recommended to make registration in
-              advance to get an early registration discount. Online
-              RegistrationPlease sign in with your ID and visit the Online
-              Registration page to fill out the registration form.
-            </p>
+          <div className="dean-img">
+            <img src={deanImg} alt="Dean of KIUT University" />
           </div>
-
-          <div className="home-info__content-box">
+          <div className="home-info__info">
+            <h2 className="dean-name">
+              <strong>Janpolat Kudaybergenov</strong>
+            </h2>
             <p className="home-info__text">
-              Considering the current COVID-19 pandemic situation, ICEF 2022
-              will be held as a hybrid event; a combination of "live" face to
-              face event and a "virtual" online component. ICEF 2022
-              Registration can be done on-line, and both USD and KRW are
-              accepted.The participants are recommended to make registration in
-              advance to get an early registration discount. Online
-              RegistrationPlease sign in with your ID and visit the Online
-              Registration page to fill out the registration form.
+              In accordance with the Decree of the President of Uzbekistan
+              Republic PP-60, January 28, 2022 “On the development strategy of
+              New Uzbekistan for 2022-2026”, Decree of the President of the
+              Republic of Uzbekistan dated 08.10.2019 No. PF-5847 "Concept for
+              the development of the higher education system of the Republic of
+              Uzbekistan until 2030" April 26, 2023, at the Kimyo International
+              University in Tashkent as part of the Pedagogical Forum
+              "Education: a look into the future" is planned to hold the
+              International Scientific and Practical Conference "Processes of
+              Modernization in Education: Problems and Solutions".
             </p>
-            <div className="home-info__img">
-              <img src={homeInfoImg2} alt="" />
-            </div>
           </div>
         </div>
+        <aside className="home-info__aside">
+          <RecentConferences/>
+        </aside>
       </div>
     </section>
   );
