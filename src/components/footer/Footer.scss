@@ -1,10 +1,18 @@
 .footer {
   padding: 35px 0 25px 20px;
   background-color: var(--white-c);
+  border-top: 1px solid var(--primary-blue-c);
 
   .container {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    &::after {
+    content: url("../../assets/ui-icons/dashes.svg");
+    position: absolute;
+    bottom: -5px;
+    right: 20px;
+    }
   }
 
   &-logo {

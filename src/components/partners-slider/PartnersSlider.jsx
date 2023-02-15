@@ -37,7 +37,7 @@ const PartnersSlider = () => {
       <div className="container">
         <h3 className="partners-title">OUR PARTNERS</h3>
         <Swiper
-          spaceBetween={30}
+          spaceBetween={50}
           slidesPerView={4}
           autoplay={{
             delay: 2500,
