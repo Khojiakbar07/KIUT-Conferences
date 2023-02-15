@@ -10,7 +10,7 @@ import "./Header.scss";
 const Header = () => {
   const { i18n, t } = useTranslation();
   useEffect(() => {
-    i18n.changeLanguage("ru");
+    i18n.changeLanguage("en");
   }, [i18n]);
 
   return (
@@ -30,17 +30,17 @@ const Header = () => {
                 }
                 to="/"
               >
-                Home
+                {t("home")}
               </NavLink>
             </li>
             <li className="nav-list__item">
               <NavLink className="nav__link" to="/about">
-                About
+                {t("about_us")}
               </NavLink>
             </li>
             <li className="nav-list__item">
               <NavLink className="nav__link" to="/conference">
-                Conference
+                {t("conference")}
               </NavLink>
             </li>
           </ul>
