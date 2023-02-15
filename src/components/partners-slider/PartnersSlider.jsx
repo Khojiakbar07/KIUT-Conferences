@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -48,7 +49,7 @@ const PartnersSlider = () => {
           className="partners-swiper"
         >
           {partnersLogoArr.map((partner) => (
-            <SwiperSlide className="partners-swiper__item">
+            <SwiperSlide key={uuidv4()} className="partners-swiper__item">
               <img src={partner} alt="Partners' logo" />
             </SwiperSlide>
           ))}
