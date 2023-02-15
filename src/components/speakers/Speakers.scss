@@ -1,5 +1,5 @@
 .speakers {
-  padding-top: 106px;
+  padding-top: 66px;
 
   &-title {
     text-transform: uppercase;
@@ -32,5 +32,29 @@
     border-radius: 100px;
   }
 
+  &-content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
 
+  &-img {
+    width: 312px;
+    height: 322px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &-name {
+    font-size: var(--text-2xl);
+    font-weight: 500;
+    line-height: 29px;
+    color: #323232;
+  }
 }
