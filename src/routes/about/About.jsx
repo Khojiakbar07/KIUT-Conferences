@@ -1,11 +1,11 @@
 //components
-import HeroAbout from "../../components/hero-about/HeroAbout";
 import InfoAbout from "../../components/info-about/InfoAbout";
+import Intro from "../../components/intro/Intro";
 
 const About = () => {
   return (
     <main>
-      <HeroAbout />
+      <Intro title={"about us"}/>
       <InfoAbout />
     </main>
   );

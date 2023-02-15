@@ -1,6 +1,9 @@
 .intro {
-  height: 250px;
+  padding: 130px 0 210px;
   background-image: url("../../assets/images/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 
   .container {
     height: 100%;
@@ -8,29 +11,5 @@
     align-items: center;
     justify-content: center;
     position: relative;
-  }
-
-  &-title {
-    font-family: var(--ff-gothic);
-    color: var(--white-c);
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 145%;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-  }
-
-  &-label {
-    padding: 13px 20px;
-    background-color: var(--white-c);
-    position: absolute;
-    bottom: 0;
-    right: 12%;
-
-    span {
-      color: var(--black-c);
-      font-weight: 700;
-      font-size: var(--text-sm);
-    }
   }
 }
