@@ -10,7 +10,7 @@ import "./Header.scss";
 const Header = () => {
   const { i18n, t } = useTranslation();
   useEffect(() => {
-    i18n.changeLanguage("uz");
+    i18n.changeLanguage("en");
   }, [i18n]);
 
   return (

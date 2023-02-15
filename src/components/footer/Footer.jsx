@@ -6,7 +6,14 @@ import "./Footer.scss";
 import logo from "../../assets/logo/KiutLogo.svg";
 //icons
 import { FaInstagram, FaVk, FaYoutube, FaFacebookF } from "react-icons/fa";
+import {useTranslation} from "react-i18next";
+import {useEffect} from "react";
 const Footer = () => {
+  const { i18n, t } = useTranslation();
+  useEffect(() => {
+    i18n.changeLanguage("en");
+  }, [i18n]);
+
   return (
     <footer className="footer">
       <div className="container">
@@ -17,52 +24,58 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <div className="footer__block">
-            <h3 className="footer__block-title">Навигация</h3>
+            <h3 className="footer__block-title">
+              {t("navigation")}
+            </h3>
             <ul className="footer__links-list">
               <li className="footer__links-list__item">
                 <Link to="/" className="footer__link">
-                  Главная
+                  {t("home")}
                 </Link>
               </li>
               <li className="footer__links-list__item">
                 <Link to="/about" className="footer__link">
-                  О Вас
+                  {t("about_us")}
                 </Link>
               </li>
               <li className="footer__links-list__item">
                 <Link to="/" className="footer__link">
-                  Услуги
+                  {t("services")}
                 </Link>
               </li>
               <li className="footer__links-list__item">
                 <Link to="/" className="footer__link">
-                  Карта сайта
+                  {t("our_location")}
                 </Link>
               </li>
               <li className="footer__links-list__item">
                 <Link to="/" className="footer__link">
-                  Контакты
+                  {t("contacts")}
                 </Link>
               </li>
             </ul>
           </div>
           <div className="footer__block">
-            <h3 className="footer__block-title">Реквизиты</h3>
+            <h3 className="footer__block-title">
+              {t("requisites")}
+            </h3>
             <ul className="footer__links-list">
               <li className="footer__links-list__item">
                 <span>
-                  Инн: <br /> 525624553474
+                  {t("inn")}: <br /> 525624553474
                 </span>
               </li>
               <li className="footer__links-list__item">
                 <span>
-                  Огрнип: <br /> 312525616000033
+                  {t("ogrnip")}: <br /> 312525616000033
                 </span>
               </li>
             </ul>
           </div>
           <div className="footer__block">
-            <h3 className="footer__block-title">Мы в соц. сетях</h3>
+            <h3 className="footer__block-title">
+              {t("we_are_on_social_network")}
+            </h3>
             <div className="footer__socials">
               <a
                 href="https://instagram.com"

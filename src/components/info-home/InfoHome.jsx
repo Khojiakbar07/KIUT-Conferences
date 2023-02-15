@@ -4,8 +4,14 @@ import RecentConferences from "../recent-conferences/RecentConferences"
 import deanImg from "../../assets/images/dean1.jpg";
 //SCSS
 import "./InfoHome.scss";
+import {useTranslation} from "react-i18next";
+import {useEffect} from "react";
 
 const InfoHome = () => {
+  const { i18n, t } = useTranslation();
+  useEffect(() => {
+    i18n.changeLanguage("en");
+  }, [i18n]);
   return (
     <section className="home-info">
       <div className="container">
@@ -18,16 +24,7 @@ const InfoHome = () => {
               <strong>Janpolat Kudaybergenov</strong>
             </h2>
             <p className="home-info__text">
-              In accordance with the Decree of the President of Uzbekistan
-              Republic PP-60, January 28, 2022 “On the development strategy of
-              New Uzbekistan for 2022-2026”, Decree of the President of the
-              Republic of Uzbekistan dated 08.10.2019 No. PF-5847 "Concept for
-              the development of the higher education system of the Republic of
-              Uzbekistan until 2030" April 26, 2023, at the Kimyo International
-              University in Tashkent as part of the Pedagogical Forum
-              "Education: a look into the future" is planned to hold the
-              International Scientific and Practical Conference "Processes of
-              Modernization in Education: Problems and Solutions".
+              {t("janpolat")}
             </p>
           </div>
         </div>
