@@ -1,0 +1,68 @@
+.payment-form {
+  max-width: 880px;
+  padding: 16px 50px 85px;
+  background-color: var(--white-c);
+  box-shadow: var(--bx-payments-card);
+  border-radius: 20px;
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+    color: var(--black-c);
+    margin-bottom: 38px;
+  }
+
+  &__inputs-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 80px
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.005em;
+      color: #0A0A0A;
+    }
+
+    input {
+      padding: 16px 24px;
+      border-radius: 12px;
+      border: 1px solid #C2C2C2;
+      outline: none;
+      color: var(--black-c);
+
+      &:focus, &:valid {
+        border-color: var(--black-c);
+      }
+    }
+  }
+
+  input[type=file]::file-selector-button {
+    display: none;
+  }
+
+  input[type=file] {
+    cursor: pointer;
+  }
+
+  .file-upload {
+    position: relative;
+  }
+
+  .plus-icon {
+    font-size: 24px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
