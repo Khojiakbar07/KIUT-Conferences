@@ -1,20 +1,27 @@
 import { Route, Routes } from "react-router";
 
+//layout
+import Layout from "../components/layout/Layout";
+
 //pages
 import Home from "./home/Home";
 import About from "./about/About";
 import Payment from "./payment/Payment";
 import Test from "./Test";
 import Conferences from "./conferences/Conferences";
+import Detail from "./detail/Detail";
+import NotFound from "./not-found/NotFound";
 
 const index = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/test" element={<Test />} />
-      <Route path="/payment" element={<Payment />} />
-      <Route path="/conference" element={<Conferences />} />
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/about" element={<Layout><About /></Layout>} />
+        <Route path="/test" element={<Test />} />
+        <Route path="/payment" element={<Layout><Payment /></Layout>} />
+        <Route path="/conference" element={<Layout><Conferences /></Layout>} />
+        <Route path="/detail/:id" element={<Layout><Detail /></Layout>} />
+        <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

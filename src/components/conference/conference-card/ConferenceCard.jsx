@@ -23,7 +23,7 @@ const ConferenceCard = ({ conference }) => {
         </p>
         <Link
           className="conference-card__link"
-          to={`conference/detail/${conference.id}`}
+          to={`/detail/${conference.id}`}
         >
           <span>Узнать больше</span> <HiOutlineArrowLongRight />
         </Link>

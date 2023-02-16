@@ -22,6 +22,7 @@ const Header = () => {
   const changeLang = (e) => {
     i18n.changeLanguage(e.target.textContent || "en");
     setActiveLang(localStorage.getItem("lang"));
+    window.location.reload();
   };
 
   return (
