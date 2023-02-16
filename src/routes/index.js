@@ -20,7 +20,7 @@ const index = () => {
         <Route path="/test" element={<Test />} />
         <Route path="/payment" element={<Layout><Payment /></Layout>} />
         <Route path="/conference" element={<Layout><Conferences /></Layout>} />
-        <Route path="/detail/:id" element={<Layout><Detail /></Layout>} />
+        <Route path="/detail/:conferenceId" element={<Layout><Detail /></Layout>} />
         <Route path="*" element={<NotFound />} />
     </Routes>
   );

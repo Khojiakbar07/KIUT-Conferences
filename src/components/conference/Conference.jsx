@@ -9,7 +9,7 @@ import "./Conference.scss";
 import ConferenceCard from "./conference-card/ConferenceCard";
 
 //BASE URL
-const BASE_URL = "https://cmsconference-production.up.railway.app/apps";
+const BASE_URL = "https://conference.alltravel.uz/apps";
 
 const Conference = () => {
   const [conferencesArr, setConferencesArr] = useState([]);
