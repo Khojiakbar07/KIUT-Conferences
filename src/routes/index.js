@@ -5,7 +5,7 @@ import Home from "./home/Home";
 import About from "./about/About";
 import Payment from "./payment/Payment";
 import Test from "./Test";
-import Conference from "./conference/Conference";
+import Conferences from "./conferences/Conferences";
 
 const index = () => {
   return (
@@ -14,7 +14,7 @@ const index = () => {
       <Route path="/about" element={<About />} />
       <Route path="/test" element={<Test />} />
       <Route path="/payment" element={<Payment />} />
-      <Route path="/conference" element={<Conference />} />
+      <Route path="/conference" element={<Conferences />} />
     </Routes>
   );
 };
