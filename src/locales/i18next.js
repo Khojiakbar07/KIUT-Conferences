@@ -8,10 +8,9 @@ i18next
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "uz",
+    fallbackLng: "en",
     debug: false,
     whitelist: Languages,
-    lng: "ru",
     interpolation: {
       escapeValue: false,
     },

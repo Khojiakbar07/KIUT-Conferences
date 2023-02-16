@@ -3,7 +3,7 @@ import "./InfoAbout.scss";
 import { useTranslation } from "react-i18next";
 
 const InfoAbout = () => {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
   
   return (
     <section className="about-info">
