@@ -5,13 +5,10 @@ import deanImg from "../../assets/images/dean1.jpg";
 //SCSS
 import "./InfoHome.scss";
 import {useTranslation} from "react-i18next";
-import {useEffect} from "react";
 
 const InfoHome = () => {
-  const { i18n, t } = useTranslation();
-  useEffect(() => {
-    i18n.changeLanguage("en");
-  }, [i18n]);
+  const { t } = useTranslation();
+
   return (
     <section className="home-info">
       <div className="container">

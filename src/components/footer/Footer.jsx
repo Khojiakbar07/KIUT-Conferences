@@ -6,13 +6,9 @@ import "./Footer.scss";
 import logo from "../../assets/logo/KiutLogo.svg";
 //icons
 import { FaInstagram, FaVk, FaYoutube, FaFacebookF } from "react-icons/fa";
-import {useTranslation} from "react-i18next";
-import {useEffect} from "react";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
-  const { i18n, t } = useTranslation();
-  useEffect(() => {
-    i18n.changeLanguage("en");
-  }, [i18n]);
+  const { t } = useTranslation();
 
   return (
     <footer className="footer">
@@ -24,9 +20,7 @@ const Footer = () => {
         </div>
         <div className="footer-right">
           <div className="footer__block">
-            <h3 className="footer__block-title">
-              {t("navigation")}
-            </h3>
+            <h3 className="footer__block-title">{t("navigation")}</h3>
             <ul className="footer__links-list">
               <li className="footer__links-list__item">
                 <Link to="/" className="footer__link">
@@ -56,9 +50,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer__block">
-            <h3 className="footer__block-title">
-              {t("requisites")}
-            </h3>
+            <h3 className="footer__block-title">{t("requisites")}</h3>
             <ul className="footer__links-list">
               <li className="footer__links-list__item">
                 <span>

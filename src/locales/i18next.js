@@ -8,9 +8,10 @@ i18next
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
-    debug: true,
+    fallbackLng: "uz",
+    debug: false,
     whitelist: Languages,
+    lng: "ru",
     interpolation: {
       escapeValue: false,
     },
@@ -21,4 +22,5 @@ i18next
       caches: ["cookie", "localStorage"],
     },
   });
+
 export default i18next;

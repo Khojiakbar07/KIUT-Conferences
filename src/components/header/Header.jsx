@@ -1,17 +1,28 @@
 // tools
-import { useEffect } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import { useTranslation } from "react-i18next";
+
+//icons
+import { FiChevronDown } from "react-icons/fi";
+
 // Images
 import logo from "../../assets/logo/KiutLogo.svg";
+
 // SCSS
 import "./Header.scss";
 
 const Header = () => {
   const { i18n, t } = useTranslation();
-  useEffect(() => {
-    i18n.changeLanguage("en");
-  }, [i18n]);
+  const langs = ["en", "ru", "uz"];
+  const [activeLang, setActiveLang] = useState(localStorage.getItem("lang"));
+  const [isLangListMouseOver, setLangListMouseOver] = useState(false);
+
+  const changeLang = (e) => {
+    i18n.changeLanguage(e.target.textContent || "en");
+    setActiveLang(localStorage.getItem("lang"));
+  };
 
   return (
     <header className="header">
@@ -45,10 +56,49 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="join-conference">
-          <Link className="join-conference__link">
-            {t("join_to_conference")}
-          </Link>
+        <div className="header-right">
+          <div
+            className="lang"
+            onMouseOver={() => {
+              setLangListMouseOver(true);
+            }}
+            onMouseLeave={() => {
+              setLangListMouseOver(false);
+            }}
+          >
+            <button className="lang-btn">
+              <span>{localStorage.getItem("lang")}</span>
+              <FiChevronDown />
+            </button>
+            <div className="lang-collection">
+              <ul
+                onClick={() => {
+                  setLangListMouseOver(false);
+                }}
+                style={
+                  isLangListMouseOver
+                    ? { display: "block" }
+                    : { display: "none" }
+                }
+                className="lang-list"
+              >
+                {langs.map((lang) => (
+                  <li
+                    style={activeLang === lang ? { display: "none" } : null}
+                    key={uuidv4()}
+                    onClick={changeLang}
+                  >
+                    {lang}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="join-conference">
+            <Link className="join-conference__link">
+              {t("join_to_conference")}
+            </Link>
+          </div>
         </div>
       </div>
     </header>

@@ -34,6 +34,61 @@
     }
   }
 
+  &-right {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+  }
+
+  .lang {
+    position: relative;
+  }
+
+  .lang-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: var(--white-c);
+    border-radius: 5px;
+    box-shadow: 0 6px 8px -6px rgb(24 39 75 / 12%), 0 8px 16px -6px rgb(24 39 75 / 8%);
+    z-index: 10;
+    overflow: hidden;
+
+    li {
+      text-align: center;
+      text-transform: capitalize;
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0c81ffa6;
+        color: var(--white-c);
+      }
+    }
+  }
+
+  .lang-btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    border: 1px solid var(--primary-blue-c);
+    border-radius: 50px;
+    color: var(--primary-blue-c);
+
+    span {
+      text-transform: capitalize;
+      font-size: var(--text-lg);
+      font-weight: 500;
+      letter-spacing: -0.03em;
+    }
+
+    svg {
+      display: block;
+      font-size: var(--text-2xl);
+      padding-top: 4px;
+    }
+  }
 
   .join-conference__link {
     color: var(--black-c);
