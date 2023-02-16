@@ -56,48 +56,39 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="header-right">
-          <div
-            className="lang"
-            onMouseOver={() => {
-              setLangListMouseOver(true);
-            }}
-            onMouseLeave={() => {
-              setLangListMouseOver(false);
-            }}
-          >
-            <button className="lang-btn">
-              <span>{localStorage.getItem("lang")}</span>
-              <FiChevronDown />
-            </button>
-            <div className="lang-collection">
-              <ul
-                onClick={() => {
-                  setLangListMouseOver(false);
-                }}
-                style={
-                  isLangListMouseOver
-                    ? { display: "block" }
-                    : { display: "none" }
-                }
-                className="lang-list"
-              >
-                {langs.map((lang) => (
-                  <li
-                    style={activeLang === lang ? { display: "none" } : null}
-                    key={uuidv4()}
-                    onClick={changeLang}
-                  >
-                    {lang}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="join-conference">
-            <Link className="join-conference__link">
-              {t("join_to_conference")}
-            </Link>
+        <div
+          className="lang"
+          onMouseOver={() => {
+            setLangListMouseOver(true);
+          }}
+          onMouseLeave={() => {
+            setLangListMouseOver(false);
+          }}
+        >
+          <button className="lang-btn">
+            <span>{localStorage.getItem("lang")}</span>
+            <FiChevronDown />
+          </button>
+          <div className="lang-collection">
+            <ul
+              onClick={() => {
+                setLangListMouseOver(false);
+              }}
+              style={
+                isLangListMouseOver ? { display: "block" } : { display: "none" }
+              }
+              className="lang-list"
+            >
+              {langs.map((lang) => (
+                <li
+                  style={activeLang === lang ? { display: "none" } : null}
+                  key={uuidv4()}
+                  onClick={changeLang}
+                >
+                  {lang}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
