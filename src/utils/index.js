@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 //SCSS
 import "./index.scss";
 
@@ -6,6 +7,17 @@ import "./index.scss";
 import { FiChevronUp } from "react-icons/fi";
 
 const BackToTop = () => {
+
+  const { pathname } = useLocation();
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  useEffect(() => {
+    scrollToTop();
+  }, [pathname])
+
   const button = useRef();
   useEffect(() => {
     window.onscroll = () => {
@@ -16,9 +28,7 @@ const BackToTop = () => {
       }
     };
   }, []);
-  const scrollToTop = () => {
-    window.scrollTo(0, 0);
-  };
+
   return (
     <button ref={button} className="back-to-top" onClick={scrollToTop}>
       <FiChevronUp />

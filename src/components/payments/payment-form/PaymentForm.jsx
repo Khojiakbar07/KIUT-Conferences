@@ -30,7 +30,7 @@ const PaymentForm = () => {
         </div>
         <div className="payment-form__input">
           <label htmlFor="email">Email address</label>
-          <input type="text" placeholder="Full name..." id="email" required />
+          <input type="text" placeholder="Email address" id="email" required />
         </div>
         <div className="payment-form__input">
           <label htmlFor="chooseFile">Add a file</label>

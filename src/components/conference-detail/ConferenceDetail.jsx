@@ -66,7 +66,9 @@ const ConferenceDetail = () => {
                 </li>
               </ul>
             </div>
-            <Link className="conference-info__payment-link" to="/payment">Payment</Link>
+            <Link className="conference-info__payment-link" to="/payment">
+              Payment
+            </Link>
           </div>
         </div>
       </div>
