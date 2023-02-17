@@ -17,10 +17,10 @@ const index = () => {
     <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
-        <Route path="/test" element={<Test />} />
-        <Route path="/payment" element={<Layout><Payment /></Layout>} />
         <Route path="/conference" element={<Layout><Conferences /></Layout>} />
         <Route path="/detail/:conferenceId" element={<Layout><Detail /></Layout>} />
+        <Route path="/payment/:conferenceId" element={<Layout><Payment /></Layout>} />
+        <Route path="/test" element={<Test />} />
         <Route path="*" element={<NotFound />} />
     </Routes>
   );

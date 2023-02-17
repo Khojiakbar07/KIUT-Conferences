@@ -54,3 +54,28 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1750px) {
+  .payments-type {
+    .click, .payme {
+      width: 200px;
+      height: 80px;
+    }
+
+    .humo, .uzcard {
+      width: 130px;
+      height: 110px;
+    }
+ 
+    .apelsin {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .payments-guide {
+    height: fit-content;
+  }
+}
