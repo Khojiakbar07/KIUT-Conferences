@@ -34,6 +34,10 @@
     color: var(--black-c);
     line-height: 125%;
     margin-bottom: 36px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
   }
 
   &__link {

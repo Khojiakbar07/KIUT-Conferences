@@ -1,7 +1,6 @@
 //tools
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { v4 as uuidv4 } from "uuid";
 
 //SCSS
 import "./Conference.scss";
@@ -33,7 +32,7 @@ const Conference = () => {
       <div className="container">
         {conferencesArr?.length > 0 &&
           conferencesArr.map((conferenceData) => (
-            <ConferenceCard key={uuidv4()} conference={conferenceData} />
+            <ConferenceCard key={conferenceData.id} conference={conferenceData} />
           ))}
       </div>
     </section>
