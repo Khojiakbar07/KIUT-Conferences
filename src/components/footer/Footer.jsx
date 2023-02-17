@@ -33,19 +33,19 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="footer__links-list__item">
-                <Link to="/" className="footer__link">
-                  {t("services")}
+                <Link to="/conference" className="footer__link">
+                  {t("conference")}
                 </Link>
               </li>
               <li className="footer__links-list__item">
-                <Link to="/" className="footer__link">
+                <a
+                  href="https://goo.gl/maps/fnyo8eCUrAiTLvKF9"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="footer__link"
+                >
                   {t("our_location")}
-                </Link>
-              </li>
-              <li className="footer__links-list__item">
-                <Link to="/" className="footer__link">
-                  {t("contacts")}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
