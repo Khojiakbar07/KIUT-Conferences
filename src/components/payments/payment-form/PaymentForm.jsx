@@ -37,13 +37,13 @@ const PaymentForm = () => {
           <div className="file-upload">
             <input
               type="file"
-              placeholder="Choose file"
               id="chooseFile"
               accept="image/jpg, image/png, image/jpeg, .doc, .docx, .zip, .pdf"
               required
             />
             <FiPlus className="plus-icon" />
           </div>
+          
         </div>
         <div className="payment-form__input">
           <label htmlFor="phoneNumber">Phone Number</label>
@@ -53,6 +53,18 @@ const PaymentForm = () => {
             onChange={setPhoneNumber}
             required
           />
+        </div>
+        <div className="payment-form__input">
+        <label htmlFor="check">Add a check</label>
+          <div className="file-upload">
+            <input
+              type="file"
+              id="check"
+              accept="image/jpg, image/png, image/jpeg, .doc, .docx, .zip, .pdf"
+              required
+            />
+            <FiPlus className="plus-icon" />
+          </div>
         </div>
       </div>
       <p className="payment-form__accept-text">You can attach (.zip, .pdf, .doc, .docx, .png, .jpg, .jpeg that are less than 5MB/file, limit 3 files)</p>
