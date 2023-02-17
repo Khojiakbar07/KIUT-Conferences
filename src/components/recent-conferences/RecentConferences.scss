@@ -75,7 +75,7 @@
   }
 
   &__link {
-    font-size: var(--text-sm);
+    font-size: var(--text-lg);
     color: var(--green-c);
 
     &:hover {
@@ -83,4 +83,31 @@
     }
   }
 
+}
+
+@media screen and (max-width: 1440px) {
+  .recent-conferences {
+    padding: 25px 10px 30px 20px;
+    &__title {
+      font-size: var(--text-2xl);
+    }
+
+    &__list-item {
+      align-items: center;
+    }
+
+    &__name {
+      line-height: 25px;
+    }
+    &__img {
+      width: 156px;
+      height: 140px;
+      margin-right: 15px;
+    }
+
+    &__desc {
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+  }
 }

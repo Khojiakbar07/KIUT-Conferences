@@ -42,3 +42,35 @@
     letter-spacing: -0.02em;
   }
 }
+
+@media screen and (max-width: 1720px) {
+  .home-info {
+    .dean-img {
+      width: 400px;
+      height: 420px;
+    }
+
+    &__text {
+      font-size: var(--text-lg);
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .home-info {
+    .dean-img {
+      width: 330px;
+      height: 370px;
+    }
+    .dean-name {
+      font-size: var(--text-3xl);
+      line-height: 25px;
+    }
+    &__text {
+      font-size: var(--text-base);
+      line-height: 28px;
+
+    }
+
+  }
+}
