@@ -1,10 +1,10 @@
 //component
-import RecentConferences from "../recent-conferences/RecentConferences"
+import RecentConferences from "../recent-conferences/RecentConferences";
 //images
 import deanImg from "../../assets/images/dean1.jpg";
 //SCSS
 import "./InfoHome.scss";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const InfoHome = () => {
   const { t } = useTranslation();
@@ -20,13 +20,11 @@ const InfoHome = () => {
             <h2 className="dean-name">
               <strong>Janpolat Kudaybergenov</strong>
             </h2>
-            <p className="home-info__text">
-              {t("janpolat")}
-            </p>
+            <p className="home-info__text">{t("janpolat")}</p>
           </div>
         </div>
         <aside className="home-info__aside">
-          <RecentConferences/>
+          <RecentConferences />
         </aside>
       </div>
     </section>

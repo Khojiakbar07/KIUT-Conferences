@@ -30,7 +30,7 @@ const RecentConferences = () => {
 
   console.log(conferencesArr);
 
-  return (
+  return conferencesArr?.length > 0 ? (
     <div className="recent-conferences">
       <h4 className="recent-conferences__title">
         <strong>{t("recent_conferences")}</strong>
@@ -56,12 +56,19 @@ const RecentConferences = () => {
                 <p className="recent-conferences__desc">
                   {conference[`description_${localStorage.getItem("lang")}`]}
                 </p>
-                <Link className="recent-conferences__link" to={`/detail/${conference.id}`}>Read more</Link>
+                <Link
+                  className="recent-conferences__link"
+                  to={`/detail/${conference.id}`}
+                >
+                  Read more
+                </Link>
               </div>
             </li>
           ))}
       </ul>
     </div>
+  ) : (
+    <></>
   );
 };
 

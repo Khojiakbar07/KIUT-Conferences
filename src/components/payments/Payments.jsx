@@ -26,7 +26,11 @@ const Payments = () => {
             <img className="click" src={click} alt="You can pay via click" />
             <img className="payme" src={payme} alt="You can pay via payme" />
             <img className="humo" src={humo} alt="You can pay via humo" />
-            <img className="apelsin" src={apelsin} alt="You can pay via apelsin" />
+            <img
+              className="apelsin"
+              src={apelsin}
+              alt="You can pay via apelsin"
+            />
             <img className="uzcard" src={uzcard} alt="You can pay via uzcard" />
           </div>
         </div>
