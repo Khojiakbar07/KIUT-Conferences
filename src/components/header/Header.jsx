@@ -52,7 +52,12 @@ const Header = () => {
             </li>
             <li className="nav-list__item">
               <NavLink className="nav__link" to="/conference">
-                {t("conference")}
+                Programs
+              </NavLink>
+            </li>
+            <li className="nav-list__item">
+              <NavLink className="nav__link" to="/submission">
+                Submission
               </NavLink>
             </li>
           </ul>
