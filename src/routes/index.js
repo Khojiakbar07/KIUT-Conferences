@@ -6,7 +6,7 @@ import Layout from "../components/layout/Layout";
 //pages
 import Home from "./home/Home";
 import About from "./about/About";
-import Payment from "./payment/Payment";
+import Payment from "./submission/Submission";
 import Conferences from "./conferences/Conferences";
 import Detail from "./detail/Detail";
 import NotFound from "./not-found/NotFound";
@@ -31,7 +31,7 @@ const index = () => {
         }
       />
       <Route
-        path="/conference"
+        path="/programs"
         element={
           <Layout>
             <Conferences />
@@ -47,7 +47,7 @@ const index = () => {
         }
       />
       <Route
-        path="/payment/:conferenceId"
+        path="/submission"
         element={
           <Layout>
             <Payment />
