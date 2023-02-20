@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { FiChevronDown } from "react-icons/fi";
 
 // Images
-import logo from "../../assets/logo/KiutLogo.svg";
+import logo from "../../assets/logo/KiutLogo.png";
 
 // SCSS
 import "./Header.scss";

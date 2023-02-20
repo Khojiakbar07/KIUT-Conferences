@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 //SCSS
 import "./Footer.scss";
 //images
-import logo from "../../assets/logo/KiutLogo.svg";
+import logo from "../../assets/logo/KiutLogo.png";
 //icons
 import { FaInstagram, FaVk, FaYoutube, FaFacebookF } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
