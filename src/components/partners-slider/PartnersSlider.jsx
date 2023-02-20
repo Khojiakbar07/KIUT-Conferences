@@ -4,12 +4,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 //SCSS
 import "./PartnersSlider.scss";
 
 // import required modules
-import { Autoplay } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 //partners' logos
 import itPark from "../../assets/partners/it-park.png";
@@ -40,12 +42,13 @@ const PartnersSlider = () => {
         <Swiper
           spaceBetween={50}
           slidesPerView={5}
+          loop={true}
+          grabCursor={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
           }}
-          loop={true}
-          modules={[Autoplay]}
+          modules={[Autoplay, Pagination, Navigation]}
           className="partners-swiper"
         >
           {partnersLogoArr.map((partner) => (
