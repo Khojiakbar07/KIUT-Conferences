@@ -2,17 +2,18 @@
   padding: 35px 0 25px 20px;
   background-color: var(--white-c);
   border-top: 1px solid var(--primary-blue-c);
+  position: relative;
+
+  &::after {
+    content: url("../../assets/ui-icons/dashes.svg");
+    position: absolute;
+    bottom: 18px;
+    right: 20px;
+  }
 
   .container {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    &::after {
-    content: url("../../assets/ui-icons/dashes.svg");
-    position: absolute;
-    bottom: -5px;
-    right: 20px;
-    }
   }
 
   &-logo {
@@ -50,7 +51,14 @@
     margin-bottom: 10px;
   }
 
+  &__links-list__item>span {
+    font-size: var(--text-sm);
+    color: var(--black-c);
+    text-transform: uppercase;
+  }
+
   &__link {
+    font-size: var(--text-sm);
     color: var(--black-c);
     transition: 0.3s;
 
@@ -99,5 +107,7 @@
 
   .copyright {
     margin-top: 65px;
+    color: var(--black-c);
+    font-size: var(--text-xs);
   }
 }

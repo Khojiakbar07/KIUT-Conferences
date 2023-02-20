@@ -65,9 +65,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="footer__block">
-            <h3 className="footer__block-title">
-              {t("we_are_on_social_network")}
-            </h3>
+            <h3 className="footer__block-title">{t("follow_us")}</h3>
             <div className="footer__socials">
               <a
                 href="https://instagram.com"
