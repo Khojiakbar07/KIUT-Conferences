@@ -1,25 +1,23 @@
 .about-info {
-  padding: 46px 0 77px;
+  padding: 30px 0 120px;
 
   &__title {
     text-align: center;
     font-family: var(--ff-gothic);
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 61px;
-    letter-spacing: -0.03em;
-    margin-bottom: 65px;
+    font-size: var(--sm-title);
+    font-weight: 700;
+    line-height: 125%;
+    margin-bottom: 37px;
   }
   &__content {
     display: flex;
-    column-gap: 45px;
+    column-gap: 18px;
   }
   &__text {
-    font-family: var(--ff-gothic);
-    font-size: var(--text-xl);
-    color: var(--black-c);
+    font-size: 15px;
     font-weight: 700;
     line-height: 125%;
+    color: var(--black-c);
   }
 
   .map-location {
