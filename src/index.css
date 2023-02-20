@@ -92,6 +92,17 @@
   --bx-payments-card: 2px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+.line::after {
+  content: "";
+  width: 475px;
+  height: 2px;
+  background-color: var(--green-c);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 body,
 html {
   font-weight: 400;

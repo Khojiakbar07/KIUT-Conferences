@@ -8,7 +8,7 @@ const InfoAbout = () => {
   return (
     <section className="about-info">
       <div className="container">
-        <h3 className="about-info__title">{t("ABOUT_US")}</h3>
+        <h3 className="about-info__title line">{t("ABOUT_US")}</h3>
         <div className="about-info__content">
           <p className="about-info__text">
             {t("about_text1")}

@@ -37,7 +37,7 @@ const partnersLogoArr = [
 const PartnersSlider = () => {
   return (
     <section className="partners">
-      <h3 className="partners-title">OUR PARTNERS</h3>
+      <h3 className="partners-title line">OUR PARTNERS</h3>
       <div className="container">
         <Swiper
           spaceBetween={50}

@@ -16,17 +16,6 @@
     letter-spacing: -0.02em;
     position: relative;
     margin-bottom: 42px;
-
-    &::after {
-      content: "";
-      height: 2px;
-      width: 475px;
-      background-color: var(--green-c);
-      position: absolute;
-      bottom: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 
 }

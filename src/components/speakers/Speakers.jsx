@@ -6,7 +6,7 @@ import speaker1 from "../../assets/speakers/speaker1.jpg";
 const Speakers = () => {
   return (
     <section className="speakers">
-      <h3 className="speakers-title">Speakers</h3>
+      <h3 className="speakers-title line">Speakers</h3>
       <div className="container">
         <div className="speakers-content">
           <div className="speakers-box">

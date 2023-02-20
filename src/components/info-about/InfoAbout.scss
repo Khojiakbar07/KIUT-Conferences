@@ -8,6 +8,12 @@
     font-weight: 700;
     line-height: 125%;
     margin-bottom: 37px;
+    position: relative;
+
+    &::after {
+      max-width: 305px;
+      bottom: -8px;
+    }
   }
 
   &__content {
@@ -17,7 +23,6 @@
 
   &__text {
     font-size: 15px;
-    font-weight: 700;
     line-height: 125%;
     color: var(--black-c);
   }

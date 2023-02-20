@@ -34,18 +34,13 @@ const Footer = () => {
               </li>
               <li className="footer__links-list__item">
                 <Link to="/conference" className="footer__link">
-                  {t("conference")}
+                  Programs
                 </Link>
               </li>
               <li className="footer__links-list__item">
-                <a
-                  href="https://goo.gl/maps/fnyo8eCUrAiTLvKF9"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="footer__link"
-                >
-                  {t("our_location")}
-                </a>
+                <Link to="#" className="footer__link">
+                  Submission
+                </Link>
               </li>
             </ul>
           </div>

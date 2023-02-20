@@ -30,10 +30,16 @@ const Conference = () => {
   return (
     <section className="conference">
       <div className="container">
-        {conferencesArr?.length > 0 &&
-          conferencesArr.map((conferenceData) => (
-            <ConferenceCard key={conferenceData.id} conference={conferenceData} />
-          ))}
+        <h3 className="conference-title line">Conference</h3>
+        <div className="conference-inner">
+          {conferencesArr?.length > 0 &&
+            conferencesArr.map((conferenceData) => (
+              <ConferenceCard
+                key={conferenceData?.id}
+                conference={conferenceData}
+              />
+            ))}
+        </div>
       </div>
     </section>
   );
