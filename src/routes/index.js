@@ -39,7 +39,7 @@ const index = () => {
         }
       />
       <Route
-        path="/detail/:conferenceId"
+        path="/detail"
         element={
           <Layout>
             <Detail />

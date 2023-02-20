@@ -1,74 +1,66 @@
 //tools
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { formatterDate } from "../../hooks/formatterDate";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import { Link } from "react-router-dom";
+// import { formatterDate } from "../../hooks/formatterDate";
 
 //SCSS
 import "./ConferenceDetail.scss";
 
-//BASE_URL
-const BASE_URL = "https://conference.alltravel.uz/apps";
+//image
+import forumImg from "../../assets/images/forum-img.png";
+
+// const BASE_URL = "https://conference.alltravel.uz/apps";
 
 const ConferenceDetail = () => {
-  const { conferenceId } = useParams();
-  const [conferenceItem, setConferenceItem] = useState([]);
-  const lang = localStorage.getItem("lang");
-  useEffect(() => {
-    (async () => {
-      try {
-        const RESPONSE = await axios.get(
-          `${BASE_URL}/conference/retrieve/${conferenceId}`
-        );
-        if (RESPONSE.status === 200) {
-          setConferenceItem(RESPONSE.data);
-        }
-      } catch (err) {
-        console.log(err);
-      }
-    })();
-  }, [conferenceId]);
-  console.log(conferenceItem);
+  // const [conferenceItem, setConferenceItem] = useState([]);
+  // const lang = localStorage.getItem("lang");
+  // useEffect(() => {
+  //   (async () => {
+  //     try {
+  //       const RESPONSE = await axios.get(
+  //         `${BASE_URL}/conference/retrieve/${conferenceId}`
+  //       );
+  //       if (RESPONSE.status === 200) {
+  //         setConferenceItem(RESPONSE.data);
+  //       }
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   })();
+  // }, [conferenceId]);
+  // console.log(conferenceItem);
 
   return (
     <section className="conference-info">
       <div className="container">
-        <div className="conference-info__hero">
-          <h2 className="conference-info__name">
-            {conferenceItem?.[`name_${lang}`]}
-          </h2>
+        <h3 className="conference-info__title line">CONFERECNCE detail</h3>
+        <div className="conference-info__info">
           <div className="conference-info__img">
-            <img src={conferenceItem?.image} alt="Conference" />
+            <img src={forumImg} alt="Forum" />
           </div>
-        </div>
-        <div className="conference-info__content">
-          <p className="conference-info__desc">
-            {conferenceItem?.[`description_${lang}`]}
-          </p>
-          <div className="conference-info__info">
-            <div className="conference-info__card">
-              <ul className="conference-info__card__list">
-                <li className="conference-info__card__list-item">
-                  <strong>Fee</strong>
-                  <p>{conferenceItem?.[`price_${lang}`]}</p>
-                </li>
-                <li className="conference-info__card__list-item">
-                  <strong>Date and Time</strong>
-                  <p>{`${formatterDate(conferenceItem?.date_starts_time).day}.${
-                    formatterDate(conferenceItem?.date_starts_time).month
-                  }.${
-                    formatterDate(conferenceItem?.date_starts_time).year
-                  }`}</p>
-                </li>
-                <li className="conference-info__card__list-item">
-                  <strong>Address</strong>
-                  <p>Usman Nasyr Street, 156, 100121 Tashkent</p>
-                </li>
-              </ul>
+          <div className="conference-info__card">
+            <div className="conference-info__card-title">
+              <strong>Important dates</strong>
             </div>
-            <Link className="conference-info__payment-link" to={`/payment/${conferenceItem?.id}`}>
-              Payment
-            </Link>
+            <ul className="conference-info__card__list">
+              <li className="conference-info__card__list-item">
+                <strong>Online submission</strong>
+                <p>September 1. 2022</p>
+              </li>
+              <li className="conference-info__card__list-item">
+                <strong>Online registration</strong>
+                <p>March 26, 2023</p>
+              </li>
+              <li className="conference-info__card__list-item">
+                <strong>Conference presentation</strong>
+                <p>April 26-27, 2023</p>
+              </li>
+              <li className="conference-info__card__list-item">
+                <strong>Full paper submission</strong>
+                <p>May 1, 2023.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

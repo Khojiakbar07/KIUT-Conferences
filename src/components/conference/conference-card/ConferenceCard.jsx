@@ -33,10 +33,7 @@ const ConferenceCard = ({ conference }) => {
           world will have the opportunity to participate both physically and
           online, depending on their preferences.
         </p>
-        <Link
-          className="conference-card__link"
-          to={`/detail/${conference?.id}`}
-        >
+        <Link className="conference-card__link" to={`/detail`}>
           <span>Read More</span> <HiOutlineArrowLongRight />
         </Link>
       </div>
