@@ -75,17 +75,14 @@
     }
   }
 
+  &__content>p {
+    margin-bottom: 40px;
+  }
 
-  &__desc {
-    font-size: 30px;
+  &__text {
+    font-size: var(--text-2xl);
     line-height: 34px;
     letter-spacing: -0.02em;
     color: var(--dark-c);
   }
-
-
-
-
-
-
 }
