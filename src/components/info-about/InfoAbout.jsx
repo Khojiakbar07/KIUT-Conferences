@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const InfoAbout = () => {
   const { t } = useTranslation();
-  
+
   return (
     <section className="about-info">
       <div className="container">
