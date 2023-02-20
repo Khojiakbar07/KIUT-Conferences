@@ -38,12 +38,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="footer__links-list__item">
-                <Link to="/conference" className="footer__link">
+                <Link to="/programs" className="footer__link">
                   Programs
                 </Link>
               </li>
               <li className="footer__links-list__item">
-                <Link to="#" className="footer__link">
+                <Link to="/submission" className="footer__link">
                   Submission
                 </Link>
               </li>
