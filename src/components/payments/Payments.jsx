@@ -14,6 +14,7 @@ const Payments = () => {
   return (
     <section className="payments">
       <div className="container">
+        <h3 className="payments-title line">SUBMISSION</h3>
         <div className="payments__content">
           <div className="payments-QR"></div>
           <PaymentForm />

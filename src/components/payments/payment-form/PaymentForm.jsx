@@ -63,48 +63,44 @@ const PaymentForm = () => {
         you back!
       </h5>
       <div className="payment-form__inputs-wrapper">
-        <div className="payment-form__input">
-          <label htmlFor="fullName">Full name</label>
-          <input
-            type="text"
-            placeholder="Full name..."
-            value={fullName}
-            id="fullName"
-            required
-            onChange={(e) => {
-              setFullName(e.target.value);
-            }}
-          />
-        </div>
-        <div className="payment-form__input">
-          <label htmlFor="email">Email address</label>
-          <input
-            type="email"
-            placeholder="Email address"
-            value={email}
-            id="email"
-            required
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-        </div>
-        <div className="payment-form__input">
-          <label htmlFor="chooseFile">Add a file</label>
-          <div className="file-upload">
+        <div className="payment-form__info-inputs">
+          <div className="payment-form__input">
+            <label htmlFor="fullName">Full name</label>
             <input
-              type="file"
-              id="chooseFile"
-              accept="image/jpg, image/png, image/jpeg, .doc, .docx, .zip, .pdf"
+              type="text"
+              placeholder="Full name..."
+              value={fullName}
+              id="fullName"
               required
               onChange={(e) => {
-                setSelectedFile(e.target.files[0]);
+                setFullName(e.target.value);
               }}
             />
-            <FiPlus className="plus-icon" />
+          </div>
+          <div className="payment-form__input">
+            <label htmlFor="email">Email address</label>
+            <input
+              type="email"
+              placeholder="Email address"
+              value={email}
+              id="email"
+              required
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
           </div>
         </div>
-        <div className="payment-form__input">
+        <div className="payment-form__input work-place">
+          <label htmlFor="work-place">Work place</label>
+          <input
+            type="text"
+            placeholder="Work place..."
+            id="work-place"
+            required
+          />
+        </div>
+        <div className="payment-form__input phone-num">
           <label htmlFor="phoneNumber">Phone Number</label>
           <PhoneInput
             placeholder="Enter phone number"
@@ -113,19 +109,38 @@ const PaymentForm = () => {
             required
           />
         </div>
-        <div className="payment-form__input">
-          <label htmlFor="check">Add a check</label>
-          <div className="file-upload">
-            <input
-              type="file"
-              id="check"
-              accept="image/jpg, image/png, image/jpeg"
-              required
-              onChange={(e) => {
-                setSelectedCheck(e.target.files[0]);
-              }}
-            />
-            <FiPlus className="plus-icon" />
+
+        <div className="upload-files__wrap">
+          <div className="payment-form__input">
+            <label htmlFor="chooseFile">Add a file</label>
+            <div className="file-upload">
+              <input
+                type="file"
+                id="chooseFile"
+                accept="image/jpg, image/png, image/jpeg, .doc, .docx, .zip, .pdf"
+                required
+                onChange={(e) => {
+                  setSelectedFile(e.target.files[0]);
+                }}
+              />
+              <FiPlus className="plus-icon" />
+            </div>
+          </div>
+
+          <div className="payment-form__input">
+            <label htmlFor="check">Add a check</label>
+            <div className="file-upload">
+              <input
+                type="file"
+                id="check"
+                accept="image/jpg, image/png, image/jpeg"
+                required
+                onChange={(e) => {
+                  setSelectedCheck(e.target.files[0]);
+                }}
+              />
+              <FiPlus className="plus-icon" />
+            </div>
           </div>
         </div>
       </div>
@@ -133,9 +148,11 @@ const PaymentForm = () => {
         You can attach (.zip, .pdf, .doc, .docx, .png, .jpg, .jpeg that are less
         than 5MB/file, limit 3 files)
       </p>
-      <button className="payment-form__btn-submit" type="submit">
-        Submit
-      </button>
+      <div className="submit">
+        <button className="payment-form__btn-submit" type="submit">
+          Submit
+        </button>
+      </div>
     </form>
   );
 };

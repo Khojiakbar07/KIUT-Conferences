@@ -62,7 +62,7 @@
     font-size: var(--text-sm);
 
     &:hover {
-      background-color: #004cff;
+      background-color: var(--link-hover-c);
     }
 
     span {

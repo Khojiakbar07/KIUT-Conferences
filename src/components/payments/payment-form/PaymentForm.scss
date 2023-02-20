@@ -1,24 +1,54 @@
 .payment-form {
-  max-width: 880px;
-  padding: 16px 50px 85px;
+  max-width: 660px;
+  padding: 24px 18px 32px;
   background-color: var(--white-c);
   box-shadow: var(--bx-payments-card);
   border-radius: 20px;
 
   &__title {
     text-align: center;
-    font-size: 30px;
+    font-size: var(--text-xl);
     font-weight: 500;
-    line-height: 37px;
+    line-height: 24px;
     color: var(--black-c);
     margin-bottom: 38px;
   }
 
-  &__inputs-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px 80px;
-    margin-bottom: 38px;
+  &__info-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 32px;
+
+    >div {
+      flex: 1;
+    }
+  }
+
+  .work-place {
+    margin-bottom: 42px;
+  }
+
+  .phone-num {
+    max-width: 435px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+
+    input {
+      max-width: 328px;
+    }
+  }
+
+  .upload-files__wrap {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 12px;
+
+    input {
+      max-width: 200px;
+    }
   }
 
   &__input {
@@ -73,15 +103,24 @@
     letter-spacing: 0.005em;
     color: #0A0A0A;
     line-height: 20px;
-    margin-bottom: 44px;
+    margin-bottom: 32px;
+  }
+
+  .submit {
+    display: flex;
+    justify-content: center;
   }
 
   &__btn-submit {
-    padding: 11px 100px;
+    padding: 11px 68px;
     background-color: var(--primary-blue-c);
     border-radius: 20px;
     font-size: var(--text-lg);
     font-weight: 500;
     color: var(--white-c);
+
+    &:hover {
+      background-color: var(--link-hover-c);
+    }
   }
 }
