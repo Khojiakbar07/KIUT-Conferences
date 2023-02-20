@@ -5,7 +5,12 @@ import "./Footer.scss";
 //images
 import logo from "../../assets/logo/KiutLogo.png";
 //icons
-import { FaInstagram, FaVk, FaYoutube, FaFacebookF } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTelegramPlane,
+  FaYoutube,
+  FaFacebookF,
+} from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
@@ -71,12 +76,12 @@ const Footer = () => {
                 <FaInstagram />
               </a>
               <a
-                href="https://https://vk.com"
+                href="https://telegram.com"
                 rel="noreferrer"
                 target="_blank"
-                className="footer__social-link vk"
+                className="footer__social-link telegram"
               >
-                <FaVk />
+                <FaTelegramPlane />
               </a>
               <a
                 href="https://youtube.com"
@@ -96,7 +101,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="copyright">
-              All Rights Reserved <br />© Copyright 2022-2023
+              All Rights Reserved <br />© KIUT 2022-2023
             </p>
           </div>
         </div>

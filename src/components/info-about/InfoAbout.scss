@@ -16,7 +16,7 @@
     }
   }
 
-  &__content {
+  &-inner {
     display: flex;
     column-gap: 18px;
   }
@@ -30,5 +30,18 @@
   .map-location {
     display: flex;
     align-items: center;
+  }
+
+  .contact-type__list {
+    margin-top: 12px;
+  }
+
+  a {
+    color: inherit;
+    font-size: inherit;
+  }
+
+  .underline {
+    text-decoration: underline;
   }
 }

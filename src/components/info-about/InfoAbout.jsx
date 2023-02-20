@@ -9,14 +9,37 @@ const InfoAbout = () => {
     <section className="about-info">
       <div className="container">
         <h3 className="about-info__title line">{t("ABOUT_US")}</h3>
-        <div className="about-info__content">
-          <p className="about-info__text">
-            {t("about_text1")}
-            <br />
-            {t("about_text2")}
-            <br />
-            {t("about_text3")}
-          </p>
+        <div className="about-info-inner">
+          <div className="about-info__content">
+            <p className="about-info__text">
+              {t("about_text1")}
+              <br />
+              {t("about_text2")}
+              <br />
+              {t("about_text3")}
+            </p>
+            <ul className="contact-type__list">
+              <li className="about-info__text">
+                <span>Call Center / International:</span>
+                <a className="tel" href="tel:+998781294040">
+                  +99878 129 40 40
+                </a>
+                (121).
+              </li>
+              <li className="about-info__text">
+                Email:{" "}
+                <a className="underline" href="mailto:info@kiut.uz">
+                  info@kiut.uz
+                </a>
+              </li>
+              <li className="about-info__text">
+                Website:{" "}
+                <a className="underline" href="http://conference.kiut.uz">
+                  http://conference.kiut.uz
+                </a>
+              </li>
+            </ul>
+          </div>
           <div className="map-location">
             <iframe
               title="university-location"
