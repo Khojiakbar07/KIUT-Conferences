@@ -1,102 +1,64 @@
 .home-info {
-  padding-top: 45px;
+  padding: 94px 0 237px;
 
   .container {
     display: flex;
-    column-gap: 50px;
+    justify-content: space-between;
   }
 
   &__content {
-    display: flex;
-    column-gap: 20px;
+    flex: 1;
+    max-width: 766px;
   }
 
   .dean-name {
-    font-size: 40px;
+    font-size: var(--sm-title);
     font-weight: 700;
     line-height: 60px;
     color: var(--black-c);
-    margin-bottom: 15px;
-  }
-
-  .dean-img {
-    width: 617px;
-    height: 650px;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  &__info {
-    flex: 1;
+    margin-bottom: 28px;
   }
 
   &__text {
     color: var(--black-c);
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: -0.02em;
-  }
-}
-
-@media screen and (max-width: 1720px) {
-  .home-info {
-    .dean-img {
-      width: 400px;
-      height: 420px;
-    }
-
-    &__text {
-      font-size: var(--text-lg);
-    }
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .home-info {
-    .dean-img {
-      width: 330px;
-      height: 370px;
-    }
-
-    .dean-name {
-      font-size: var(--text-3xl);
-      line-height: 25px;
-    }
-
-    &__text {
-      font-size: var(--text-base);
-      line-height: 28px;
-
-    }
-
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .home-info {
-    .container {
-      column-gap: 10px;
-    }
-
-    &__content {
-      column-gap: 15px;
-    }
-
-    .dean-img {
-      width: 240px;
-      height: 300px;
-    }
-
-    .dean-name {
-      font-size: var(--text-2xl);
-      line-height: 36px;
-      margin-bottom: 8px;
-    }
+    font-size: var(--text-2xl);
+    line-height: 29px;
   }
 
+  .dean-img__wrap {
+    flex: 1;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .dean-img {
+    position: relative;
+    align-self: center;
+
+    &::after,
+    &::before {
+      position: absolute;
+    }
+
+    &::after {
+      content: url("../../assets/images/kiut-img1.jpg");
+      top: -70px;
+      right: -136px;
+    }
+
+    &::before {
+      content: url("../../assets/images/kiut-img2.jpg");
+      bottom: -145px;
+      left: -70px;
+    }
+
+    img {
+      width: 312px;
+      height: 408px;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+    }
+  }
 }
