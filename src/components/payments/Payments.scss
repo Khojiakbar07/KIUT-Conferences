@@ -31,7 +31,8 @@
     column-gap: 20px
   }
 
-  &__scan-me, &-type {
+  &__scan-me,
+  &-type {
     background-color: var(--white-c);
     border-radius: 20px;
     box-shadow: var(--bx-payments-card);
@@ -60,7 +61,8 @@
       height: 84px;
     }
 
-    .humo, .uzcard {
+    .humo,
+    .uzcard {
       width: 150px;
       height: 130px;
     }

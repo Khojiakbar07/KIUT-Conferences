@@ -10,6 +10,7 @@ import Payment from "./submission/Submission";
 import Conferences from "./conferences/Conferences";
 import Detail from "./detail/Detail";
 import NotFound from "./not-found/NotFound";
+import Registration from "./registration/Registration";
 
 const index = () => {
   return (
@@ -51,6 +52,14 @@ const index = () => {
         element={
           <Layout>
             <Payment />
+          </Layout>
+        }
+      />
+      <Route
+        path="/registration"
+        element={
+          <Layout>
+            <Registration />
           </Layout>
         }
       />

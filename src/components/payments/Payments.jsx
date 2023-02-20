@@ -40,7 +40,11 @@ const Payments = () => {
             />
             <img className="humo" src={humo} alt="You can pay via humo" />
             <img className="uzcard" src={uzcard} alt="You can pay via uzcard" />
-            <img className="visa-card" src={visaCard} alt="You can pay via visa card" />
+            <img
+              className="visa-card"
+              src={visaCard}
+              alt="You can pay via visa card"
+            />
           </div>
         </div>
       </div>
