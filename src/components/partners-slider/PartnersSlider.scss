@@ -1,5 +1,11 @@
 .partners {
-  padding: 66px 0 150px;
+  padding: 80px 0;
+
+  .container {
+    padding: 90px 30px;
+    border-radius: 100px;
+    background-color: var(--white-c);
+  }
 
   &-title {
     text-align: center;
@@ -9,7 +15,7 @@
     line-height: 26px;
     letter-spacing: -0.02em;
     position: relative;
-    margin-bottom: 114px;
+    margin-bottom: 42px;
 
     &::after {
       content: "";
@@ -27,7 +33,7 @@
 
 .partners-swiper {
   &__item {
-    height: 250px;
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;

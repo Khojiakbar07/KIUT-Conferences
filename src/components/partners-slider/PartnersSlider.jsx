@@ -35,11 +35,11 @@ const partnersLogoArr = [
 const PartnersSlider = () => {
   return (
     <section className="partners">
+      <h3 className="partners-title">OUR PARTNERS</h3>
       <div className="container">
-        <h3 className="partners-title">OUR PARTNERS</h3>
         <Swiper
           spaceBetween={50}
-          slidesPerView={4}
+          slidesPerView={5}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
