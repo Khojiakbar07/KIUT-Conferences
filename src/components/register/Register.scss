@@ -1,0 +1,33 @@
+.register {
+  padding: 60px 0 74px;
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--sm-title);
+    font-weight: 600;
+    line-height: 61px;
+    letter-spacing: -0.03em;
+    color: var(--black-c);
+    position: relative;
+    margin-bottom: 38px;
+
+    &::after {
+      bottom: 5px;
+    }
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-text {
+    max-width: 1100px;
+    width: 100%;
+    font-size: var(--text-2xl);
+    line-height: 125%;
+    margin-bottom: 60px;
+  }
+}
