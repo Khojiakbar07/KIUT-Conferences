@@ -10,6 +10,7 @@
   &-logo {
     width: 328px;
     height: 67px;
+
     img {
       width: 100%;
       height: 100%;
@@ -17,7 +18,7 @@
     }
   }
 
-  &-nav ul {
+  .nav-list {
     display: flex;
   }
 
@@ -30,6 +31,7 @@
     padding: 32px 30px;
     transition: 0.3s;
     white-space: nowrap;
+
     &.active,
     &:hover {
       background-color: #F7F6FA;
@@ -38,33 +40,52 @@
     }
   }
 
+  .nav-list__item {
+    position: relative;
+  }
+
+  .nav-link__sub-list {
+    display: none;
+    top: calc(100% + 30px);
+
+    a {
+      color: var(--black-c);
+    }
+  }
+
+  .nav__sub-list {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: var(--white-c);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 6px 8px -6px rgb(24 39 75 / 12%), 0 8px 16px -6px rgb(24 39 75 / 8%);
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  .sub-list__item {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0c81ffa6;
+      color: var(--white-c);
+    }
+  }
+
   .lang {
     position: relative;
   }
 
   .lang-list {
-    position: absolute;
     top: 100%;
-    right: 0;
-    width: 100%;
-    background-color: var(--white-c);
     border-radius: 5px;
-    box-shadow: 0 6px 8px -6px rgb(24 39 75 / 12%), 0 8px 16px -6px rgb(24 39 75 / 8%);
-    z-index: 10;
-    overflow: hidden;
-
-    li {
-      text-align: center;
-      text-transform: capitalize;
-      padding: 10px;
-      cursor: pointer;
-
-      &:hover {
-        background-color: #0c81ffa6;
-        color: var(--white-c);
-      }
-    }
   }
+
 
   .lang-btn {
     display: flex;

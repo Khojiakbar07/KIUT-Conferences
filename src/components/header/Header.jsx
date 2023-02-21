@@ -49,6 +49,14 @@ const Header = () => {
               <NavLink className="nav__link" to="/about">
                 {t("about_us")}
               </NavLink>
+              <ul className="nav__sub-list nav-link__sub-list">
+                <li className="sub-list__item">
+                  <Link to="/about">About Us</Link>
+                </li>
+                <li className="sub-list__item">
+                  <Link to="/conference">Conference</Link>
+                </li>
+              </ul>
             </li>
             <li className="nav-list__item">
               <NavLink className="nav__link" to="/programs">
@@ -83,10 +91,11 @@ const Header = () => {
               style={
                 isLangListMouseOver ? { display: "block" } : { display: "none" }
               }
-              className="lang-list"
+              className="lang-list nav__sub-list"
             >
               {langs.map((lang) => (
                 <li
+                  className="sub-list__item"
                   style={activeLang === lang ? { display: "none" } : null}
                   key={uuidv4()}
                   onClick={changeLang}

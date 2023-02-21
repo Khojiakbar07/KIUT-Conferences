@@ -4,6 +4,7 @@ import PaymentForm from "./payment-form/PaymentForm";
 //SCSS
 import "./Payments.scss";
 //images
+import QR from "../../assets/images/qr-code.png";
 import scanGuide from "../../assets/images/scan-me.png";
 import click from "../../assets/payment-types/click.png";
 import apelsin from "../../assets/payment-types/apelsin.png";
@@ -14,13 +15,16 @@ import masterCard from "../../assets/payment-types/master-card.png";
 import visaCard from "../../assets/payment-types/visa-card.png";
 
 const Payments = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <section className="payments">
       <div className="container">
         <h3 className="payments-title line">{t("submission")}</h3>
         <div className="payments__content">
-          <div className="payments-QR"></div>
+          <div className="payments-QR">
+            <p>QR Code for pay</p>
+            <img src={QR} alt="" />
+          </div>
           <PaymentForm />
         </div>
         <div className="payments-guide">

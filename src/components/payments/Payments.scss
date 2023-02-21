@@ -25,6 +25,29 @@
     margin-bottom: 70px;
   }
 
+  &-QR {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white-c);
+    box-shadow: var(--bx-payments-card);
+    border-radius: 20px;
+
+    > p {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 37px;
+      color: var(--black-c);
+      margin-bottom: 45px;
+    }
+
+    img {
+      width: 300px;
+      aspect-ratio: 1/1;
+    }
+  }
+
   &-guide {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
