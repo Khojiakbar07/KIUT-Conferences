@@ -7,8 +7,6 @@ import "./ConferenceDetail.scss";
 //image
 import forumImg from "../../assets/images/forum-img.png";
 
-// const BASE_URL = "https://conference.alltravel.uz/apps";
-
 const ConferenceDetail = () => {
   const { t } = useTranslation();
 
