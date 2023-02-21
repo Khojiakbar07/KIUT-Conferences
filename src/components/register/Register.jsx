@@ -1,3 +1,4 @@
+import BankTable from "./bank-table/BankTable";
 import InfoTable from "./info-table/InfoTable";
 import "./Register.scss";
 
@@ -27,6 +28,7 @@ const Register = () => {
             indexation by the leading databases
           </p>
           <InfoTable />
+          <BankTable />
         </div>
       </div>
     </section>

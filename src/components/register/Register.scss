@@ -30,4 +30,22 @@
     line-height: 125%;
     margin-bottom: 60px;
   }
+
+  th {
+    background-color: var(--dark-blue);
+    color: var(--white-c);
+    font-size: var(--text-xl);
+  }
+
+  td {
+    background-color: #F2F2F2;
+    font-weight: 500;
+    color: var(--black-c);
+  }
+
+  tr,
+  td,
+  th {
+    border: 1px solid var(--black-c);
+  }
 }

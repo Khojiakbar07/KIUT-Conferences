@@ -3,6 +3,7 @@
 
   table {
     max-width: 600px;
+    width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
   }
@@ -13,27 +14,15 @@
 
   th {
     padding: 30px 50px;
-    background-color: var(--dark-blue);
-    color: var(--white-c);
-    font-size: var(--text-xl);
 
     &:first-child {
       width: 40%;
     }
   }
 
-  tr,
-  td,
-  th {
-    border: 1px solid var(--black-c);
-  }
-
   td {
     text-align: center;
-    background-color: #F2F2F2;
     padding: 20px;
-    font-weight: 500;
-    color: var(--black-c);
   }
 
   &__def {
