@@ -3,7 +3,7 @@ import Register from "../../components/register/Register";
 
 const Registration = () => {
   return (
-    <main>
+    <main className="primary-bg">
       <Intro />
       <Register />
     </main>
