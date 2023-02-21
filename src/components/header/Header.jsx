@@ -15,7 +15,7 @@ import "./Header.scss";
 
 const Header = () => {
   const { i18n, t } = useTranslation();
-  const langs = ["en", "ru", "uz"];
+  const langs = ["en", "ru"];
   const [activeLang, setActiveLang] = useState(localStorage.getItem("lang"));
   const [isLangListMouseOver, setLangListMouseOver] = useState(false);
 
@@ -52,12 +52,12 @@ const Header = () => {
             </li>
             <li className="nav-list__item">
               <NavLink className="nav__link" to="/programs">
-                Programs
+                {t("Programs")}
               </NavLink>
             </li>
             <li className="nav-list__item">
               <NavLink className="nav__link" to="/submission">
-                Submission
+                {t("Submission")}
               </NavLink>
             </li>
           </ul>

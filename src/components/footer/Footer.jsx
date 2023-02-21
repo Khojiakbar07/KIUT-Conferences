@@ -1,9 +1,13 @@
 // tools
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 //SCSS
 import "./Footer.scss";
+
 //images
 import logo from "../../assets/logo/KiutLogo.png";
+
 //icons
 import {
   FaInstagram,
@@ -11,7 +15,7 @@ import {
   FaYoutube,
   FaFacebookF,
 } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
+
 const Footer = () => {
   const { t } = useTranslation();
 
@@ -39,12 +43,12 @@ const Footer = () => {
               </li>
               <li className="footer__links-list__item">
                 <Link to="/programs" className="footer__link">
-                  Programs
+                  {t("Programs")}
                 </Link>
               </li>
               <li className="footer__links-list__item">
                 <Link to="/submission" className="footer__link">
-                  Submission
+                  {t("Submission")}
                 </Link>
               </li>
             </ul>
