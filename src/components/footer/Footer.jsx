@@ -42,8 +42,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="footer__links-list__item">
-                <Link to="/programs" className="footer__link">
-                  {t("Programs")}
+                <Link to="/conference" className="footer__link">
+                  {t("conf")}
                 </Link>
               </li>
               <li className="footer__links-list__item">

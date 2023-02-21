@@ -32,7 +32,7 @@ const index = () => {
         }
       />
       <Route
-        path="/programs"
+        path="/conference"
         element={
           <Layout>
             <Conferences />

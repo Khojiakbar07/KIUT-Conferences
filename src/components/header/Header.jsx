@@ -18,11 +18,12 @@ const Header = () => {
   const langs = ["en", "ru"];
   const [activeLang, setActiveLang] = useState(localStorage.getItem("lang"));
   const [isLangListMouseOver, setLangListMouseOver] = useState(false);
+  const [aboutListActive, setAboutListActive] = useState(false);
+  const [programListActive, setProgramListActive] = useState(false);
 
   const changeLang = (e) => {
     i18n.changeLanguage(e.target.textContent || "en");
     setActiveLang(localStorage.getItem("lang"));
-    window.location.reload();
   };
 
   return (
@@ -45,23 +46,68 @@ const Header = () => {
                 {t("home")}
               </NavLink>
             </li>
-            <li className="nav-list__item">
-              <NavLink className="nav__link" to="/about">
+            <li
+              onMouseEnter={() => {
+                setAboutListActive(true);
+              }}
+              onMouseLeave={() => {
+                setAboutListActive(false);
+              }}
+              className="nav-list__item"
+            >
+              <Link className="nav__link" to="#">
                 {t("about_us")}
-              </NavLink>
-              <ul className="nav__sub-list nav-link__sub-list">
-                <li className="sub-list__item">
+                <FiChevronDown className="down-arrow" />
+              </Link>
+              <ul
+                style={
+                  aboutListActive ? { display: "block" } : { display: "none" }
+                }
+                className="nav__sub-list nav-link__sub-list"
+                onClick={() => {
+                  setAboutListActive(false);
+                }}
+              >
+                <li className="sub-list__item nav-sub__list-item">
                   <Link to="/about">About Us</Link>
                 </li>
-                <li className="sub-list__item">
+                <li className="sub-list__item nav-sub__list-item">
                   <Link to="/conference">Conference</Link>
                 </li>
               </ul>
             </li>
-            <li className="nav-list__item">
-              <NavLink className="nav__link" to="/programs">
+            <li
+              onMouseEnter={() => {
+                setProgramListActive(true);
+              }}
+              onMouseLeave={() => {
+                setProgramListActive(false);
+              }}
+              className="nav-list__item"
+            >
+              <Link className="nav__link" to="#">
                 {t("Programs")}
-              </NavLink>
+                <FiChevronDown className="down-arrow" />
+              </Link>
+              <ul
+                style={
+                  programListActive ? { display: "block" } : { display: "none" }
+                }
+                className="nav__sub-list nav-link__sub-list"
+                onClick={() => {
+                  setProgramListActive(false);
+                }}
+              >
+                <li className="sub-list__item nav-sub__list-item">
+                  <Link to="/registration">Registration</Link>
+                </li>
+                <li className="sub-list__item nav-sub__list-item">
+                  <Link to="/committes">Organizing Committe</Link>
+                </li>
+                <li className="sub-list__item nav-sub__list-item">
+                  <Link to="/committes">Scientific Review Committee</Link>
+                </li>
+              </ul>
             </li>
             <li className="nav-list__item">
               <NavLink className="nav__link" to="/submission">
@@ -81,7 +127,7 @@ const Header = () => {
         >
           <button className="lang-btn">
             <span>{localStorage.getItem("lang")}</span>
-            <FiChevronDown />
+            <FiChevronDown className="down-arrow" />
           </button>
           <div className="lang-collection">
             <ul
