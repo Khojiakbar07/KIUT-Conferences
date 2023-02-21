@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 //react phone number
 import "react-phone-number-input/style.css";
@@ -17,7 +18,7 @@ const BASE_URL = "https://conference.alltravel.uz/apps";
 
 const PaymentForm = () => {
   const { conferenceId } = useParams();
-
+  const { t } = useTranslation();
   const [fullName, setFullName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [email, setEmail] = useState("");
@@ -58,17 +59,14 @@ const PaymentForm = () => {
       className="payment-form"
       encType="multipart/form-data"
     >
-      <h5 className="payment-form__title">
-        Open account in minutes <br /> Leave your contact details, we will call
-        you back!
-      </h5>
+      <h5 className="payment-form__title">{t("registrat")}</h5>
       <div className="payment-form__inputs-wrapper">
         <div className="payment-form__info-inputs">
           <div className="payment-form__input">
-            <label htmlFor="fullName">Full name</label>
+            <label htmlFor="fullName">{t("fullname")}</label>
             <input
               type="text"
-              placeholder="Full name..."
+              placeholder={t("fullname")}
               value={fullName}
               id="fullName"
               required
@@ -78,10 +76,10 @@ const PaymentForm = () => {
             />
           </div>
           <div className="payment-form__input">
-            <label htmlFor="email">Email address</label>
+            <label htmlFor="email">{t("email")}</label>
             <input
               type="email"
-              placeholder="Email address"
+              placeholder={t("email")}
               value={email}
               id="email"
               required
@@ -92,18 +90,13 @@ const PaymentForm = () => {
           </div>
         </div>
         <div className="payment-form__input work-place">
-          <label htmlFor="work-place">Work place</label>
-          <input
-            type="text"
-            placeholder="Work place..."
-            id="work-place"
-            required
-          />
+          <label htmlFor="work-place">{t("work")}</label>
+          <input type="text" placeholder={t("work")} id="work-place" required />
         </div>
         <div className="payment-form__input phone-num">
-          <label htmlFor="phoneNumber">Phone Number</label>
+          <label htmlFor="phoneNumber">{t("phone")}</label>
           <PhoneInput
-            placeholder="Enter phone number"
+            placeholder={t("phone")}
             value={phoneNumber}
             onChange={setPhoneNumber}
             required
@@ -112,7 +105,7 @@ const PaymentForm = () => {
 
         <div className="upload-files__wrap">
           <div className="payment-form__input">
-            <label htmlFor="chooseFile">Add a file</label>
+            <label htmlFor="chooseFile">{t("file")}</label>
             <div className="file-upload">
               <input
                 type="file"
@@ -128,7 +121,7 @@ const PaymentForm = () => {
           </div>
 
           <div className="payment-form__input">
-            <label htmlFor="check">Add a check</label>
+            <label htmlFor="check">{t("check")}</label>
             <div className="file-upload">
               <input
                 type="file"
@@ -144,13 +137,10 @@ const PaymentForm = () => {
           </div>
         </div>
       </div>
-      <p className="payment-form__accept-text">
-        You can attach (.zip, .pdf, .doc, .docx, .png, .jpg, .jpeg that are less
-        than 5MB/file, limit 3 files)
-      </p>
+      <p className="payment-form__accept-text">{t("attach")}</p>
       <div className="submit">
         <button className="payment-form__btn-submit" type="submit">
-          Submit
+          {t("submit")}
         </button>
       </div>
     </form>
