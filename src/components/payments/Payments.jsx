@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 //components
 import PaymentForm from "./payment-form/PaymentForm";
 //SCSS
@@ -13,10 +14,11 @@ import masterCard from "../../assets/payment-types/master-card.png";
 import visaCard from "../../assets/payment-types/visa-card.png";
 
 const Payments = () => {
+  const {t} = useTranslation()
   return (
     <section className="payments">
       <div className="container">
-        <h3 className="payments-title line">SUBMISSION</h3>
+        <h3 className="payments-title line">{t("submission")}</h3>
         <div className="payments__content">
           <div className="payments-QR"></div>
           <PaymentForm />

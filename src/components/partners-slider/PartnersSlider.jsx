@@ -1,4 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
+import { useTranslation } from "react-i18next";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -35,9 +36,10 @@ const partnersLogoArr = [
 ];
 
 const PartnersSlider = () => {
+  const { t } = useTranslation();
   return (
     <section className="partners">
-      <h3 className="partners-title line">OUR PARTNERS</h3>
+      <h3 className="partners-title line">{t("patr")}</h3>
       <div className="container">
         <Swiper
           spaceBetween={50}
