@@ -38,7 +38,7 @@ const PaymentForm = () => {
 
     try {
       const RESPONSE = await axios.post(
-        `${BASE_URL}/participant/create/`,
+        `${BASE_URL}/apps/participant/create/`,
         formData1
       );
       if (RESPONSE.status === 201) {
