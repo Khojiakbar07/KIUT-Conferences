@@ -14,7 +14,7 @@ import { FiPlus } from "react-icons/fi";
 import axios from "axios";
 
 //BASE_URL
-const BASE_URL = "https://conference.alltravel.uz/apps";
+const BASE_URL = "https://conference.kiut.uz/api";
 
 const PaymentForm = () => {
   const { conferenceId } = useParams();
