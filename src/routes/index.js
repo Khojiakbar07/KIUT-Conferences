@@ -12,6 +12,7 @@ import Committees from "./committees/Committees";
 import OrganizingInfo from "../components/committees-info/organizing/OrganizingInfo";
 import ScientificInfo from "../components/committees-info/scientific/ScientificInfo";
 import NotFound from "./not-found/NotFound";
+import Admin from "./admin/Admin";
 
 const root = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const root = createBrowserRouter([
         ],
       },
     ],
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
   },
 ]);
 
