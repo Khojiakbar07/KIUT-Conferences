@@ -52,7 +52,7 @@ const root = createBrowserRouter([
             element: <OrganizingInfo />,
           },
           {
-            path: "scintific",
+            path: "scientific",
             element: <ScientificInfo />,
           },
         ],

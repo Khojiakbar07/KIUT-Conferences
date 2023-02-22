@@ -1,0 +1,33 @@
+.committee {
+  padding: 60px 0 100px;
+
+  &-inner {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  &-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: var(--sm-title);
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 80px;
+
+    &::after {
+      width: 500px !important;
+      bottom: -10px !important;
+    }
+  }
+
+  &-list__item {
+    margin-bottom: 25px;
+
+    p {
+      font-size: var(--text-xl);
+      letter-spacing: -0.02em;
+      line-height: 26px;
+      color: var(--black-c);
+    }
+  }
+}

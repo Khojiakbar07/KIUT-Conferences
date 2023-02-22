@@ -102,10 +102,12 @@ const Header = () => {
                   <Link to="/registration">Registration</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="/committes">Organizing Committe</Link>
+                  <Link to="committee/organizing">Organizing Committe</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="/committes">Scientific Review Committee</Link>
+                  <Link to="committee/scientific">
+                    Scientific Review Committee
+                  </Link>
                 </li>
               </ul>
             </li>
