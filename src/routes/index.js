@@ -1,71 +1,64 @@
-import { Route, Routes } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
 
-//layout
-import Layout from "../components/layout/Layout";
-
-//pages
+//routes
+import App from "../App";
 import Home from "./home/Home";
 import About from "./about/About";
 import Payment from "./submission/Submission";
 import Conferences from "./conferences/Conferences";
 import Detail from "./detail/Detail";
-import NotFound from "./not-found/NotFound";
 import Registration from "./registration/Registration";
+import Committees from "./committees/Committees";
+import OrganizingInfo from "../components/committees-info/organizing/OrganizingInfo";
+import ScientificInfo from "../components/committees-info/scientific/ScientificInfo";
+import NotFound from "./not-found/NotFound";
 
-const index = () => {
-  return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <Layout>
-            <Home />
-          </Layout>
-        }
-      />
-      <Route
-        path="/about"
-        element={
-          <Layout>
-            <About />
-          </Layout>
-        }
-      />
-      <Route
-        path="/conference"
-        element={
-          <Layout>
-            <Conferences />
-          </Layout>
-        }
-      />
-      <Route
-        path="/detail"
-        element={
-          <Layout>
-            <Detail />
-          </Layout>
-        }
-      />
-      <Route
-        path="/submission"
-        element={
-          <Layout>
-            <Payment />
-          </Layout>
-        }
-      />
-      <Route
-        path="/registration"
-        element={
-          <Layout>
-            <Registration />
-          </Layout>
-        }
-      />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  );
-};
+const root = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <NotFound />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "conference",
+        element: <Conferences />,
+      },
+      {
+        path: "detail",
+        element: <Detail />,
+      },
+      {
+        path: "submission",
+        element: <Payment />,
+      },
+      {
+        path: "registration",
+        element: <Registration />,
+      },
+      {
+        path: "committee",
+        element: <Committees />,
+        children: [
+          {
+            path: "organizing",
+            element: <OrganizingInfo />,
+          },
+          {
+            path: "scintific",
+            element: <ScientificInfo />,
+          },
+        ],
+      },
+    ],
+  },
+]);
 
-export default index;
+export default root;
