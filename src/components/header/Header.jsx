@@ -69,10 +69,10 @@ const Header = () => {
                 }}
               >
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="/about">About Us</Link>
+                  <Link to="/about">{t("about")}</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="/conference">Conference</Link>
+                  <Link to="/conference">{t("confere")}</Link>
                 </li>
               </ul>
             </li>
@@ -99,14 +99,14 @@ const Header = () => {
                 }}
               >
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="/registration">Registration</Link>
+                  <Link to="/registration">{t("regis")}</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="committee/organizing">Organizing Committe</Link>
+                  <Link to="committee/organizing">{t("organiza")}</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
                   <Link to="committee/scientific">
-                    Scientific Review Committee
+                    {t("scine")}
                   </Link>
                 </li>
               </ul>

@@ -1,6 +1,6 @@
 {
   "home": "Home",
-  "about_us": "About Us",
+  "about_us": "About",
   "ABOUT_US": "ABOUT US",
   "conference": "Conferences",
   "join_to_conference": "Join to conference",
@@ -69,5 +69,14 @@
   "check": "Add a check",
   "registrat": "Registration",
   "attach": "You can attach (.zip, .pdf, .doc, .docx, .png, .jpg, .jpeg that are less than 5MB/file, limit 3 files)",
-  "submit": "Submit"
+  "submit": "Submit",
+  "about":"About us",
+  "confere":"Conference",
+  "regis":"Registration",
+  "organiza":"Organizing Committe",
+  "scine":"Scientific Review Committee",
+  "registr":"Registration",
+  "all":"All registrations and submissions are managed through the Research  Advances submission system that guides you stepwise through the  process of entering data about forum participants and uploading your  files. To ensure that manuscripts are correctly assigned to the  track, participants must select the appropriate event option when  reaching the Event Selection step during submission. Please note  that the papers registered with the Research Advances platform will  be carefully peer reviewed and, if accepted, published in the  appropriate forum proceedings, edited book volumes, or partner  journals as full articles. These papers will be submitted for  indexation by the leading databases (including Scopus, Web of  Science). If one would like to participate in the forum with  publication of the presented papers in the proceedings published by  the Kimyo International University in Tashkent, it is required to  register on the forum webpage and upload an original paper. Once  again, please note that this volume is not submitted for further  indexation by the leading databases",
+  "dede":""
+
 }
