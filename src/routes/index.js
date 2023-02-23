@@ -13,6 +13,7 @@ import OrganizingInfo from "../components/committees-info/organizing/OrganizingI
 import ScientificInfo from "../components/committees-info/scientific/ScientificInfo";
 import NotFound from "./not-found/NotFound";
 import Admin from "./admin/Admin";
+import Requirements from "./requirements/Requirements";
 
 const root = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const root = createBrowserRouter([
             element: <ScientificInfo />,
           },
         ],
+      },
+      {
+        path: "requirements",
+        element: <Requirements />,
       },
     ],
   },
