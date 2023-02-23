@@ -11,8 +11,8 @@
     position: relative;
 
     &::after {
-      max-width: 305px;
-      bottom: -8px;
+      max-width: 305px ;
+      bottom: -8px !important;
     }
   }
 
