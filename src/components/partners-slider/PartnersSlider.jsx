@@ -5,14 +5,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 //SCSS
 import "./PartnersSlider.scss";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+import { Autoplay } from "swiper";
 
 //partners' logos
 import itPark from "../../assets/partners/it-park.png";
@@ -23,6 +21,7 @@ import mimar from "../../assets/partners/mimar-group.png";
 import oxbridgeSchool from "../../assets/partners/oxbridge-school.png";
 import uzbekistan from "../../assets/partners/uzbekistan.png";
 import vosiqSchool from "../../assets/partners/vosiq-school.png";
+import eurasia from "../../assets/partners/Science-in-Eurasia.png";
 
 const partnersLogoArr = [
   itPark,
@@ -33,6 +32,7 @@ const partnersLogoArr = [
   oxbridgeSchool,
   uzbekistan,
   vosiqSchool,
+  eurasia,
 ];
 
 const PartnersSlider = () => {
@@ -50,7 +50,7 @@ const PartnersSlider = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[Autoplay]}
           className="partners-swiper"
         >
           {partnersLogoArr.map((partner) => (
