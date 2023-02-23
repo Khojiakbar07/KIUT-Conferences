@@ -1,0 +1,38 @@
+.requirement {
+  padding: 50px 0 100px;
+
+  &-title {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: var(--sm-title);
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    color: var(--black-c);
+    position: relative;
+    margin-bottom: 62px;
+
+    &::after {
+      width: 305px !important;
+    }
+  }
+
+
+  &-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &-text {
+    font-size: var(--text-2xl);
+    line-height: 125%;
+  }
+
+  &-text__title {
+    margin-bottom: 10px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+}

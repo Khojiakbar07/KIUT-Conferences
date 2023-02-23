@@ -99,7 +99,10 @@ const Header = () => {
                 }}
               >
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="/registration">{t("regis")}</Link>
+                  <Link to="registration">{t("regis")}</Link>
+                </li>
+                <li className="sub-list__item nav-sub__list-item">
+                  <Link to="requirements">Requirements</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
                   <Link to="committee/organizing">{t("organiza")}</Link>
