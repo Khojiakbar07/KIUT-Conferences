@@ -37,8 +37,6 @@ const PaymentForm = () => {
         formData1.append("payment_doc", selectedCheck);
         formData1.append("conference", null);
 
-        console.log(fullName)
-
         try {
             const RESPONSE = await axios.post(
                 `${BASE_URL}/apps/participant/create/`,
