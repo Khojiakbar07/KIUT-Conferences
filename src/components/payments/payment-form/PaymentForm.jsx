@@ -103,9 +103,10 @@ const PaymentForm = () => {
                     />
                 </div>
                 <div className="payment-form__input phone-num">
-                    <label htmlFor="phoneNumber">{t("phone")}</label>
+                    <label htmlFor="phoneNumber">{t("phoneNumber")}</label>
                     <PhoneInput
-                        placeholder={t("phone")}
+                        id="phoneNumber"
+                        placeholder={t("phoneNumber")}
                         value={phoneNumber}
                         onChange={setPhoneNumber}
                         required

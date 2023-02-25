@@ -8,20 +8,24 @@
 
   &__content {
     flex: 1;
-    max-width: 766px;
   }
 
   .dean-name {
     font-size: var(--sm-title);
     font-weight: 700;
-    line-height: 60px;
     color: var(--black-c);
     margin-bottom: 28px;
   }
 
+  .dean__sub-title {
+    display: block;
+    margin-bottom: 20px;
+  }
+
   &__text {
+    text-align: justify;
     color: var(--black-c);
-    font-size: var(--text-2xl);
+    font-size: var(--text-lg);
     line-height: 29px;
   }
 

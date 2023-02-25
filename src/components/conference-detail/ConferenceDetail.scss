@@ -59,6 +59,7 @@
     padding-bottom: 15px;
 
     strong {
+      text-transform: capitalize;
       display: block;
       margin-bottom: 8px;
       font-size: var(--text-lg);
@@ -80,6 +81,7 @@
   }
 
   &__text {
+    text-align: justify;
     font-size: var(--text-2xl);
     line-height: 34px;
     letter-spacing: -0.02em;

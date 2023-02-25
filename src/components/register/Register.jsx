@@ -11,7 +11,7 @@ const Register = () => {
     <section className="register">
       <div className="container">
         <div className="register-inner">
-          <h3 className="register-title line">{t("registr")}</h3>
+          <h3 className="register-title line">{t("registrat")}</h3>
           <p className="register-text">
             {t("all")}
           </p>

@@ -13,6 +13,7 @@ const InfoHome = () => {
       <div className="container">
         <div className="home-info__content">
           <h2 className="dean-name">{t("jam")}</h2>
+          <strong className="dean__sub-title">{t("dean_sub")}</strong>
           <p className="home-info__text">{t("self")}</p>
         </div>
         <div className="dean-img__wrap">
