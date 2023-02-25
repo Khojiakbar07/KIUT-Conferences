@@ -35,10 +35,6 @@ const ConferenceDetail = () => {
                 <strong>{t("conferen")}</strong>
                 <p>{t("april")} 26-27, 2023</p>
               </li>
-              <li className="conference-info__card__list-item">
-                <strong>{t("full")}</strong>
-                <p>{t("may")} 1, 2023.</p>
-              </li>
             </ul>
           </div>
         </div>
