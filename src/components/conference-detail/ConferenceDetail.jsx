@@ -6,9 +6,63 @@ import "./ConferenceDetail.scss";
 
 //image
 import forumImg from "../../assets/images/forum-img.png";
+import Accordion from "./accordion";
 
 const ConferenceDetail = () => {
   const { t } = useTranslation();
+
+  const AccordionData = [
+    {
+      title: `1. ${t("current")}`,
+      content:
+        "Make sure you’re trying to sign in to the right application system. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt.",
+    },
+    {
+      title: `2. ${t("methot")}`,
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+    },
+    {
+      title: `3. ${t("innovaat")}`,
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+    },
+    {
+      title: `4. ${t("teach")}`,
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+    },
+    {
+      title: `5. ${t("trnd")}`,
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+    },
+    {
+      title: `6. ${t("advance")}`,
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+    },
+    {
+      title: `7. ${t("expect")}`,
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+    },
+    {
+      title: `8. ${t("press")}`,
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+    },
+    {
+      title: `9. ${t("practice")}`,
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+    },
+    {
+      title: `10. ${t("education")}`,
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+    },
+  ];
 
   return (
     <section className="conference-info">
@@ -41,39 +95,20 @@ const ConferenceDetail = () => {
         <div className="conference-info__content">
           <p className="conference-info__text">{t("organiz")}</p>
           <p className="conference-info__text">{t("part")}</p>
-          <strong className="conference-info__text">{t("thms")}</strong>
+          <strong className="conference-info__text track-title">{t("thms")}</strong>
+          <Accordion data={AccordionData} multiple={true} />
           <ol>
             <li>
-              <span className="conference-info__text">1. {t("current")}</span>
+              <span></span>
             </li>
             <li>
-              <span className="conference-info__text">2. {t("methot")}</span>
+              <span className="conference-info__text"></span>
             </li>
             <li>
-              <span className="conference-info__text">3. {t("innovaat")}</span>
+              <span className="conference-info__text"></span>
             </li>
             <li>
-              <span className="conference-info__text">4. {t("teach")}</span>
-            </li>
-            <li>
-              <span className="conference-info__text">5. {t("trnd")}</span>
-            </li>
-            <li>
-              <span className="conference-info__text">6. {t("advance")}</span>
-            </li>
-            <li>
-              <span className="conference-info__text">7. {t("expect")}</span>
-            </li>
-            <li>
-              <span className="conference-info__text">8. {t("press")}</span>
-            </li>
-            <li>
-              <span className="conference-info__text">9. {t("practice")}</span>
-            </li>
-            <li>
-              <span className="conference-info__text">
-                10. {t("education")}
-              </span>
+              <span className="conference-info__text"></span>
             </li>
           </ol>
         </div>
