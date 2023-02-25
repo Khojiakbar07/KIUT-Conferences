@@ -14,23 +14,15 @@ import { Autoplay } from "swiper";
 
 //partners' logos
 import itPark from "../../assets/partners/it-park.png";
-import akfa from "../../assets/partners/akfa.png";
 import hyatt from "../../assets/partners/hyatt_regency.png";
 import iuas from "../../assets/partners/iuas.png";
-import mimar from "../../assets/partners/mimar-group.png";
-import oxbridgeSchool from "../../assets/partners/oxbridge-school.png";
-import uzbekistan from "../../assets/partners/uzbekistan.png";
 import vosiqSchool from "../../assets/partners/vosiq-school.png";
 import eurasia from "../../assets/partners/Science-in-Eurasia.png";
 
 const partnersLogoArr = [
   itPark,
-  akfa,
   hyatt,
   iuas,
-  mimar,
-  oxbridgeSchool,
-  uzbekistan,
   vosiqSchool,
   eurasia,
 ];
