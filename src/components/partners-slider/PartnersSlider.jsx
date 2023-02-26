@@ -14,17 +14,29 @@ import { Autoplay } from "swiper";
 
 //partners' logos
 import itPark from "../../assets/partners/it-park.png";
-import hyatt from "../../assets/partners/hyatt_regency.png";
 import iuas from "../../assets/partners/iuas.png";
 import vosiqSchool from "../../assets/partners/vosiq-school.png";
 import eurasia from "../../assets/partners/Science-in-Eurasia.png";
+import britishCouncil from "../../assets/partners/British-Council.png";
+import daegu from "../../assets/partners/Daegu.png";
+import gachong from "../../assets/partners/Gachong.png";
+import hanyang from "../../assets/partners/Hanyang.png";
+import koren from "../../assets/partners/koren.png";
+import num from "../../assets/partners/num.png";
+import riga from "../../assets/partners/riga.png";
 
 const partnersLogoArr = [
   itPark,
-  hyatt,
   iuas,
   vosiqSchool,
   eurasia,
+  daegu,
+  num,
+  gachong,
+  britishCouncil,
+  hanyang,
+  riga,
+  koren,
 ];
 
 const PartnersSlider = () => {
