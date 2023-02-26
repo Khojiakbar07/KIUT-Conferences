@@ -1,35 +1,37 @@
+import { useTranslation } from "react-i18next";
 import "./BankTable.scss";
 
 const BankTable = () => {
+  const { t } = useTranslation();
   return (
     <table className="register__bank-table">
       <thead>
         <tr>
-          <th colSpan={2}>TIPF 2023 Bank Account Information</th>
+          <th colSpan={2}>{t("bank-table")}</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td className="head-td">Bank</td>
-          <td>Ipak Yo'li Bank</td>
+          <td className="head-td">{t("bank-table")}</td>
+          <td>{t("bank_name")}</td>
         </tr>
         <tr>
-          <td className="head-td">Account No..</td>
+          <td className="head-td">{t("bank_acc")}</td>
           <td>2020 8000 0009 0096 3002</td>
         </tr>
         <tr>
-          <td className="head-td">Swift Code</td>
+          <td className="head-td">{t("swift_code")}</td>
           <td>01028</td>
         </tr>
         <tr>
-          <td className="head-td">Bank Address</td>
+          <td className="head-td">{t("bank_address")}</td>
           <td>
-            100100, Toshkent c., Yakkasaroy district, street. Usmon Nosir, 5
+          {t("address_bank")}
           </td>
         </tr>
         <tr>
-          <td className="head-td">Branch</td>
-          <td>Yakkasaroy Branch</td>
+          <td className="head-td">{t("branch")}</td>
+          <td>{t("branch_name")}</td>
         </tr>
       </tbody>
     </table>

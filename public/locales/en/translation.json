@@ -87,5 +87,14 @@
   "second_category": "Presentation & Publication in the Collected Volume**",
   "third_category": "Participation and Presentation Only",
   "table_desc1": "* published by world publishers and submitted for indexation by the leading databases.",
-  "table_desc2": "** published by the Kimyo International University in Tashkent."
+  "table_desc2": "** published by the Kimyo International University in Tashkent.",
+  "bank-table": "TIPF 2023 Bank Account Information",
+  "bank": "Bank",
+  "bank_name": "Ipak Yo'li Bank",
+  "bank_acc": "Account No..",
+  "swift_code": "Swift Code",
+  "bank_address": "Bank Address",
+  "address_bank": "100100, Toshkent c., Yakkasaroy district, street. Usmon Nosir, 5",
+  "branch": "Branch",
+  "branch_name": "Yakkasaroy Branch"
 }
