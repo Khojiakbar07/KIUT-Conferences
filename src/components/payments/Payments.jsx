@@ -21,11 +21,11 @@ const Payments = () => {
       <div className="container">
         <h3 className="payments-title line">{t("submission")}</h3>
         <div className="payments__content">
+          <PaymentForm />
           <div className="payments-QR">
             <p>QR Code for pay</p>
             <img src={QR} alt="" />
           </div>
-          <PaymentForm />
         </div>
         <div className="payments-guide">
           <div className="payments__scan-me">
