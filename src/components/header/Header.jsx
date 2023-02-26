@@ -24,6 +24,7 @@ const Header = () => {
   const changeLang = (e) => {
     i18n.changeLanguage(e.target.textContent || "en");
     setActiveLang(localStorage.getItem("lang"));
+    window.location.reload();
   };
 
   return (
@@ -108,9 +109,7 @@ const Header = () => {
                   <Link to="/committee/organizing">{t("organiza")}</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="/committee/scientific">
-                    {t("scine")}
-                  </Link>
+                  <Link to="/committee/scientific">{t("scine")}</Link>
                 </li>
               </ul>
             </li>
