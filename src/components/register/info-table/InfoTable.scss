@@ -1,9 +1,10 @@
 .register__info-table {
   margin-bottom: 80px;
+  max-width: 650px;
 
   table {
-    max-width: 600px;
     width: 100%;
+    margin: 0 auto;
     border-collapse: collapse;
     margin-bottom: 20px;
   }
@@ -26,6 +27,7 @@
   }
 
   &__def {
+    text-align: justify;
     font-size: var(--text-sm);
     line-height: 150%;
     color: var(--black-c)

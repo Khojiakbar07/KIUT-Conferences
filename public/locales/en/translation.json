@@ -3,7 +3,6 @@
   "about_us": "About",
   "ABOUT_US": "ABOUT US",
   "conference": "Conferences",
-  "join_to_conference": "Join to conference",
   "speakers": "SPEAKERS",
   "our_partners": "OUR PARTNERS",
   "about_text1": "Kimyo International University in Tashkent, the first private higher education institution in the country, was initially established under the name of the Yeoju Technical Institute in Tashkent on the basis of the state license of the State Inspectorate for Supervision of the Quality in Education under the Cabinet of Ministers of the Republic of Uzbekistan No. 0002 (033297) dated 24.07.2018, as well as the resolution of the Cabinet of Ministers of the Republic of Uzbekistan No. 1007 dated 17.12.2019.",
@@ -78,5 +77,15 @@
   "scine": "Scientific Review Committee",
   "registr": "Registration",
   "all": "All registrations and submissions are managed through the Research  Advances submission system that guides you stepwise through the  process of entering data about forum participants and uploading your  files. To ensure that manuscripts are correctly assigned to the  track, participants must select the appropriate event option when  reaching the Event Selection step during submission. Please note  that the papers registered with the Research Advances platform will  be carefully peer reviewed and, if accepted, published in the  appropriate forum proceedings, edited book volumes, or partner  journals as full articles. These papers will be submitted for  indexation by the leading databases (including Scopus, Web of  Science). If one would like to participate in the forum with  publication of the presented papers in the proceedings published by  the Kimyo International University in Tashkent, it is required to  register on the forum webpage and upload an original paper. Once  again, please note that this volume is not submitted for further  indexation by the leading databases",
-  "dede": ""
+  "category": "Category",
+  "fee": "Fees",
+  "fee1": "US $300 per paper",
+  "fee2": "US $300 per paper + journal APC (if applied)",
+  "fee3": "UZS 25,000 per 1 page",
+  "fee4": "Free for everyone. Prior registration is required.",
+  "first_category": "Presentation & Paper Publication*",
+  "second_category": "Presentation & Publication in the Collected Volume**",
+  "third_category": "Participation and Presentation Only",
+  "table_desc1": "* published by world publishers and submitted for indexation by the leading databases.",
+  "table_desc2": "** published by the Kimyo International University in Tashkent."
 }

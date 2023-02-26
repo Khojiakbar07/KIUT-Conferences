@@ -1,41 +1,41 @@
+import { useTranslation } from "react-i18next";
 import "./InfoTable.scss";
+
 const InfoTabel = () => {
+  const { t } = useTranslation();
   return (
     <div className="register__info-table">
       <table className="register__info-table">
         <thead>
           <tr>
-            <th>Category</th>
-            <th>Fees</th>
+            <th>{t("category")}</th>
+            <th>{t("fee")}</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td className="head-td" rowSpan={2}>
-              Presentation & Paper Publication*
+              {t("first_category")}
             </td>
-            <td>US$300 per paper</td>
+            <td>{t("fee1")}</td>
           </tr>
           <tr>
-            <td>US$300 per paper + journal APC (if applied)</td>
+            <td>{t("fee2")}</td>
           </tr>
           <tr>
-            <td className="head-td">
-              Presentation & Publication in the Collected Volume**
-            </td>
-            <td>UZS25,000 per 1 page</td>
+            <td className="head-td">{t("second_category")}</td>
+            <td>{t("fee3")}</td>
           </tr>
           <tr>
-            <td className="head-td">Participation and Presentation Only</td>
-            <td>Free for everyone. Prior registration is required.</td>
+            <td className="head-td">{t("third_category")}</td>
+            <td>{t("fee4")}</td>
           </tr>
         </tbody>
       </table>
       <p className="register__info-table__def">
-        * published by world publishers and submitted for indexation by the
-        leading databases.
+        {t("table_desc1")}
         <br />
-        ** published by the Kimyo International University in Tashkent.
+        {t("table_desc2")}
       </p>
     </div>
   );
