@@ -96,5 +96,19 @@
   "bank_address": "Bank Address",
   "address_bank": "100100, Toshkent c., Yakkasaroy district, street. Usmon Nosir, 5",
   "branch": "Branch",
-  "branch_name": "Yakkasaroy Branch"
+  "branch_name": "Yakkasaroy Branch",
+  "requirements": "Requirements",
+  "requirement_title": "Scientific articles must be thoroughly edited, and must also meet all the technical requirements for registration, namely:",
+  "required_editor": "- text editor - MS Word 2007, 2010;",
+  "required_size": "- page size - A4, 20mm margin on each side;",
+  "required_font": "- font - Times New Roman, size - 14;",
+  "required_line": "- line spacing and paragraph spacing - 1.5;",
+  "required_volume": "- the volume of the article is at least 5-8 full pages;",
+  "required_right-corner": "- in the right corner indicate the full surname, name and patronymic, scientific degree and title, position, company name, and the name of the scientific material in bold in the middle of the line;",
+  "required_table": "- all tables, diagrams and figures must be in MS Word format, Times New Roman font, the name of diagrams and figures should be indicated below, and tables - above;",
+  "required_graph": "- all graphs and diagrams must be in e MS format Excel ;",
+  "required_formula": "- formulas must be written in the MS Equation editor;",
+  "required_sources": "- sources should be indicated in tables, figures and graphs and references to them in the text ;",
+  "required_link": "- links should be located at the bottom of each page;",
+  "required_article": "- a scientific article can be submitted in Uzbek, Russian or English."
 }

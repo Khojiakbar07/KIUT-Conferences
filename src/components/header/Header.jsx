@@ -102,13 +102,13 @@ const Header = () => {
                   <Link to="registration">{t("regis")}</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="requirements">Requirements</Link>
+                  <Link to="requirements">{t("requirements")}</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="committee/organizing">{t("organiza")}</Link>
+                  <Link to="/committee/organizing">{t("organiza")}</Link>
                 </li>
                 <li className="sub-list__item nav-sub__list-item">
-                  <Link to="committee/scientific">
+                  <Link to="/committee/scientific">
                     {t("scine")}
                   </Link>
                 </li>
