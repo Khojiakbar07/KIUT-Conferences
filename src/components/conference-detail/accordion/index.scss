@@ -1,11 +1,17 @@
 .accordion {
   margin-bottom: 30px;
+  box-shadow: 0px 4px 25px rgb(20 32 47 / 20%);
 
   &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px 25px;
     background-color: var(--primary-blue-c);
     border-radius: 4px;
+    cursor: pointer;
   }
+
   &-body {
     display: none;
     background-color: var(--white-c);
@@ -13,11 +19,27 @@
     padding: 10px 25px;
   }
 
-  &.active &-body {
-    display: block;
+  &.active {
+    .accordion-body {
+      display: block;
+    }
+
+    .accordion-icon {
+      transform: rotate(180deg);
+    }
+  }
+
+  &-icon {
+    display: flex;
+    transition: all 0.5s;
+    font-size: var(--text-3xl);
   }
 
   &-title {
     color: var(--white-c);
+  }
+
+  &-text {
+    margin-bottom: 25px;
   }
 }

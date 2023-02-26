@@ -14,53 +14,116 @@ const ConferenceDetail = () => {
   const AccordionData = [
     {
       title: `1. ${t("current")}`,
-      content:
-        "Make sure you’re trying to sign in to the right application system. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt.",
+      content: [
+        {
+          text: `${t("detail_text_1.1")}`,
+        },
+        {
+          text: `${t("detail_text_1.2")}`,
+        },
+        {
+          text: `${t("detail_text_1.3")}`,
+        }
+      ],
     },
     {
       title: `2. ${t("methot")}`,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+      content: [
+        {
+          text: "blah blah 1",
+        },
+        {
+          text: "blah blah 2",
+        },
+      ],
     },
     {
       title: `3. ${t("innovaat")}`,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+      content: [
+        {
+          text: "blah blah 1",
+        },
+        {
+          text: "blah blah 2",
+        },
+      ],
     },
     {
       title: `4. ${t("teach")}`,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+      content: [
+        {
+          text: "blah blah 1",
+        },
+        {
+          text: "blah blah 2",
+        },
+      ],
     },
     {
       title: `5. ${t("trnd")}`,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+      content: [
+        {
+          text: "blah blah 1",
+        },
+        {
+          text: "blah blah 2",
+        },
+      ],
     },
     {
       title: `6. ${t("advance")}`,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+      content: [
+        {
+          text: "blah blah 1",
+        },
+        {
+          text: "blah blah 2",
+        },
+      ],
     },
     {
       title: `7. ${t("expect")}`,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+      content: [
+        {
+          text: "blah blah 1",
+        },
+        {
+          text: "blah blah 2",
+        },
+      ],
     },
     {
       title: `8. ${t("press")}`,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+      content: [
+        {
+          text: "blah blah 1",
+        },
+        {
+          text: "blah blah 2",
+        },
+      ],
     },
     {
       title: `9. ${t("practice")}`,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+      content: [
+        {
+          text: "blah blah 1",
+        },
+        {
+          text: "blah blah 2",
+        },
+      ],
     },
     {
       title: `10. ${t("education")}`,
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumharum ducimus voluptatem dolorum id, natus deleniti ratione laborum voluptatibus! Commodi placeat, voluptatem doloribus iure aliquid sint dolores qui incidunt. Ea?",
+      content: [
+        {
+          text: "blah blah 1",
+        },
+        {
+          text: "blah blah 2",
+        },
+      ],
     },
   ];
 
@@ -95,22 +158,10 @@ const ConferenceDetail = () => {
         <div className="conference-info__content">
           <p className="conference-info__text">{t("organiz")}</p>
           <p className="conference-info__text">{t("part")}</p>
-          <strong className="conference-info__text track-title">{t("thms")}</strong>
-          <Accordion data={AccordionData} multiple={true} />
-          <ol>
-            <li>
-              <span></span>
-            </li>
-            <li>
-              <span className="conference-info__text"></span>
-            </li>
-            <li>
-              <span className="conference-info__text"></span>
-            </li>
-            <li>
-              <span className="conference-info__text"></span>
-            </li>
-          </ol>
+          <strong className="conference-info__text track-title">
+            {t("thms")}
+          </strong>
+          <Accordion data={AccordionData} />
         </div>
       </div>
     </section>
