@@ -23,17 +23,20 @@ const ConferenceDetail = () => {
         },
         {
           text: `${t("detail_text_1.3")}`,
-        }
+        },
       ],
     },
     {
       title: `2. ${t("methot")}`,
       content: [
         {
-          text: "blah blah 1",
+          text: `${t("detail_text_2.1")}`,
         },
         {
-          text: "blah blah 2",
+          text: `${t("detail_text_2.2")}`,
+        },
+        {
+          text: `${t("detail_text_2.3")}`,
         },
       ],
     },
@@ -41,10 +44,13 @@ const ConferenceDetail = () => {
       title: `3. ${t("innovaat")}`,
       content: [
         {
-          text: "blah blah 1",
+          text: `${t("detail_text_3.1")}`,
         },
         {
-          text: "blah blah 2",
+          text: `${t("detail_text_3.2")}`,
+        },
+        {
+          text: `${t("detail_text_3.3")}`,
         },
       ],
     },
@@ -52,10 +58,13 @@ const ConferenceDetail = () => {
       title: `4. ${t("teach")}`,
       content: [
         {
-          text: "blah blah 1",
+          text: `${t("detail_text_4.1")}`,
         },
         {
-          text: "blah blah 2",
+          text: `${t("detail_text_4.2")}`,
+        },
+        {
+          text: `${t("detail_text_4.3")}`,
         },
       ],
     },
@@ -63,10 +72,16 @@ const ConferenceDetail = () => {
       title: `5. ${t("trnd")}`,
       content: [
         {
-          text: "blah blah 1",
+          text: `${t("detail_text_5.1")}`,
         },
         {
-          text: "blah blah 2",
+          text: `${t("detail_text_5.2")}`,
+        },
+        {
+          text: `${t("detail_text_5.3")}`,
+        },
+        {
+          text: `${t("detail_text_5.4")}`,
         },
       ],
     },
@@ -74,10 +89,13 @@ const ConferenceDetail = () => {
       title: `6. ${t("advance")}`,
       content: [
         {
-          text: "blah blah 1",
+          text: `${t("detail_text_6.1")}`,
         },
         {
-          text: "blah blah 2",
+          text: `${t("detail_text_6.2")}`,
+        },
+        {
+          text: `${t("detail_text_6.3")}`,
         },
       ],
     },
@@ -85,10 +103,7 @@ const ConferenceDetail = () => {
       title: `7. ${t("expect")}`,
       content: [
         {
-          text: "blah blah 1",
-        },
-        {
-          text: "blah blah 2",
+          text: `${t("detail_text_7")}`,
         },
       ],
     },
@@ -96,10 +111,7 @@ const ConferenceDetail = () => {
       title: `8. ${t("press")}`,
       content: [
         {
-          text: "blah blah 1",
-        },
-        {
-          text: "blah blah 2",
+          text: `${t("detail_text_8")}`,
         },
       ],
     },
@@ -107,10 +119,7 @@ const ConferenceDetail = () => {
       title: `9. ${t("practice")}`,
       content: [
         {
-          text: "blah blah 1",
-        },
-        {
-          text: "blah blah 2",
+          text: `${t("detail_text_9")}`,
         },
       ],
     },
@@ -118,10 +127,7 @@ const ConferenceDetail = () => {
       title: `10. ${t("education")}`,
       content: [
         {
-          text: "blah blah 1",
-        },
-        {
-          text: "blah blah 2",
+          text: `${t("detail_text_10")}`,
         },
       ],
     },
