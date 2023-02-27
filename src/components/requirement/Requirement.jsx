@@ -13,7 +13,7 @@ const Requirement = () => {
           </p>
           <ul>
             <li>
-              <p className="requirement-text"> {t("requirement_editor")}</p>
+              <p className="requirement-text"> {t("required_editor")}</p>
             </li>
             <li>
               <p className="requirement-text"> {t("required_size")}</p>
