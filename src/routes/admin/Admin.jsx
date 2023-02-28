@@ -1,7 +1,9 @@
 import "./Admin.scss";
 import React, { Component } from "react";
+import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import LoginModal from "../../components/login-modal/LoginModal";
 
 class Admin extends Component {
   constructor(props) {
@@ -29,8 +31,6 @@ class Admin extends Component {
   dateLocal(datetime) {
     const dt = new Date(datetime);
     dt.setMinutes(dt.getMinutes() - dt.getTimezoneOffset());
-    console.log(dt.toISOString().slice(0, 16));
-    console.log(dt.toISOString());
     return dt.toISOString().slice(0, 10);
   }
 
@@ -44,7 +44,7 @@ class Admin extends Component {
     const items = this.state.participantList;
 
     return items.map((item, index) => (
-      <tr>
+      <tr key={uuidv4()}>
         <td className="id-col">{index + 1}</td>
         <td>{item.fullname}</td>
         <td>{item.worked_place}</td>
@@ -68,6 +68,7 @@ class Admin extends Component {
   render() {
     return (
       <div className={"admin"}>
+        <LoginModal />
         <table>
           <thead>
             <tr>
