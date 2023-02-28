@@ -1,4 +1,4 @@
-import "./Admin.css";
+import "./Admin.scss";
 import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
@@ -45,7 +45,7 @@ class Admin extends Component {
 
     return items.map((item, index) => (
       <tr>
-        <td>{index + 1}</td>
+        <td className="id-col">{index + 1}</td>
         <td>{item.fullname}</td>
         <td>{item.worked_place}</td>
         <td>{item.phone}</td>
@@ -67,10 +67,10 @@ class Admin extends Component {
 
   render() {
     return (
-      <div className={"admin-page bg-light p-3 pt-5"}>
-        <table striped bordered hover>
+      <div className={"admin"}>
+        <table>
           <thead>
-            <tr className={"bg-dark text-light"}>
+            <tr>
               <th>#</th>
               <th>Full Name</th>
               <th>Work Place</th>

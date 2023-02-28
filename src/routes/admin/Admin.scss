@@ -1,0 +1,35 @@
+.admin {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  th {
+    background-color: rgb(36, 34, 34);
+    color: var(--white-c);
+    padding: 15px;
+  }
+
+  td {
+    font-family: sans-serif;
+    border: 1px solid var(--black-c);
+    padding: 5px 20px;
+  }
+
+  tr:nth-child(even) {
+    background-color: rgb(235, 235, 235);
+  }
+
+  a {
+
+    color: var(--green-c);
+    &:hover {
+      color: var(--link-hover-c);
+    }
+  }
+
+  .id-col {
+    font-weight: 600;
+  }
+}
