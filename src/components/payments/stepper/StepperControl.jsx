@@ -7,7 +7,7 @@ const StepperControl = ({ handleClick, currentStep, steps }) => {
       <button
         onClick={() => handleClick("prev")}
         className="stepper-control__btn"
-        style={currentStep === 1 ? {display: "none"} : null}
+        style={currentStep === 1 ? { display: "none" } : null}
       >
         Back
       </button>
@@ -17,7 +17,7 @@ const StepperControl = ({ handleClick, currentStep, steps }) => {
         onClick={() => handleClick("next")}
         className="stepper-control__btn"
       >
-        {currentStep === steps.length - 1 ? "Confirm" : "Next" }
+        {currentStep === steps.length - 1 ? "Confirm" : "Next"}
       </button>
     </div>
   );

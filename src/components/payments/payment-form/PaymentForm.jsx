@@ -63,55 +63,10 @@ const PaymentForm = () => {
       <h5 className="payment-form__title">{t("registrat")}</h5>
       <div className="payment-form__inputs-wrapper">
         <div className="payment-form__info-inputs">
-          <div className="payment-form__input">
-            <label htmlFor="fullName">{t("fullname")}</label>
-            <input
-              type="text"
-              placeholder={t("fullname")}
-              value={fullName}
-              id="fullName"
-              required
-              onChange={(e) => {
-                setFullName(e.target.value);
-              }}
-            />
-          </div>
-          <div className="payment-form__input">
-            <label htmlFor="email">{t("email")}</label>
-            <input
-              type="email"
-              placeholder={t("email")}
-              value={email}
-              id="email"
-              required
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            />
-          </div>
+          
         </div>
-        <div className="payment-form__input work-place">
-          <label htmlFor="work-place">{t("work")}</label>
-          <input
-            type="text"
-            placeholder={t("work")}
-            id="work-place"
-            onChange={(e) => {
-              setWorkedPlace(e.target.value);
-            }}
-            required
-          />
-        </div>
-        <div className="payment-form__input phone-num">
-          <label htmlFor="phoneNumber">{t("phoneNumber")}</label>
-          <PhoneInput
-            id="phoneNumber"
-            placeholder={t("phoneNumber")}
-            value={phoneNumber}
-            onChange={setPhoneNumber}
-            required
-          />
-        </div>
+        
+        
 
         <div className="upload-files__wrap">
           <div className="payment-form__input">
