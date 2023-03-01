@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 //components
-import PaymentForm from "./payment-form/PaymentForm";
-import StepperControl from "./stepper/StepperControl";
 import Stepper from "./stepper/Stepper";
 
 // steps
@@ -14,10 +12,7 @@ import UploadFile from "./steps/UploadFile";
 //SCSS
 import "./Payments.scss";
 
-//images
-import click from "../../assets/payment-types/click.png";
-import humo from "../../assets/payment-types/Humo.png";
-import uzcard from "../../assets/payment-types/Uzcard.png";
+
 
 const Payments = () => {
   const { t } = useTranslation();
@@ -31,7 +26,7 @@ const Payments = () => {
           <Account handleClick={handleClick} />
         );
       case 2:
-        return <Payment />;
+        return <Payment handleClick={handleClick} />;
       case 3:
         return <UploadFile />;
 

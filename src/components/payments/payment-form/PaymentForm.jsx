@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-//react phone number
-import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
-
 //SCSS
 import "./PaymentForm.scss";
 
@@ -18,21 +14,18 @@ const BASE_URL = "https://conference.kiut.uz/api";
 const PaymentForm = () => {
   // const {conferenceId} = useParams();
   const { t } = useTranslation();
-  const [fullName, setFullName] = useState("");
-  const [workedPlace, setWorkedPlace] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [email, setEmail] = useState("");
+
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedCheck, setSelectedCheck] = useState(null);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formData1 = new FormData();
-    formData1.append("fullname", fullName);
-    formData1.append("worked_place", workedPlace);
-    formData1.append("phone", phoneNumber);
-    formData1.append("email", email);
-    formData1.append("comment", "");
+    // formData1.append("fullname", fullName);
+    // formData1.append("worked_place", workedPlace);
+    // formData1.append("phone", phoneNumber);
+    // formData1.append("email", email);
+    // formData1.append("comment", "");
     formData1.append("support_doc", selectedFile);
     formData1.append("payment_doc", selectedCheck);
     formData1.append("conference", null);
