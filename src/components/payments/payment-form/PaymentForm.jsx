@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
+// import { useState } from "react";
+// import { useTranslation } from "react-i18next";
 
 //SCSS
 import "./PaymentForm.scss";
@@ -7,7 +7,7 @@ import "./PaymentForm.scss";
 const PaymentForm = () => {
   // const {conferenceId} = useParams();
 
-  const [selectedFile, setSelectedFile] = useState(null);
+  // const [selectedFile, setSelectedFile] = useState(null);
 
   return (
     <form className="payment-form" encType="multipart/form-data">
@@ -23,7 +23,7 @@ const PaymentForm = () => {
                 accept="image/jpg, image/png, image/jpeg, .doc, .docx, .zip, .pdf"
                 required
                 onChange={(e) => {
-                  setSelectedFile(e.target.files[0]);
+                  // setSelectedFile(e.target.files[0]);
                 }}
               />
             </div>
