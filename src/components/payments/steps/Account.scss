@@ -25,6 +25,23 @@
     max-width: 370px;
     margin-bottom: 50px;
   }
+
+  &__submit-btn {
+    max-width: 206px;
+    width: 100%;
+    display: block;
+    padding: 11px;
+    background-color: var(--primary-blue-c);
+    border-radius: 20px;
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--white-c);
+    margin: 0 auto;
+
+    &:hover {
+      background-color: var(--link-hover-c);
+    }
+  }
 }
 
 .payment-form__input {

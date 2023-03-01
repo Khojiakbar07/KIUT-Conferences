@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { StepperContext } from "../../contexts/StepperContext";
 
 //components
 import PaymentForm from "./payment-form/PaymentForm";
@@ -23,13 +22,14 @@ import uzcard from "../../assets/payment-types/Uzcard.png";
 const Payments = () => {
   const { t } = useTranslation();
   const [currentStep, setCurrentStep] = useState(1);
-
   const steps = ["Step 1", "Step 2", "Step 3"];
 
   const displayStep = (step) => {
     switch (step) {
       case 1:
-        return <Account />;
+        return (
+          <Account handleClick={handleClick} />
+        );
       case 2:
         return <Payment />;
       case 3:
@@ -56,17 +56,15 @@ const Payments = () => {
           {/* Stepper */}
           <div className="stepper-wrapper">
             <Stepper steps={steps} currentStep={currentStep} />
-          {/* Display Components */}
-            <StepperContext.Provider value={{}} >
-              {displayStep(currentStep)}
-            </StepperContext.Provider>
+            {/* Display Components */}
+            {displayStep(currentStep)}
           </div>
           {/* Navigation controls */}
-          <StepperControl
+          {/* <StepperControl
             handleClick={handleClick}
             currentStep={currentStep}
             steps={steps}
-          />
+          /> */}
         </div>
       </div>
     </section>

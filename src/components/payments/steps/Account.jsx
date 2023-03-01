@@ -8,25 +8,24 @@ import PhoneInput from "react-phone-number-input";
 //SCSS
 import "./Account.scss";
 
-//icons
-import { FiPlus } from "react-icons/fi";
-import axios from "axios";
-
-export default function Account() {
+export default function Account({ handleClick }) {
   const { t } = useTranslation();
-  const [fullName, setFullName] = useState(
-    localStorage.getItem("fullname") || ""
-  );
-  const [workedPlace, setWorkedPlace] = useState(
-    localStorage.getItem("worked_place") || ""
-  );
-  const [phoneNumber, setPhoneNumber] = useState(
-    localStorage.getItem("phone") || ""
-  );
-  const [email, setEmail] = useState(localStorage.getItem("email") || "");
+  const [fullName, setFullName] = useState("");
+  const [workedPlace, setWorkedPlace] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    localStorage.setItem("accounted", true);
+    localStorage.setItem("fullname", fullName);
+    localStorage.setItem("worked_place", workedPlace);
+    localStorage.setItem("phone", phoneNumber);
+    localStorage.setItem("email", email);
+  };
 
   return (
-    <form className="account-form">
+    <form className="account-form" onSubmit={handleSubmit}>
       <div className="account-form__inputs">
         <div className="payment-form__input flex">
           <label htmlFor="fullName">{t("fullname")}</label>
@@ -65,18 +64,24 @@ export default function Account() {
         />
       </div>
       <div className="payment-form__input email-input">
-          <label htmlFor="email">{t("email")}</label>
-          <input
-            type="email"
-            placeholder={t("email")}
-            value={email}
-            id="email"
-            required
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-        </div>
+        <label htmlFor="email">{t("email")}</label>
+        <input
+          type="email"
+          placeholder={t("email")}
+          value={email}
+          id="email"
+          required
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+        />
+      </div>
+      <button
+        onClick={() => handleClick("next")}
+        className="account-form__submit-btn"
+      >
+        Next
+      </button>
     </form>
   );
 }
