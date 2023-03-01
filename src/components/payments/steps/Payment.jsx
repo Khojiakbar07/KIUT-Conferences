@@ -41,6 +41,7 @@ export default function Payment({ handleClick }) {
         <HiOutlineArrowLongLeft className="prev-icon" />
         Back
       </button>
+      <button onClick={() => handleClick("next")}>Test Next</button>
       <img className="click-img" src={click} alt="Pay via Click" />
     </div>
   );

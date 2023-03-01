@@ -12,8 +12,6 @@ import UploadFile from "./steps/UploadFile";
 //SCSS
 import "./Payments.scss";
 
-
-
 const Payments = () => {
   const { t } = useTranslation();
   const [currentStep, setCurrentStep] = useState(1);
@@ -22,13 +20,11 @@ const Payments = () => {
   const displayStep = (step) => {
     switch (step) {
       case 1:
-        return (
-          <Account handleClick={handleClick} />
-        );
+        return <Account handleClick={handleClick} />;
       case 2:
         return <Payment handleClick={handleClick} />;
       case 3:
-        return <UploadFile />;
+        return <UploadFile handleClick={handleClick} />;
 
       default:
     }
