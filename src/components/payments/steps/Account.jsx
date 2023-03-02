@@ -11,7 +11,9 @@ import "./Account.scss";
 export default function Account({ handleClick }) {
   const { t } = useTranslation();
   const [fullName, setFullName] = useState(localStorage.getItem("fullname"));
-  const [workedPlace, setWorkedPlace] = useState(localStorage.getItem("worked_place"));
+  const [workedPlace, setWorkedPlace] = useState(
+    localStorage.getItem("worked_place")
+  );
   const [phoneNumber, setPhoneNumber] = useState(localStorage.getItem("phone"));
   const [email, setEmail] = useState(localStorage.getItem("email"));
 

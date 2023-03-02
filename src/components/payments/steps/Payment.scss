@@ -60,9 +60,11 @@
   font-size: var(--text-lg);
   color: var(--white-c);
   margin-bottom: 20px;
+
   svg {
     font-size: var(--text-3xl);
   }
+
   &:hover {
     background-color: var(--link-hover-c);
   }
