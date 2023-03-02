@@ -10,10 +10,10 @@ import "./Account.scss";
 
 export default function Account({ handleClick }) {
   const { t } = useTranslation();
-  const [fullName, setFullName] = useState("");
-  const [workedPlace, setWorkedPlace] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [email, setEmail] = useState("");
+  const [fullName, setFullName] = useState(localStorage.getItem("fullname"));
+  const [workedPlace, setWorkedPlace] = useState(localStorage.getItem("worked_place"));
+  const [phoneNumber, setPhoneNumber] = useState(localStorage.getItem("phone"));
+  const [email, setEmail] = useState(localStorage.getItem("email"));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,6 +22,8 @@ export default function Account({ handleClick }) {
     localStorage.setItem("worked_place", workedPlace);
     localStorage.setItem("phone", phoneNumber);
     localStorage.setItem("email", email);
+
+    handleClick("next");
   };
 
   return (
@@ -45,6 +47,7 @@ export default function Account({ handleClick }) {
           <input
             type="text"
             placeholder={t("work")}
+            value={workedPlace}
             id="work-place"
             onChange={(e) => {
               setWorkedPlace(e.target.value);
@@ -77,7 +80,7 @@ export default function Account({ handleClick }) {
         />
       </div>
       <button
-        onClick={() => handleClick("next")}
+        // onClick={() => handleClick("next")}
         className="account-form__submit-btn"
       >
         Next

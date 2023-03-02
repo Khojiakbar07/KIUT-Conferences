@@ -10,7 +10,7 @@ import { HiOutlineArrowLongLeft } from "react-icons/hi2";
 import "./UploadFile.scss";
 
 //BASE_URL
-const BASE_URL = "https://conference.kiut.uz/api";
+const BASE_URL = "http://conference.kiut.uz/api";
 
 export default function UploadFile({ handleClick }) {
   const { t } = useTranslation();
@@ -34,6 +34,7 @@ export default function UploadFile({ handleClick }) {
       );
       if (RESPONSE.status === 201) {
         alert("Your information has been sent successfully!");
+        localStorage.setItem("step", "1")
       } else {
         alert(
           "Upload a valid image. The file you uploaded was either not an image or a corrupted image!"
