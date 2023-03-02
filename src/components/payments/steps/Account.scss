@@ -1,0 +1,72 @@
+.account-form {
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 22px;
+  }
+
+  .flex {
+    flex: 1;
+  }
+
+  .phone-num {
+    max-width: 425px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 22px;
+
+    input {
+      max-width: 318px;
+    }
+  }
+
+  .email-input {
+    max-width: 370px;
+    margin-bottom: 50px;
+  }
+
+  &__submit-btn {
+    max-width: 206px;
+    width: 100%;
+    display: block;
+    padding: 11px;
+    background-color: var(--primary-blue-c);
+    border-radius: 20px;
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--white-c);
+    margin: 0 auto;
+
+    &:hover {
+      background-color: var(--link-hover-c);
+    }
+  }
+}
+
+.payment-form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #0A0A0A;
+  }
+
+  input {
+    padding: 16px 24px;
+    border-radius: 12px;
+    border: 1px solid #C2C2C2;
+    outline: none;
+    color: var(--black-c);
+
+    &:focus,
+    &:valid {
+      border-color: var(--black-c);
+    }
+  }
+}
