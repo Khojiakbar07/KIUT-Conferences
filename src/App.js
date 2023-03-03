@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Layout from "./components/layout/Layout";
-import { BackToTop } from "./utils";
+import { BackToTop, Loader } from "./utils";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Outlet />
       </Layout>
       <BackToTop />
+      <Loader />
     </div>
   );
 }
