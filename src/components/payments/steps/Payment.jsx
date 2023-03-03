@@ -29,9 +29,9 @@ export default function Payment({handleClick}) {
                         <input type="hidden" name="merchant_user_id" value="30373"/>
                         <input type="hidden" name="service_id" value="26597"/>
                         <input type="hidden" name="transaction_param" value={transaction_param}/>
-                        <input type="hidden" name="return_url" value="http://conference.kiut.uz/submission"/>
+                        <input type="hidden" name="return_url" value="https://conference.kiut.uz/submission"/>
                         <input type="hidden" name="card_type" value="uzcard"/>
-                        <button type="submit" className="payment-link"><i></i>Pay with UzCard</button>
+                        <button type="submit" className="payment-link">Pay with UzCard</button>
                     </form>
                 </div>
                 <div className="payment-type">
@@ -49,9 +49,9 @@ export default function Payment({handleClick}) {
                         <input type="hidden" name="merchant_user_id" value="30373"/>
                         <input type="hidden" name="service_id" value="26597"/>
                         <input type="hidden" name="transaction_param" value={transaction_param}/>
-                        <input type="hidden" name="return_url" value="http://conference.kiut.uz/submission"/>
+                        <input type="hidden" name="return_url" value="https://conference.kiut.uz/submission"/>
                         <input type="hidden" name="card_type" value="humo"/>
-                        <button type="submit" className="payment-link"><i></i>Pay with Humo</button>
+                        <button type="submit" className="payment-link">Pay with Humo</button>
                     </form>
                 </div>
             </div>
