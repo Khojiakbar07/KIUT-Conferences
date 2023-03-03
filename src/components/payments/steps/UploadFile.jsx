@@ -68,7 +68,7 @@ export default function UploadFile({ handleClick }) {
       <div className="final-step__controlls">
         <button onClick={() => handleClick("prev")} className="prev-btn">
           <HiOutlineArrowLongLeft className="prev-icon" />
-          Back
+          {t("back")}
         </button>
         <button className="prev-btn" type="submit">
           {t("submit")}

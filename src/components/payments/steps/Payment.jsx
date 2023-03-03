@@ -10,9 +10,11 @@ import {
   HiOutlineArrowLongLeft,
   HiOutlineArrowLongRight,
 } from "react-icons/hi2";
+import { useTranslation } from "react-i18next";
 
 export default function Payment({ handleClick }) {
   const transaction_param = localStorage.getItem("email");
+  const { t } = useTranslation();
 
   return (
     <div className="payment">
@@ -48,7 +50,7 @@ export default function Payment({ handleClick }) {
             />
             <input type="hidden" name="card_type" value="uzcard" />
             <button type="submit" className="payment-link">
-              Pay with UzCard
+              {t("pay_with")} UzCard
             </button>
           </form>
         </div>
@@ -83,18 +85,18 @@ export default function Payment({ handleClick }) {
             />
             <input type="hidden" name="card_type" value="humo" />
             <button type="submit" className="payment-link">
-              Pay with Humo
+              {t("pay_with")} Humo
             </button>
           </form>
         </div>
       </div>
       <button onClick={() => handleClick("prev")} className="prev-btn">
         <HiOutlineArrowLongLeft className="prev-icon" />
-        Back
+        {t("back")}
       </button>
       {localStorage.getItem("payed") === "1" ? (
         <button onClick={() => handleClick("next")} className={"prev-btn"}>
-          Next
+          {t("next")}
           <HiOutlineArrowLongRight className="right-icon" />
         </button>
       ) : null}
