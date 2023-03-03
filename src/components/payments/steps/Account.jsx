@@ -38,8 +38,8 @@ export default function Account({ handleClick }) {
     localStorage.setItem("worked_place", workedPlace);
     localStorage.setItem("phone", phoneNumber);
     localStorage.setItem("email", email);
-
-    handleClick("next");
+    localStorage.setItem("conference", selected);
+    selected !== "Select..." ? handleClick("next") : <></>;
   };
 
   return (

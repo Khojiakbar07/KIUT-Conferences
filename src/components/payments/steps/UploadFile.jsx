@@ -25,7 +25,7 @@ export default function UploadFile({ handleClick }) {
     formData1.append("payment_id", localStorage.getItem("payment_id"));
     formData1.append("comment", "");
     formData1.append("support_doc", selectedFile);
-    formData1.append("conference", null);
+    formData1.append("conference", localStorage.getItem("conference"));
 
     try {
       const RESPONSE = await axios.post(
