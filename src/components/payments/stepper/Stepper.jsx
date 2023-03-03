@@ -1,8 +1,10 @@
 import { useEffect, useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { v4 as uuidv4 } from "uuid";
 import "./Stepper.scss";
 
 const Stepper = ({ steps, currentStep }) => {
+  const { t } = useTranslation();
   const [newStep, setNewStep] = useState([]);
   const stepRef = useRef();
 
@@ -64,17 +66,16 @@ const Stepper = ({ steps, currentStep }) => {
     setNewStep(current);
   }, [steps, currentStep]);
 
-  const displaySteps = newStep.map((step) => {
+  const displaySteps = newStep.map((step, index) => {
     return (
       <div key={uuidv4()} className="steps">
         <div className="steps-wrap">
           <div className={`step-round ${step.selected ? "selected" : ""}`}>
             {/* Display number */}
-            {step.completed ? <span></span> : <></>}
           </div>
           <div className="step-desc">
             {/* Display description */}
-            {step.description}
+            {t("step")} {index + 1}
           </div>
         </div>
         <div

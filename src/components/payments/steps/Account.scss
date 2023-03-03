@@ -64,6 +64,7 @@
     }
 
     &-content {
+      width: 100%;
       position: absolute;
       border-radius: 12px;
       border: 1px solid transparent;
@@ -96,6 +97,7 @@
       height: 250px;
       border-color: #C2C2C2;
     }
+
     .down-icon {
       transform: rotate(180deg);
     }
@@ -127,4 +129,17 @@
       border-color: var(--black-c);
     }
   }
+}
+
+.dropdown-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  background: dodgerblue;
+  border-radius: 5px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+  background: var(--white-c);
 }

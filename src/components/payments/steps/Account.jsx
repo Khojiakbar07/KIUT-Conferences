@@ -28,8 +28,9 @@ export default function Account({ handleClick }) {
   const [email, setEmail] = useState(localStorage.getItem("email") || "");
 
   // dropdown
+  const dropdownPlaceholder = t("select") + "...";
   const [isDropdownActive, setDropdownActive] = useState(false);
-  const [selected, setSelected] = useState("Select...");
+  const [selected, setSelected] = useState(dropdownPlaceholder);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -39,7 +40,7 @@ export default function Account({ handleClick }) {
     localStorage.setItem("phone", phoneNumber);
     localStorage.setItem("email", email);
     localStorage.setItem("conference", selected);
-    selected !== "Select..." ? handleClick("next") : <></>;
+    selected !== dropdownPlaceholder ? handleClick("next") : <></>;
   };
 
   return (
@@ -97,8 +98,8 @@ export default function Account({ handleClick }) {
           />
         </div>
       </div>
-      <div className="account-form__select payment-form__inputs">
-        <label htmlFor="dropdown">Conference section</label>
+      <div className="account-form__select payment-form__input">
+        <label htmlFor="dropdown">{t("conference_section")}</label>
         <div
           className={`dropdown flex ${isDropdownActive ? "active" : ""}`}
           id="dropdown"
@@ -135,7 +136,7 @@ export default function Account({ handleClick }) {
         </div>
       </div>
 
-      <button className="account-form__submit-btn">Next</button>
+      <button className="account-form__submit-btn">{t("next")}</button>
     </form>
   );
 }
