@@ -10,7 +10,7 @@ import { HiOutlineArrowLongLeft } from "react-icons/hi2";
 import "./UploadFile.scss";
 
 //BASE_URL
-const BASE_URL = "http://conference.kiut.uz/api";
+const BASE_URL = "https://conference.kiut.uz/api";
 
 export default function UploadFile({ handleClick }) {
   const { t } = useTranslation();

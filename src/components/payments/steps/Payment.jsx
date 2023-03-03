@@ -46,7 +46,7 @@ export default function Payment({ handleClick }) {
             <input
               type="hidden"
               name="return_url"
-              value="http://conference.kiut.uz/submission"
+              value="https://conference.kiut.uz/submission"
             />
             <input type="hidden" name="card_type" value="uzcard" />
             <button type="submit" className="payment-link">
@@ -81,7 +81,7 @@ export default function Payment({ handleClick }) {
             <input
               type="hidden"
               name="return_url"
-              value="http://conference.kiut.uz/submission"
+              value="https://conference.kiut.uz/submission"
             />
             <input type="hidden" name="card_type" value="humo" />
             <button type="submit" className="payment-link">
