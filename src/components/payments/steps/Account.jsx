@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { v4 as uuidv4 } from "uuid";
 
@@ -12,6 +12,7 @@ import { FiChevronDown } from "react-icons/fi";
 //SCSS
 import "./Account.scss";
 
+// data
 import dropdownData from "../../../dummy-data/dropdown-data.json";
 
 export default function Account({ handleClick }) {

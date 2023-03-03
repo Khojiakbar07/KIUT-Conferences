@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import axios from "axios";
+
+// context
+import { LoaderContext } from "../../../context/LoaderContext";
 
 //icon
 import { FiPlus } from "react-icons/fi";
@@ -14,6 +17,7 @@ const BASE_URL = "https://conference.kiut.uz/api";
 
 export default function UploadFile({ handleClick }) {
   const { t } = useTranslation();
+  const { setIsLoading } = useContext(LoaderContext);
   const [selectedFile, setSelectedFile] = useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -28,10 +32,12 @@ export default function UploadFile({ handleClick }) {
     formData1.append("conference", localStorage.getItem("conference"));
 
     try {
+      setIsLoading(true);
       const RESPONSE = await axios.post(
         `${BASE_URL}/apps/participant/create/`,
         formData1
       );
+      if (RESPONSE) setIsLoading(false);
       if (RESPONSE.status === 201) {
         alert("Your information has been sent successfully!");
         localStorage.setItem("step", "1");

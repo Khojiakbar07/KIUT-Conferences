@@ -15,7 +15,6 @@ import { useSearchParams } from "react-router-dom";
 
 const Payments = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-
   if (
     searchParams.get("payment_status") === "2" &&
     searchParams.get("payment_id")
