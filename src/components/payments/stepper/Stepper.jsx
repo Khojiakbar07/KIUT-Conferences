@@ -64,21 +64,29 @@ const Stepper = ({ steps, currentStep }) => {
     setNewStep(current);
   }, [steps, currentStep]);
 
-  const displaySteps = newStep.map((step, index) => {
+  const displaySteps = newStep.map((step) => {
     return (
-      <div key={uuidv4()}  className="steps">
+      <div key={uuidv4()} className="steps">
         <div className="steps-wrap">
           <div className={`step-round ${step.selected ? "selected" : ""}`}>
             {/* Display number */}
-            {step.completed ? <span ></span> : <></>}
+            {step.completed ? <span></span> : <></>}
           </div>
           <div className="step-desc">
             {/* Display description */}
-            {/* Step {step.completed ? <span>{index + 1}</span> : index + 1} */}
             {step.description}
           </div>
         </div>
-        <div className="stepper-line" style={step.completed ? {borderColor: "#007BFF"} : {borderColor: "#D1D5DB"}}>{/* Display line */}</div>
+        <div
+          className="stepper-line"
+          style={
+            step.completed
+              ? { borderColor: "#007BFF" }
+              : { borderColor: "#D1D5DB" }
+          }
+        >
+          {/* Display line */}
+        </div>
       </div>
     );
   });
