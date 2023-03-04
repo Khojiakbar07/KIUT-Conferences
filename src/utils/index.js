@@ -36,6 +36,13 @@ const BackToTop = () => {
 };
 
 const Loader = ({ isLoading }) => {
+  useEffect(() => {
+    if (isLoading) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isLoading]);
   return (
     <div
       style={isLoading ? { display: "grid" } : { display: "none" }}
