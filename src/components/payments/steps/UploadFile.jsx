@@ -29,7 +29,7 @@ export default function UploadFile({ handleClick }) {
     formData1.append("payment_id", localStorage.getItem("payment_id"));
     formData1.append("comment", "");
     formData1.append("support_doc", selectedFile);
-    formData1.append("conference", localStorage.getItem("conference"));
+    formData1.append("conference_section", localStorage.getItem("conference"));
 
     try {
       setIsLoading(true);
