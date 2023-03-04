@@ -40,7 +40,8 @@ export default function UploadFile({ handleClick }) {
       if (RESPONSE) setIsLoading(false);
       if (RESPONSE.status === 201) {
         alert("Your information has been sent successfully!");
-        localStorage.setItem("step", "1");
+        localStorage.clear()
+        window.location.reload()
       } else {
         alert(
           "Upload a valid image. The file you uploaded was either not an image or a corrupted image!"
