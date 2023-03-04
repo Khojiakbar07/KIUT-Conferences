@@ -58,8 +58,8 @@ const Payments = () => {
         <h3 className="payments-title line">{t("submission")}</h3>
         <div className="payments__content">
           <div className="progress-title">{t("regis")}</div>
-          {/* Stepper */}
           <div className="stepper-wrapper">
+            {/* Stepper */}
             <Stepper steps={steps} currentStep={currentStep} />
             {/* Display Components */}
             {displayStep(currentStep)}
