@@ -11,15 +11,16 @@ import Registration from "./registration/Registration";
 import Committees from "./committees/Committees";
 import OrganizingInfo from "../components/committees-info/organizing/OrganizingInfo";
 import ScientificInfo from "../components/committees-info/scientific/ScientificInfo";
-import NotFound from "./not-found/NotFound";
+// import NotFound from "./not-found/NotFound";
 import Admin from "./admin/Admin";
 import Requirements from "./requirements/Requirements";
+import { Loader } from "../utils";
 
 const root = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <NotFound />,
+    errorElement: <Loader />,
     children: [
       {
         index: true,

@@ -14,7 +14,7 @@ function App() {
         </LoaderContext.Provider>
       </Layout>
       <BackToTop />
-      <Loader isLoading={isLoading} />
+      <Loader isLoading={isLoading} setIsLoading={setIsLoading} />
     </div>
   );
 }

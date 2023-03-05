@@ -35,14 +35,17 @@ const BackToTop = () => {
   );
 };
 
-const Loader = ({ isLoading }) => {
+const Loader = ({ isLoading, setIsLoading }) => {
   useEffect(() => {
+    window.addEventListener("load", () => {
+      setIsLoading(false);
+    });
     if (isLoading) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-  }, [isLoading]);
+  }, [isLoading, setIsLoading]);
   return (
     <div
       style={isLoading ? { display: "grid" } : { display: "none" }}

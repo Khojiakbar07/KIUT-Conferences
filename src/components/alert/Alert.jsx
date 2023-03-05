@@ -17,7 +17,7 @@ export default function Alert({ paymentStatus, setPaymentStatus }) {
     } else {
       setResMessage(t("error_message"));
     }
-  }, [paymentStatus]);
+  }, [paymentStatus, t]);
   console.log(paymentStatus);
 
   const handleClick = () => {
