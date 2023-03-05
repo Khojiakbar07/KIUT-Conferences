@@ -59,7 +59,7 @@ const Payments = () => {
   return (
     <section className="payments">
       <AlertContext.Provider value={{ setPaymentStatus }}>
-        <Alert paymentStatus={paymentStatus} />
+        <Alert paymentStatus={paymentStatus} setPaymentStatus={setPaymentStatus} />
         <div className="container">
           <h3 className="payments-title line">{t("submission")}</h3>
           <div className="payments__content">

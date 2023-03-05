@@ -39,8 +39,10 @@ export default function UploadFile({ handleClick }) {
         `${BASE_URL}/apps/participant/create/`,
         formData1
       );
-      if (RESPONSE) setIsLoading(false);
-      setPaymentStatus(RESPONSE.status);
+      if (RESPONSE) {
+        setIsLoading(false);
+        setPaymentStatus(RESPONSE.status);
+      }
     } catch (err) {
       console.log(err);
     }
