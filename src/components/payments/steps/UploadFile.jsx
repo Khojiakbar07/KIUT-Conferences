@@ -4,6 +4,7 @@ import axios from "axios";
 
 // context
 import { LoaderContext } from "../../../context/LoaderContext";
+import { AlertContext } from "../../../context/AlertContext";
 
 //icon
 import { FiPlus } from "react-icons/fi";
@@ -18,6 +19,7 @@ const BASE_URL = "https://conference.kiut.uz/api";
 export default function UploadFile({ handleClick }) {
   const { t } = useTranslation();
   const { setIsLoading } = useContext(LoaderContext);
+  const { setPaymentStatus } = useContext(AlertContext);
   const [selectedFile, setSelectedFile] = useState(null);
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -38,15 +40,7 @@ export default function UploadFile({ handleClick }) {
         formData1
       );
       if (RESPONSE) setIsLoading(false);
-      if (RESPONSE.status === 201) {
-        alert("Your information has been sent successfully!");
-        localStorage.clear()
-        window.location.reload()
-      } else {
-        alert(
-          "Upload a valid image. The file you uploaded was either not an image or a corrupted image!"
-        );
-      }
+      setPaymentStatus(RESPONSE.status);
     } catch (err) {
       console.log(err);
     }

@@ -5,7 +5,8 @@ import successIcon from "../../assets/ui-icons/success.svg";
 // SCSS
 import "./Alert.scss";
 
-export default function Alert() {
+export default function Alert({ paymentStatus }) {
+  console.log(paymentStatus);
   return (
     <div className="alert">
       <h5 className="alert-title line">SUCCSESSFULly registrated!</h5>

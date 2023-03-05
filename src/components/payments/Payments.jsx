@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSearchParams } from "react-router-dom";
+import { AlertContext } from "../../context/AlertContext";
 
 //components
 import Stepper from "./stepper/Stepper";
@@ -8,10 +10,10 @@ import Stepper from "./stepper/Stepper";
 import Account from "./steps/Account";
 import Payment from "./steps/Payment";
 import UploadFile from "./steps/UploadFile";
+import Alert from "../alert/Alert";
 
 //SCSS
 import "./Payments.scss";
-import { useSearchParams } from "react-router-dom";
 
 const Payments = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -29,6 +31,8 @@ const Payments = () => {
     localStorage.getItem("step") ? localStorage.getItem("step") : 1
   );
   const steps = ["Step 1", "Step 2", "Step 3"];
+
+  const [paymentStatus, setPaymentStatus] = useState(null);
 
   const displayStep = (step) => {
     switch (parseInt(step)) {
@@ -54,18 +58,21 @@ const Payments = () => {
 
   return (
     <section className="payments">
-      <div className="container">
-        <h3 className="payments-title line">{t("submission")}</h3>
-        <div className="payments__content">
-          <div className="progress-title">{t("regis")}</div>
-          <div className="stepper-wrapper">
-            {/* Stepper */}
-            <Stepper steps={steps} currentStep={currentStep} />
-            {/* Display Components */}
-            {displayStep(currentStep)}
+      <AlertContext.Provider value={{ setPaymentStatus }}>
+        <Alert paymentStatus={paymentStatus} />
+        <div className="container">
+          <h3 className="payments-title line">{t("submission")}</h3>
+          <div className="payments__content">
+            <div className="progress-title">{t("regis")}</div>
+            <div className="stepper-wrapper">
+              {/* Stepper */}
+              <Stepper steps={steps} currentStep={currentStep} />
+              {/* Display Components */}
+              {displayStep(currentStep)}
+            </div>
           </div>
         </div>
-      </div>
+      </AlertContext.Provider>
     </section>
   );
 };
