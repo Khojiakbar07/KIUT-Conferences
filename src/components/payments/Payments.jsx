@@ -32,7 +32,7 @@ const Payments = () => {
   );
   const steps = ["Step 1", "Step 2", "Step 3"];
 
-  const [paymentStatus, setPaymentStatus] = useState(201);
+  const [paymentStatus, setPaymentStatus] = useState(null);
 
   const displayStep = (step) => {
     switch (parseInt(step)) {
