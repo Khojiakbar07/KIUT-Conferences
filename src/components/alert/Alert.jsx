@@ -1,5 +1,7 @@
-//icons
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+
+//icons
 import errorIcon from "../../assets/ui-icons/error.svg";
 import successIcon from "../../assets/ui-icons/success.svg";
 
@@ -7,12 +9,13 @@ import successIcon from "../../assets/ui-icons/success.svg";
 import "./Alert.scss";
 
 export default function Alert({ paymentStatus, setPaymentStatus }) {
+  const { t } = useTranslation();
   const [resMessage, setResMessage] = useState("");
   useEffect(() => {
     if (paymentStatus === 201) {
-      setResMessage("Successfully registrated!");
+      setResMessage(t("success_message"));
     } else {
-      setResMessage("Something went wrong!");
+      setResMessage(t("error_message"));
     }
   }, [paymentStatus]);
   console.log(paymentStatus);
@@ -39,10 +42,10 @@ export default function Alert({ paymentStatus, setPaymentStatus }) {
         }
         className="alert-message"
       >
-        {paymentStatus === 201 ? "Success" : "Error"}
+        {paymentStatus === 201 ? "Success" : `${t("error")}`}
       </strong>
       <button onClick={handleClick} className="alert-btn">
-        {paymentStatus === 201 ? "OK" : "Try again"}
+        {paymentStatus === 201 ? "OK" : `${t("try_again")}`}
       </button>
     </div>
   );

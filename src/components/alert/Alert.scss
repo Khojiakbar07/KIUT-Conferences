@@ -55,5 +55,9 @@
     font-weight: 500;
     color: var(--white-c);
     align-self: flex-end;
+
+    &:hover {
+      background-color: var(--link-hover-c);
+    }
   }
 }

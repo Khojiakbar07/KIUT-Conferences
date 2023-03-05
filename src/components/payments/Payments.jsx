@@ -32,7 +32,7 @@ const Payments = () => {
   );
   const steps = ["Step 1", "Step 2", "Step 3"];
 
-  const [paymentStatus, setPaymentStatus] = useState(null);
+  const [paymentStatus, setPaymentStatus] = useState(1);
 
   const displayStep = (step) => {
     switch (parseInt(step)) {
@@ -59,7 +59,10 @@ const Payments = () => {
   return (
     <section className="payments">
       <AlertContext.Provider value={{ setPaymentStatus }}>
-        <Alert paymentStatus={paymentStatus} setPaymentStatus={setPaymentStatus} />
+        <Alert
+          paymentStatus={paymentStatus}
+          setPaymentStatus={setPaymentStatus}
+        />
         <div className="container">
           <h3 className="payments-title line">{t("submission")}</h3>
           <div className="payments__content">
