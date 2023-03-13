@@ -20,27 +20,10 @@
     }
   }
 
-  &__submit-btn {
-    max-width: 206px;
-    width: 100%;
-    display: block;
-    padding: 11px;
-    background-color: var(--primary-blue-c);
-    border-radius: 20px;
-    font-size: var(--text-lg);
-    font-weight: 500;
-    color: var(--white-c);
-    margin: 0 auto;
-
-    &:hover {
-      background-color: var(--link-hover-c);
-    }
-  }
-
   &__select {
     max-width: 500px;
     width: 100%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 22px auto;
   }
 
   .dropdown {
@@ -102,6 +85,29 @@
       transform: rotate(180deg);
     }
   }
+
+  .bill {
+    max-width: 294px;
+    margin-left: 62px;
+    margin-bottom: 32px;
+  }
+
+  &__submit-btn {
+    max-width: 206px;
+    width: 100%;
+    display: block;
+    padding: 11px;
+    background-color: var(--primary-blue-c);
+    border-radius: 20px;
+    font-size: var(--text-lg);
+    font-weight: 500;
+    color: var(--white-c);
+    margin: 0 auto;
+
+    &:hover {
+      background-color: var(--link-hover-c);
+    }
+  }
 }
 
 .payment-form__input {
@@ -142,4 +148,15 @@
 
 .dropdown-content::-webkit-scrollbar-track {
   background: var(--white-c);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

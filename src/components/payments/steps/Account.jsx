@@ -27,6 +27,7 @@ export default function Account({ handleClick }) {
     localStorage.getItem("phone") || ""
   );
   const [email, setEmail] = useState(localStorage.getItem("email") || "");
+  const [bill, setBill] = useState(localStorage.getItem("bill") || "");
 
   // dropdown
   const dropdownPlaceholder = t("select") + "...";
@@ -136,7 +137,19 @@ export default function Account({ handleClick }) {
           </ul>
         </div>
       </div>
-
+      <div className="payment-form__input bill">
+        <label htmlFor="bill">Bill</label>
+        <input
+          type="number"
+          placeholder="Enter the amount...."
+          value={bill}
+          id="bill"
+          required
+          onChange={(e) => {
+            setBill(e.target.value);
+          }}
+        />
+      </div>
       <button className="account-form__submit-btn">{t("next")}</button>
     </form>
   );
