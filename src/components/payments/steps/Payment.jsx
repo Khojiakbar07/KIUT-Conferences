@@ -34,7 +34,7 @@ export default function Payment({ handleClick }) {
             target="_blank"
             className={"payment-form"}
           >
-            <input type="hidden" name="amount" value="1000" />
+            <input type="hidden" name="amount" value="25000" />
             <input type="hidden" name="merchant_id" value="18893" />
             <input type="hidden" name="merchant_user_id" value="30373" />
             <input type="hidden" name="service_id" value="26597" />
@@ -69,7 +69,7 @@ export default function Payment({ handleClick }) {
             target="_blank"
             className={"payment-form"}
           >
-            <input type="hidden" name="amount" value="1000" />
+            <input type="hidden" name="amount" value="25000" />
             <input type="hidden" name="merchant_id" value="18893" />
             <input type="hidden" name="merchant_user_id" value="30373" />
             <input type="hidden" name="service_id" value="26597" />
