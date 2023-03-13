@@ -42,6 +42,7 @@ export default function Account({ handleClick }) {
     localStorage.setItem("phone", phoneNumber);
     localStorage.setItem("email", email);
     localStorage.setItem("conference", selected);
+    localStorage.setItem("bill", bill);
     selected !== dropdownPlaceholder ? handleClick("next") : <></>;
   };
 

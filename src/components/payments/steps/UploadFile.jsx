@@ -32,7 +32,7 @@ export default function UploadFile({ handleClick }) {
     formData1.append("comment", "");
     formData1.append("support_doc", selectedFile);
     formData1.append("conference_section", localStorage.getItem("conference"));
-
+    formData1.append("payment_amount", localStorage.getItem("bill"));
     try {
       setIsLoading(true);
       const RESPONSE = await axios.post(
