@@ -143,5 +143,7 @@
   "try_again": "Try again",
   "success_message": "Successfully registrated!",
   "error_message": "Something went wrong!",
-  "error": "Ошибка"
+  "error": "Error",
+  "payment": "Payment",
+  "payment_amount": "*25 000 sums per page"
 }
