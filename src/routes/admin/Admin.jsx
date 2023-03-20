@@ -49,6 +49,7 @@ class Admin extends Component {
         <td>{item.worked_place}</td>
         <td>{item.phone}</td>
         <td>{item.email}</td>
+        <td>{item.payment_amount}</td>
         <td>{item.payment_id}</td>
         <td>{item.conference_section}</td>
         <td>
@@ -77,6 +78,7 @@ class Admin extends Component {
               <th>Work Place</th>
               <th>Phone</th>
               <th>Email</th>
+              <th>Payed amount <br/> (UZS)</th>
               <th>Payment ID</th>
               <th>Conference Section</th>
               <th>Support Doc.</th>
