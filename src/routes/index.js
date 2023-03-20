@@ -15,6 +15,7 @@ import ScientificInfo from "../components/committees-info/scientific/ScientificI
 import Admin from "./admin/Admin";
 import Requirements from "./requirements/Requirements";
 import { Loader } from "../utils";
+import DetailN from "./detail/DetailN";
 
 const root = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const root = createBrowserRouter([
       {
         path: "detail",
         element: <Detail />,
+      },
+      {
+        path: "detail/namangan",
+        element: <DetailN />,
       },
       {
         path: "submission",
