@@ -31,7 +31,7 @@ const Intro = () => {
         className="intro-swiper"
       >
         <SwiperSlide className="intro-swiper__item">
-          <Link>
+          <Link to="/detail">
             <img src={kiutBg} alt="KIUT Internation university" />
             <div className="intro-title__wrap">
               <h2 className="intro-title">{t("intro_tipf")}</h2>
@@ -39,7 +39,7 @@ const Intro = () => {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <Link>
+          <Link to="/detail/namangan">
             <img src={namanganBg} alt="KIUT Namangan" />
             <div className="intro-title__wrap">
               <h2 className="intro-title">{t("intro_namangan")}</h2>
