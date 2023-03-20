@@ -34,7 +34,7 @@ const Intro = () => {
           <Link>
             <img src={kiutBg} alt="KIUT Internation university" />
             <div className="intro-title__wrap">
-              <h2 className="intro-title">{t("text")}</h2>
+              <h2 className="intro-title">{t("intro_tipf")}</h2>
             </div>
           </Link>
         </SwiperSlide>
@@ -42,7 +42,7 @@ const Intro = () => {
           <Link>
             <img src={namanganBg} alt="KIUT Namangan" />
             <div className="intro-title__wrap">
-              <h2 className="intro-title">{t("text")}</h2>
+              <h2 className="intro-title">{t("intro_namangan")}</h2>
             </div>
           </Link>
         </SwiperSlide>
