@@ -50,7 +50,7 @@ class Admin extends Component {
         <td>{item.phone}</td>
         <td>{item.email}</td>
         <td>{item.payment_amount}</td>
-        <td>{item.payment_id}</td>
+        <td>{item.payment_id !== 'null' ? item.payment_id : 'NOT PAYED'}</td>
         <td>{item.conference_section}</td>
         <td>
           <a href={item.support_doc} rel="noreferrer" target="_blank">

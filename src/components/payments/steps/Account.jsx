@@ -34,6 +34,8 @@ export default function Account({ handleClick }) {
   const [isDropdownActive, setDropdownActive] = useState(false);
   const [selected, setSelected] = useState(dropdownPlaceholder);
 
+  const [isNamangan, setIsNamangan] = useState(localStorage.getItem("isNamangan") || "0")
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     localStorage.setItem("accounted", true);
@@ -43,6 +45,7 @@ export default function Account({ handleClick }) {
     localStorage.setItem("email", email);
     localStorage.setItem("conference", selected);
     localStorage.setItem("bill", bill);
+    localStorage.setItem("isNamangan", isNamangan);
     selected !== dropdownPlaceholder ? handleClick("next") : <></>;
   };
 
@@ -123,6 +126,13 @@ export default function Account({ handleClick }) {
               ({ data }, idx) => (
                 <li
                   onClick={(e) => {
+
+                    if (e.target.textContent === '1. Namangan' || e.target.textContent === '1. Наманган'){
+                      setIsNamangan('1');
+                    } else {
+                      setIsNamangan('0');
+                    }
+
                     setSelected(e.target.textContent);
                     setDropdownActive(false);
                   }}
@@ -138,19 +148,23 @@ export default function Account({ handleClick }) {
           </ul>
         </div>
       </div>
-      <div className="payment-form__input bill flex">
-        <label htmlFor="bill">{t("payment")}</label>
-        <input
-          type="number"
-          placeholder={t("payment_amount")}
-          value={bill}
-          id="bill"
-          required
-          onChange={(e) => {
-            setBill(e.target.value);
-          }}
-        />
-      </div>
+      {isNamangan === '0' ?
+          <div className="payment-form__input bill flex">
+            <label htmlFor="bill">{t("payment")}</label>
+            <input
+                type="number"
+                placeholder={t("payment_amount")}
+                value={bill}
+                id="bill"
+                required
+                onChange={(e) => {
+                  setBill(e.target.value);
+                }}
+            />
+          </div>
+          :
+          null
+      }
       <button className="account-form__submit-btn">{t("next")}</button>
     </form>
   );

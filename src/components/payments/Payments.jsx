@@ -50,10 +50,18 @@ const Payments = () => {
   const handleClick = (direction) => {
     let newStep = currentStep;
 
-    direction === "next" ? newStep++ : newStep--;
     // check if steps are within bounds
-    localStorage.setItem("step", newStep);
-    newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
+    if (localStorage.getItem('isNamangan') === '1') {
+      direction === "next" ? newStep += 2 : newStep -= 2;
+
+      localStorage.setItem("step", newStep);
+      newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
+    } else {
+      direction === "next" ? newStep++ : newStep--;
+
+      localStorage.setItem("step", newStep);
+      newStep > 0 && newStep <= steps.length && setCurrentStep(newStep);
+    }
   };
 
   return (
