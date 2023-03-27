@@ -52,11 +52,11 @@ export default function UploadFile({ handleClick }) {
     <form onSubmit={handleSubmit} className="final-step">
       <div className="cheque-input__wrap">
         <div className="payment-form__input">
-          <label htmlFor="check">{t("check")}</label>
+          <label htmlFor="add_article">{t("add_article")}</label>
           <div className="file-upload">
             <input
               type="file"
-              id="check"
+              id="add_article"
               accept="image/jpg, image/png, image/jpeg, .doc, .docx, .zip, .pdf"
               required
               onChange={(e) => {
