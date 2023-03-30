@@ -15,7 +15,7 @@ import Alert from "../alert/Alert";
 //SCSS
 import "./Payments.scss";
 
-const Payments = () => {
+const Payments = ({title}) => {
   const [searchParams, setSearchParams] = useSearchParams();
   if (
     searchParams.get("payment_status") === "2" &&
@@ -72,7 +72,7 @@ const Payments = () => {
           setPaymentStatus={setPaymentStatus}
         />
         <div className="container">
-          <h3 className="payments-title line">{t("submission")}</h3>
+          <h3 className="payments-title line">{t(title)}</h3>
           <div className="payments__content">
             <div className="progress-title">{t("regis")}</div>
             <div className="stepper-wrapper">
