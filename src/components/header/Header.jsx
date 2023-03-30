@@ -157,7 +157,7 @@ const Header = () => {
                                     <Link to="submission">TIPF-2023</Link>
                                 </li>
                                 <li className="sub-list__item nav-sub__list-item">
-                                    <Link to="sumission/namangan">
+                                    <Link to="submission/namangan">
                                         Namangan-2023
                                     </Link>
                                 </li>
