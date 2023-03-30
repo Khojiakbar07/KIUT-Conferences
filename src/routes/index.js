@@ -16,6 +16,7 @@ import Admin from "./admin/Admin";
 import Requirements from "./requirements/Requirements";
 import { Loader } from "../utils";
 import DetailN from "./detail/DetailN";
+import AdminNamangan from "./admin/AdminNamangan";
 
 const root = createBrowserRouter([
   {
@@ -72,8 +73,12 @@ const root = createBrowserRouter([
     ],
   },
   {
-    path: "/admin",
+    path: "/admin/tashkent",
     element: <Admin />,
+  },
+  {
+    path: "/admin/namangan",
+    element: <AdminNamangan />,
   },
 ]);
 
