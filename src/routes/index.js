@@ -86,10 +86,10 @@ const root = createBrowserRouter([
         path: "/admin/namangan",
         element: <AdminNamangan />,
     },
-    {
-        path: "*",
-        element: <NotFound />,
-    },
+    // {
+    //     path: "*",
+    //     element: <NotFound />,
+    // },
 ]);
 
 export default root;

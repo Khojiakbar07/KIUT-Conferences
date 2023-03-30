@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
 //react phone number
@@ -16,6 +17,7 @@ import "./Account.scss";
 import dropdownData from "../../../dummy-data/dropdown-data.json";
 
 export default function Account({ handleClick }) {
+  const { pathname } = useLocation();
   const { t } = useTranslation();
   const [fullName, setFullName] = useState(
     localStorage.getItem("fullname") || ""
@@ -34,7 +36,7 @@ export default function Account({ handleClick }) {
   const [isDropdownActive, setDropdownActive] = useState(false);
   const [selected, setSelected] = useState(dropdownPlaceholder);
 
-  const [isNamangan, setIsNamangan] = useState(localStorage.getItem("isNamangan") || "0")
+  const [isNamangan, setIsNamangan] = useState(pathname === "/submission/namangan");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -126,13 +128,6 @@ export default function Account({ handleClick }) {
               ({ data }, idx) => (
                 <li
                   onClick={(e) => {
-
-                    if (e.target.textContent === '1. Namangan' || e.target.textContent === '1. Наманган'){
-                      setIsNamangan('1');
-                    } else {
-                      setIsNamangan('0');
-                    }
-
                     setSelected(e.target.textContent);
                     setDropdownActive(false);
                   }}
@@ -148,7 +143,7 @@ export default function Account({ handleClick }) {
           </ul>
         </div>
       </div>
-      {isNamangan === '0' ?
+        {!isNamangan ? 
           <div className="payment-form__input bill flex">
             <label htmlFor="bill">{t("payment")}</label>
             <input
@@ -162,9 +157,7 @@ export default function Account({ handleClick }) {
                 }}
             />
           </div>
-          :
-          null
-      }
+    : <></>}
       <button className="account-form__submit-btn">{t("next")}</button>
     </form>
   );
