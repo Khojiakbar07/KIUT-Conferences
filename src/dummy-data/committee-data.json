@@ -1,309 +1,449 @@
 [
-  {
-    "en": [
-      {
-        "director": "Chairperson",
-        "name": "Djamshid M. Kaniev",
-        "position": "Professor, Vice-Rector for Science & Innovation, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "director": "Deputy Chairperson",
-        "name": "Karimjon B. Akhmedjanov",
-        "position": "Professor, Vice-Rector for Education Quality and International Cooperation, Kimyo International University in Tashkent (Uzbekistan)."
-      },
-      {
-        "name": "Gulchekhrabonu M. Isamova",
-        "position": "Head of Science Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Sarvar B. Rakhmatillaev",
-        "position": "Head of International Cooperation Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Mavluda M. Abdujamilova",
-        "position": "Head of the Department of Education Quality Control, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Farkhod Sh. Niyazov",
-        "position": "Project Manager, Erasmus+ Coordinator, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Shoira Khamraeva",
-        "position": "Head of Public Relations Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Miryakub M. Mirzakhmedov",
-        "position": "Head of Student Affairs Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Mukarrama A. Berdieva",
-        "position": "Head of the Department of Russian Language, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Omonullokhon M. Akhmedov",
-        "position": "Head of the Department of International Economics, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Khalmurza S. Sagidullaev",
-        "position": "Head of the Department of Exact Sciences, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Shakhlo A. Isametdinova",
-        "position": "Head of the Department of Architecture and Urban Planning, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Liana A. Almyasheva",
-        "position": "Head of the Department of Painting, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Fotima R. Azimova",
-        "position": "Fashion Design Course Leader, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Tulqin Kh. Jumaev",
-        "position": "Head of the Department of Social Sciences and Humanities, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Manzura M. Rustamova",
-        "position": "Head of the Department of Preschool and Primary Education Methodology, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Nasiba Kh. Kholyigitova",
-        "position": "Head of the Department of Pedagogy and Psychology, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Akbar T. Zamonov",
-        "position": "Head of the Department of History, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Dilfuza Sh. Tursunova",
-        "position": "Head of the English Language Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Jurabek E. Kurbanbaev",
-        "position": "Chief Accountant, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Illarion G. Li",
-        "position": "Head of the Information Technology Center, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      }
-    ],
+    {
+        "en": [
+            {
+                "director": "Chairperson",
+                "name": "Djamshid M. Kaniev",
+                "position": "Professor, Vice-Rector for Science & Innovation, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "director": "Deputy Chairperson",
+                "name": "Karimjon B. Akhmedjanov",
+                "position": "Professor, Vice-Rector for Education Quality and International Cooperation, Kimyo International University in Tashkent (Uzbekistan)."
+            },
+            {
+                "name": "Gulchekhrabonu M. Isamova",
+                "position": "Head of Science Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Sarvar B. Rakhmatillaev",
+                "position": "Head of International Cooperation Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Mavluda M. Abdujamilova",
+                "position": "Head of the Department of Education Quality Control, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Farkhod Sh. Niyazov",
+                "position": "Project Manager, Erasmus+ Coordinator, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Shoira Khamraeva",
+                "position": "Head of Public Relations Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Miryakub M. Mirzakhmedov",
+                "position": "Head of Student Affairs Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Mukarrama A. Berdieva",
+                "position": "Head of the Department of Russian Language, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Omonullokhon M. Akhmedov",
+                "position": "Head of the Department of International Economics, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Khalmurza S. Sagidullaev",
+                "position": "Head of the Department of Exact Sciences, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Shakhlo A. Isametdinova",
+                "position": "Head of the Department of Architecture and Urban Planning, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Liana A. Almyasheva",
+                "position": "Head of the Department of Painting, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Fotima R. Azimova",
+                "position": "Fashion Design Course Leader, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Tulqin Kh. Jumaev",
+                "position": "Head of the Department of Social Sciences and Humanities, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Manzura M. Rustamova",
+                "position": "Head of the Department of Preschool and Primary Education Methodology, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Nasiba Kh. Kholyigitova",
+                "position": "Head of the Department of Pedagogy and Psychology, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Akbar T. Zamonov",
+                "position": "Head of the Department of History, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Dilfuza Sh. Tursunova",
+                "position": "Head of the English Language Department, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Jurabek E. Kurbanbaev",
+                "position": "Chief Accountant, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Illarion G. Li",
+                "position": "Head of the Information Technology Center, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Dr. Akmal B. Allakuliyev",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "A. Sattorov ",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "A. Vosiqov ",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "M. Berdiyev",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "A. Toshpulatov",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "M. Yuldashev",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "B. Gulmatov",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "M. Mundia",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "M. Alimova",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "D. Mirzabdullayev",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "T. Dadaboyev",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "Sh. Shoyusupov",
+                "position": "Kimyo International University in Tashkent"
+            },
+            {
+                "name": "Dr. Shoirakhon Nurdinova",
+                "position": "Namangan State University"
+            },
+            {
+                "name": "Prof. Dr. Birol Merkan",
+                "position": "Necmettin Erbakan University"
+            },
+            {
+                "name": "Dr. Nor Khadijah Mohd Azhari",
+                "position": "Universiti Teknologi MARA"
+            },
+            {
+                "name": "Dr. Sitti Aminah Baharuddin",
+                "position": "Universiti Teknologi MARA"
+            },
+            {
+                "name": "N. Khalilov",
+                "position": "Kimyo International University in Tashkent "
+            }
+        ],
 
-    "ru": [
-      {
-        "director": "Председатель Оргкомитета:",
-        "name": "Каниев Джамшид Махмудович",
-        "position": "Проректор по науке и инновации."
-      },
-      {
-        "director": "Заместитель председателя Оргкомитета",
-        "name": "Ахмеджанов Каримжон Бакиджанович ",
-        "position": "Проректор по качеству образования и международного сотрудничества."
-      },
-      {
-        "name": "Исамова Гулчехрабону Марвар кизи.",
-        "position": "Начальник научного отдела."
-      },
-      {
-        "name": "Рахматиллаев Сарвар  Ботиржонович",
-        "position": "Начальник отдела по международному сотрудничеству."
-      },
-      {
-        "name": "Абдужамилова Мавлюда Мурадовна",
-        "position": "Начальник отдела контроля качества образования."
-      },
-      {
-        "name": "Ниязов Фарход Шамилевич.",
-        "position": "Менеджер по проектам, координатор Эрасмус +."
-      },
-      {
-        "name": "Хамраева Шоира ",
-        "position": "Руководитель отдела по работе с общественностью."
-      },
-      {
-        "name": "Мирзахмедов Мирёкуб Миряхяевич",
-        "position": "Руководитель отдела по работе со студентами."
-      },
-      {
-        "name": "Мирзахмедов Мирёкуб Миряхяевич",
-        "position": "Руководитель отдела по работе со студентами."
-      },
-      {
-        "name": "Ахмедов Омонуллох Мидхадович",
-        "position": "Заведующий кафедрой международной экономики."
-      },
-      {
-        "name": "Сагидуллаев Халмурза Сапарбаевич",
-        "position": "Заведующий кафедрой точных наук."
-      },
-      {
-        "name": "Исаметдинова Шахло Авазджановна",
-        "position": "Заведующий кафедрой архитектуры и градостроительства."
-      },
-      {
-        "name": "Альмяшева Лиана Адхамовна",
-        "position": "Заведующий кафедрой живописи."
-      },
-      {
-        "name": "Азимова Фотима Расулбековна",
-        "position": "Декан направления «Дизайн одежды»."
-      },
-      {
-        "name": "Джумаев Тулкин Холмуродович",
-        "position": "Заведующий кафедрой социально-гуманитарных наук."
-      },
-      {
-        "name": "Рустамова Манзура Миркамаловна",
-        "position": "Заведующий кафедрой методики дошкольного и начального образования."
-      },
-      {
-        "name": "Холйигитова Насиба Хабибуллаевна",
-        "position": "Заведующий кафедрой педагогики и психологии."
-      },
-      {
-        "name": "Замонов Акбар Тургинович",
-        "position": "Заведующий кафедрой истории."
-      },
-      {
-        "name": "Турсунова Дилфуза Шавкатовна",
-        "position": "Заведующий кафедрой английского языка."
-      },
-      {
-        "name": "Курбанбаев Журабек Эрувбаевич",
-        "position": "Главный бухгалтер."
-      },
-      {
-        "name": "Ли Илларион Георгиевич",
-        "position": "Начальник информационного отдела."
-      }
-    ]
-  },
+        "ru": [
+            {
+                "director": "Председатель Оргкомитета:",
+                "name": "Каниев Джамшид Махмудович",
+                "position": "Проректор по науке и инновации."
+            },
+            {
+                "director": "Заместитель председателя Оргкомитета",
+                "name": "Ахмеджанов Каримжон Бакиджанович ",
+                "position": "Проректор по качеству образования и международного сотрудничества."
+            },
+            {
+                "name": "Исамова Гулчехрабону Марвар кизи.",
+                "position": "Начальник научного отдела."
+            },
+            {
+                "name": "Рахматиллаев Сарвар  Ботиржонович",
+                "position": "Начальник отдела по международному сотрудничеству."
+            },
+            {
+                "name": "Абдужамилова Мавлюда Мурадовна",
+                "position": "Начальник отдела контроля качества образования."
+            },
+            {
+                "name": "Ниязов Фарход Шамилевич.",
+                "position": "Менеджер по проектам, координатор Эрасмус +."
+            },
+            {
+                "name": "Хамраева Шоира ",
+                "position": "Руководитель отдела по работе с общественностью."
+            },
+            {
+                "name": "Мирзахмедов Мирёкуб Миряхяевич",
+                "position": "Руководитель отдела по работе со студентами."
+            },
+            {
+                "name": "Мирзахмедов Мирёкуб Миряхяевич",
+                "position": "Руководитель отдела по работе со студентами."
+            },
+            {
+                "name": "Ахмедов Омонуллох Мидхадович",
+                "position": "Заведующий кафедрой международной экономики."
+            },
+            {
+                "name": "Сагидуллаев Халмурза Сапарбаевич",
+                "position": "Заведующий кафедрой точных наук."
+            },
+            {
+                "name": "Исаметдинова Шахло Авазджановна",
+                "position": "Заведующий кафедрой архитектуры и градостроительства."
+            },
+            {
+                "name": "Альмяшева Лиана Адхамовна",
+                "position": "Заведующий кафедрой живописи."
+            },
+            {
+                "name": "Азимова Фотима Расулбековна",
+                "position": "Декан направления «Дизайн одежды»."
+            },
+            {
+                "name": "Джумаев Тулкин Холмуродович",
+                "position": "Заведующий кафедрой социально-гуманитарных наук."
+            },
+            {
+                "name": "Рустамова Манзура Миркамаловна",
+                "position": "Заведующий кафедрой методики дошкольного и начального образования."
+            },
+            {
+                "name": "Холйигитова Насиба Хабибуллаевна",
+                "position": "Заведующий кафедрой педагогики и психологии."
+            },
+            {
+                "name": "Замонов Акбар Тургинович",
+                "position": "Заведующий кафедрой истории."
+            },
+            {
+                "name": "Турсунова Дилфуза Шавкатовна",
+                "position": "Заведующий кафедрой английского языка."
+            },
+            {
+                "name": "Курбанбаев Журабек Эрувбаевич",
+                "position": "Главный бухгалтер."
+            },
+            {
+                "name": "Ли Илларион Георгиевич",
+                "position": "Начальник информационного отдела."
+            },
+            {
+                "name": "Др. Акмаль Б. Аллакулиев",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "А. Сатторов",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "А. Восиков",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "М. Бердыев",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "А. Тошпулатов",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "М. Юлдашев",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "Б. Гульматов",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "М. Мундиа",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "Р. Абдухалилов",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "М. Алимова",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "Д. Мирзабдуллаев",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "Т. Дадабоев",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "Ш. Шоюсупов",
+                "position": "Международный университет Кимё в Ташкенте"
+            },
+            {
+                "name": "Доктор Шойрахон Нурдинова",
+                "position": "Наманганский государственный университет"
+            },
+            {
+                "name": "Проф. др. Бироль Меркан",
+                "position": "Университет Некметтина Эрбакана"
+            },
+            {
+                "name": "Доктор Нор Хадиджа Мохд Азхари",
+                "position": "Университеты Технологии МАРА"
+            },
+            {
+                "name": "Доктор Ситти Амина Бахаруддин",
+                "position": "Университеты Технологии МАРА"
+            },
+            {
+                "name": "Н. Халилов",
+                "position": "Международный университет Кимё в Ташкенте"
+            }
+        ]
+    },
 
-  {
-    "en": [
-      {
-        "name": "Shokhjakhon G. Elmurodov",
-        "position": "PhD, Associate Professor, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Fozil U. Dodiyev",
-        "position": "Candidate of Economic Sciences, Associate Professor, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Nigora D. Kultasheva",
-        "position": "PhD in Art History, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Islom K. Arslanov",
-        "position": "Candidate of Technical Sciences, Associate Professor, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Irina V. Gabibova",
-        "position": "Candidate of Architecture, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Akhmadjon Kh. Khudayorov",
-        "position": "PhD in History, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Iroda M. Shamsiyeva",
-        "position": "Candidate of Historical Sciences, Associate Professor, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Sevara A. Sadikova",
-        "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Temur G. Maratov",
-        "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Tamilla H. Salmanova",
-        "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Dilfuza M. Kambarova",
-        "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Mohinakhon A. Khamidova",
-        "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Sharofat M. Kalandarova",
-        "position": "Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Elzara M. Bekirova",
-        "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      },
-      {
-        "name": "Munisa Y. Yusufova",
-        "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
-      }
-    ],
+    {
+        "en": [
+            {
+                "name": "Shokhjakhon G. Elmurodov",
+                "position": "PhD, Associate Professor, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Fozil U. Dodiyev",
+                "position": "Candidate of Economic Sciences, Associate Professor, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Nigora D. Kultasheva",
+                "position": "PhD in Art History, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Islom K. Arslanov",
+                "position": "Candidate of Technical Sciences, Associate Professor, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Irina V. Gabibova",
+                "position": "Candidate of Architecture, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Akhmadjon Kh. Khudayorov",
+                "position": "PhD in History, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Iroda M. Shamsiyeva",
+                "position": "Candidate of Historical Sciences, Associate Professor, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Sevara A. Sadikova",
+                "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Temur G. Maratov",
+                "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Tamilla H. Salmanova",
+                "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Dilfuza M. Kambarova",
+                "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Mohinakhon A. Khamidova",
+                "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Sharofat M. Kalandarova",
+                "position": "Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Elzara M. Bekirova",
+                "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            },
+            {
+                "name": "Munisa Y. Yusufova",
+                "position": "Senior Lecturer, Kimyo International University in Tashkent (Tashkent, Uzbekistan)."
+            }
+        ],
 
-    "ru": [
-      {
-        "name": "Элмуродов Шохжахон Гайрат угли",
-        "position": "PhD, доцент."
-      },
-      {
-        "name": "Додиев Фозил Уткурович",
-        "position": "Кандидат экономических наук, доцент."
-      },
-      {
-        "name": "Култашева Нигора Данияровна",
-        "position": "Доктор философии искусствоведения, PhD."
-      },
-      {
-        "name": "Арсланов Ислом Кимсанович",
-        "position": "Кандидат технических наук, доцент."
-      },
-      {
-        "name": "Габибова Ирина Вагифовна",
-        "position": "Кандидат архитектурных наук."
-      },
-      {
-        "name": "Худаёров Ахмаджон Хайдарович",
-        "position": "Доктор философии исторических наук, PhD."
-      },
-      {
-        "name": "Шамсиева Ирода Махмудовна",
-        "position": "Кандидат исторических наук, доцент."
-      },
-      {
-        "name": "Садикова Севара Абдумаликовна",
-        "position": "Старший преподаватель."
-      },
-      {
-        "name": "Маратов Темур Гайрат угли",
-        "position": "Старший преподаватель."
-      },
-      {
-        "name": "Салманова Тамилла Хикматовна",
-        "position": "Старший преподаватель."
-      },
-      {
-        "name": "Камбарова Дилфуза Махамаджановна",
-        "position": "Старший преподаватель."
-      },
-      {
-        "name": "Хамидова Мохинахон Алишеровна",
-        "position": "Старший преподаватель."
-      },
-      {
-        "name": "Каландарова Шарофат Маткаримовна",
-        "position": "преподаватель."
-      },
-      {
-        "name": "Бекирова Эльзара Мухамедовна",
-        "position": "Старший преподаватель."
-      },
-      {
-        "name": "Юсуфова Муниса Ёкубжон кизи",
-        "position": "Старший преподаватель."
-      }
-    ]
-  }
+        "ru": [
+            {
+                "name": "Элмуродов Шохжахон Гайрат угли",
+                "position": "PhD, доцент."
+            },
+            {
+                "name": "Додиев Фозил Уткурович",
+                "position": "Кандидат экономических наук, доцент."
+            },
+            {
+                "name": "Култашева Нигора Данияровна",
+                "position": "Доктор философии искусствоведения, PhD."
+            },
+            {
+                "name": "Арсланов Ислом Кимсанович",
+                "position": "Кандидат технических наук, доцент."
+            },
+            {
+                "name": "Габибова Ирина Вагифовна",
+                "position": "Кандидат архитектурных наук."
+            },
+            {
+                "name": "Худаёров Ахмаджон Хайдарович",
+                "position": "Доктор философии исторических наук, PhD."
+            },
+            {
+                "name": "Шамсиева Ирода Махмудовна",
+                "position": "Кандидат исторических наук, доцент."
+            },
+            {
+                "name": "Садикова Севара Абдумаликовна",
+                "position": "Старший преподаватель."
+            },
+            {
+                "name": "Маратов Темур Гайрат угли",
+                "position": "Старший преподаватель."
+            },
+            {
+                "name": "Салманова Тамилла Хикматовна",
+                "position": "Старший преподаватель."
+            },
+            {
+                "name": "Камбарова Дилфуза Махамаджановна",
+                "position": "Старший преподаватель."
+            },
+            {
+                "name": "Хамидова Мохинахон Алишеровна",
+                "position": "Старший преподаватель."
+            },
+            {
+                "name": "Каландарова Шарофат Маткаримовна",
+                "position": "преподаватель."
+            },
+            {
+                "name": "Бекирова Эльзара Мухамедовна",
+                "position": "Старший преподаватель."
+            },
+            {
+                "name": "Юсуфова Муниса Ёкубжон кизи",
+                "position": "Старший преподаватель."
+            }
+        ]
+    }
 ]
