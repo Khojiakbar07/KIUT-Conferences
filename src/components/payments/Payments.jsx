@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { useSearchParams } from "react-router-dom";
-import { AlertContext } from "../../context/AlertContext";
+import {useState} from "react";
+import {useTranslation} from "react-i18next";
+import {useSearchParams} from "react-router-dom";
+import {AlertContext} from "../../context/AlertContext";
 
 //components
 import Stepper from "./stepper/Stepper";
@@ -15,21 +15,18 @@ import Alert from "../alert/Alert";
 //SCSS
 import "./Payments.scss";
 
-const Payments = ({ title }) => {
-    const [searchParams, setSearchParams] = useSearchParams();
-    if (
-        searchParams.get("payment_status") === "2" &&
-        searchParams.get("payment_id")
-    ) {
+const Payments = ({title}) => {
+    const [searchParams] = useSearchParams();
+
+    if (searchParams.get("payment_status") === "2" && searchParams.get("payment_id")) {
         localStorage.setItem("payed", "1");
         localStorage.setItem("step", "3");
         localStorage.setItem("payment_id", searchParams.get("payment_id"));
     }
 
-    const { t } = useTranslation();
-    const [currentStep, setCurrentStep] = useState(
-        localStorage.getItem("step") ? localStorage.getItem("step") : 1
-    );
+    const {t} = useTranslation();
+
+    const [currentStep, setCurrentStep] = useState(localStorage.getItem("step") ? localStorage.getItem("step") : 1);
     const steps = ["Step 1", "Step 2", "Step 3"];
 
     const [paymentStatus, setPaymentStatus] = useState(null);
@@ -37,17 +34,21 @@ const Payments = ({ title }) => {
     const displayStep = (step) => {
         switch (parseInt(step)) {
             case 1:
-                return <Account handleClick={handleClick} />;
+                return <Account handleClick={handleClick}/>;
             case 2:
-                return <Payment handleClick={handleClick} />;
+                return <Payment handleClick={handleClick}/>;
             case 3:
-                return <UploadFile handleClick={handleClick} />;
+                return <UploadFile handleClick={handleClick}/>;
 
             default:
         }
     };
 
     const handleClick = (direction) => {
+        if (title === 'submission_namangan') {
+            localStorage.setItem('isNamangan', "1")
+        }
+
         let newStep = currentStep;
 
         // check if steps are within bounds
@@ -64,9 +65,8 @@ const Payments = ({ title }) => {
         }
     };
 
-    return (
-        <section className="payments">
-            <AlertContext.Provider value={{ setPaymentStatus }}>
+    return (<section className="payments">
+            <AlertContext.Provider value={{setPaymentStatus}}>
                 <Alert
                     paymentStatus={paymentStatus}
                     setPaymentStatus={setPaymentStatus}
@@ -77,15 +77,14 @@ const Payments = ({ title }) => {
                         <div className="progress-title">{t("regis")}</div>
                         <div className="stepper-wrapper">
                             {/* Stepper */}
-                            <Stepper steps={steps} currentStep={currentStep} />
+                            <Stepper steps={steps} currentStep={currentStep}/>
                             {/* Display Components */}
                             {displayStep(currentStep)}
                         </div>
                     </div>
                 </div>
             </AlertContext.Provider>
-        </section>
-    );
+        </section>);
 };
 
 export default Payments;

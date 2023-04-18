@@ -154,7 +154,8 @@ const Header = () => {
                                 }}
                             >
                                 <li className="sub-list__item nav-sub__list-item">
-                                    <Link to="submission">TIPF-2023</Link>
+                                    {/*<Link to="submission">TIPF-2023</Link>*/}
+                                    <Link onClick={() => {alert("Submission Closed!")}}>TIPF-2023</Link>
                                 </li>
                                 <li className="sub-list__item nav-sub__list-item">
                                     <Link to="submission/namangan">
