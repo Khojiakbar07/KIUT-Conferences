@@ -6,6 +6,9 @@ import conferenceImg from "../../assets/images/conference2.jpg";
 // data
 import confData from "../../dummy-data/namangan-detail.json";
 
+// style
+import "./ConferenceN.scss";
+
 export default function ConferenceN() {
   const { t } = useTranslation();
   const lang = localStorage.getItem("lang");
@@ -14,7 +17,7 @@ export default function ConferenceN() {
       <div className="container">
         <h3 className="conference-info__title line">{t("confdet")}</h3>
         <div className="conference-info__info">
-          <div className="conference-info__img">
+          <div className="conference-info__img namangan__conference-info__img">
             <img src={conferenceImg} alt="Forum" />
           </div>
           <div className="conference-info__card">
