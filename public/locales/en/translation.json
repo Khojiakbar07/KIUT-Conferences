@@ -152,5 +152,6 @@
     "payment_amount": "*25 000 sums per page",
     "zoom_meeting": "Zoom link of meeting:",
     "zoom_id": "ID conference:",
-    "access_code": "Access code:"
+    "access_code": "Access code:",
+    "publications": "Publications"
 }

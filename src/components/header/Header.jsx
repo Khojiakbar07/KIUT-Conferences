@@ -21,6 +21,7 @@ const Header = () => {
     const [aboutListActive, setAboutListActive] = useState(false);
     const [programListActive, setProgramListActive] = useState(false);
     const [submissionListActive, setSubmissionActive] = useState(false);
+    const [publicsListActive, setPublicsListActive] = useState(false);
 
     const changeLang = (e) => {
         i18n.changeLanguage(e.target.textContent || "en");
@@ -155,12 +156,50 @@ const Header = () => {
                             >
                                 <li className="sub-list__item nav-sub__list-item">
                                     {/*<Link to="submission">TIPF-2023</Link>*/}
-                                    <Link onClick={() => {alert("Submission Closed!")}}>TIPF-2023</Link>
+                                    <Link
+                                        onClick={() => {
+                                            alert("Submission Closed!");
+                                        }}
+                                    >
+                                        TIPF-2023
+                                    </Link>
                                 </li>
                                 <li className="sub-list__item nav-sub__list-item">
                                     <Link to="submission/namangan">
                                         Namangan-2023
                                     </Link>
+                                </li>
+                            </ul>
+                        </li>
+                        <li
+                            onMouseEnter={() => {
+                                setPublicsListActive(true);
+                            }}
+                            onMouseLeave={() => {
+                                setPublicsListActive(false);
+                            }}
+                            className="nav-list__item"
+                        >
+                            <Link className="nav__link" to="#">
+                                {t("publications")}
+                                <FiChevronDown className="down-arrow" />
+                            </Link>
+                            <ul
+                                style={
+                                    publicsListActive
+                                        ? { display: "block" }
+                                        : { display: "none" }
+                                }
+                                className="nav__sub-list nav-link__sub-list"
+                                onClick={() => {
+                                    setPublicsListActive(false);
+                                }}
+                            >
+                                <li className="sub-list__item nav-sub__list-item">
+                                    <Link to="publications/tipf">TIPF-2023</Link>
+                                </li>
+                                <li className="sub-list__item nav-sub__list-item">
+                                    <Link to="#">Namangan-2023</Link>
                                 </li>
                             </ul>
                         </li>
