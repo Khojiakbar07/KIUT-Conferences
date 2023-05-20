@@ -16,6 +16,7 @@ import Admin from "./admin/Admin";
 import Requirements from "./requirements/Requirements";
 import DetailN from "./detail/DetailN";
 import AdminNamangan from "./admin/AdminNamangan";
+import Articles from "./articles/Articles"
 import NotFound from "./not-found/NotFound";
 import { Loader } from "../utils";
 
@@ -74,6 +75,10 @@ const root = createBrowserRouter([
             {
                 path: "requirements",
                 element: <Requirements />,
+            },
+            {
+                path: "articles",
+                element: <Articles />,
             },
         ],
     },

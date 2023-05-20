@@ -1,0 +1,29 @@
+.article {
+    padding: 40px 0;
+
+    &-title {
+        font-weight: 600;
+        font-size: var(--text-3xl);
+        line-height: 40px;
+        text-align: center;
+        color: var(--black-c);
+        position: relative;
+        margin-bottom: 50px;
+
+        &::after {
+            width: 90% !important;
+            bottom: -8px !important;
+        }
+    }
+
+    &-section__name {
+        font-weight: 600;
+        font-size: var(--text-xl);
+        line-height: 40px;
+        color: #18216D;
+    }
+
+    &__list {
+        padding: 20px 0;
+    }
+}
