@@ -7,7 +7,6 @@ const ArticleItem = ({
 }) => {
     return (
         <li className="article-item">
-            <div className="article-item__index">{index + 1}</div>
             <div className="article-item__info">
                 <p className="article-item__name">{name}</p>
                 <p className="article-item__author">{author}</p>
