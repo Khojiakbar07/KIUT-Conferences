@@ -1,30 +1,8 @@
-import { useEffect, useState } from "react";
 import "./Article.scss";
-import axios from "axios";
 import ArticleItem from "./ArticleItem/ArticleItem";
 
-const BASE_URL = "https://conference.kiut.uz/api/apps";
-
-const Article = () => {
-    const [sections, setSections] = useState([]);
-    const [articles, setArticles] = useState([]);
-    useEffect(() => {
-        (async () => {
-            try {
-                const { data } = await axios.get(
-                    `${BASE_URL}/article/section/`
-                );
-                setSections(data.results);
-
-                const {
-                    data: { results },
-                } = await axios.get(`${BASE_URL}/article`);
-                setArticles(results);
-            } catch (error) {
-                console.log(error);
-            }
-        })();
-    }, []);
+const Article = ({sections, articles}) => {
+    
     return (
         <section className="article">
             <div className="container">

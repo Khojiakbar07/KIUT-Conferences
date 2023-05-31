@@ -199,7 +199,7 @@ const Header = () => {
                                     <Link to="publications/tipf">TIPF-2023</Link>
                                 </li>
                                 <li className="sub-list__item nav-sub__list-item">
-                                    <Link to="#">Namangan-2023</Link>
+                                    <Link to="publications/namangan">Namangan-2023</Link>
                                 </li>
                             </ul>
                         </li>
