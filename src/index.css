@@ -58,6 +58,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   transition: 0.3s;
+  scroll-behavior: smooth;
 }
 
 .container {

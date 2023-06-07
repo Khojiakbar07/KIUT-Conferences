@@ -19,7 +19,7 @@ const ArticlesNamangan = () => {
 
                 const {
                     data: { results },
-                } = await axios.get(`${BASE_URL}/article`);
+                } = await axios.get(`${BASE_URL}/namangan-article/`);
                 setArticles(results);
             } catch (error) {
                 console.log(error);
