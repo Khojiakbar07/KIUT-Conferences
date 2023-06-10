@@ -11,9 +11,8 @@ const useQuery = () => new URLSearchParams(useLocation().search);
 const Articles = () => {
     const [sections, setSections] = useState([]);
     const [articles, setArticles] = useState([]);
-    const { pathname } = useLocation();
     const query = useQuery();
-    const section = query.get("section") || 3;
+    const section = query.get("section") || sections?.[0]?.id;
 
     useEffect(() => {
         (async () => {
@@ -40,7 +39,6 @@ const Articles = () => {
                 articles={articles}
                 sections={sections}
                 title="Tashkent International Pedagogical Forum – Education: A Look Into The Future (TIPF 2023)"
-                pathname={pathname}
             />
         </main>
     );

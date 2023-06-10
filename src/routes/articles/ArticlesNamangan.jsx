@@ -2,12 +2,17 @@ import axios from "axios";
 import Article from "../../components/article/Article";
 import Intro from "../../components/intro/Intro";
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const BASE_URL = "https://conference.kiut.uz/api/apps";
+
+const useQuery = () => new URLSearchParams(useLocation().search);
 
 const ArticlesNamangan = () => {
     const [sections, setSections] = useState([]);
     const [articles, setArticles] = useState([]);
+    const query = useQuery();
+    const section = query.get("section") || sections?.[0]?.id;
 
     useEffect(() => {
         (async () => {
@@ -15,17 +20,17 @@ const ArticlesNamangan = () => {
                 const { data } = await axios.get(
                     `${BASE_URL}/namangan-article/section/`
                 );
-                setSections(data.results);
+                setSections(data);
 
-                const {
-                    data: { results },
-                } = await axios.get(`${BASE_URL}/namangan-article/`);
-                setArticles(results);
+                const RESPONSE = await axios.get(
+                    `${BASE_URL}/namangan-article/?section=${section}`
+                );
+                setArticles(RESPONSE?.data?.results);
             } catch (error) {
                 console.log(error);
             }
         })();
-    }, []);
+    }, [section]);
 
     return (
         <main>

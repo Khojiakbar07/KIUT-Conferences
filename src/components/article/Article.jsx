@@ -26,9 +26,13 @@ const Article = ({ sections, articles, title }) => {
                 </select>
 
                 <ol className="article__list">
-                    {articles.map((article) => (
-                        <ArticleItem key={article.id} article={article} />
-                    ))}
+                    {articles.length ? (
+                        articles.map((article) => (
+                            <ArticleItem key={article.id} article={article} />
+                        ))
+                    ) : (
+                        <li className="article-item__name">No Articles</li>
+                    )}
                 </ol>
             </div>
         </section>
