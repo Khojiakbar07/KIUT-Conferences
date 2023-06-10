@@ -3,13 +3,13 @@ import "./Article.scss";
 import ArticleItem from "./ArticleItem/ArticleItem";
 
 const Article = ({ sections, articles, title }) => {
-    console.log(sections);
     const navigate = useNavigate();
     const { pathname } = useLocation();
+
     const handleSelectChange = (e) => {
-        console.log(e.target.value);
-        navigate(`${pathname}/?section=${e.target.value}`);
+        navigate(`${pathname}?section=${e.target.value}`);
     };
+
     return (
         <section className="article">
             <div className="container">

@@ -16,6 +16,13 @@
         }
     }
 
+    &-select {
+        padding: 5px 10px;
+        outline: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
     &__list {
         display: flex;
         flex-direction: column;
