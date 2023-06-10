@@ -7,13 +7,7 @@
         line-height: 40px;
         text-align: center;
         color: var(--black-c);
-        position: relative;
-        margin-bottom: 50px;
-
-        &::after {
-            width: 90% !important;
-            bottom: -8px !important;
-        }
+        margin-bottom: 40px;
     }
 
     &-select {

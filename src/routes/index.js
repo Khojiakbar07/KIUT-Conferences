@@ -16,10 +16,9 @@ import Admin from "./admin/Admin";
 import Requirements from "./requirements/Requirements";
 import DetailN from "./detail/DetailN";
 import AdminNamangan from "./admin/AdminNamangan";
-import ArticlesTIPF from "./articles/ArticlesTIPF";
+import ArticlesTIPF from "./articles/Articles";
 import NotFound from "./not-found/NotFound";
 import { Loader } from "../utils";
-import ArticlesNamangan from "./articles/ArticlesNamangan";
 
 const root = createBrowserRouter([
     {
@@ -83,7 +82,7 @@ const root = createBrowserRouter([
             },
             {
                 path: "publications/namangan",
-                element: <ArticlesNamangan />,
+                element: <ArticlesTIPF />,
             },
         ],
     },

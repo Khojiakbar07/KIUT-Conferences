@@ -13,24 +13,31 @@ const Articles = () => {
     const [articles, setArticles] = useState([]);
     const query = useQuery();
     const section = query.get("section") || sections?.[0]?.id;
+    const { pathname } = useLocation();
+
+    const isNamanganR = pathname === "/publications/namangan";
 
     useEffect(() => {
         (async () => {
             try {
                 const { data } = await axios.get(
-                    `${BASE_URL}/article/section/`
+                    `${BASE_URL}${
+                        isNamanganR ? "/namangan-article/" : "/article/"
+                    }section/`
                 );
                 setSections(data);
 
                 const RESPONSE = await axios.get(
-                    `${BASE_URL}/article/?section=${section}`
+                    `${BASE_URL}${
+                        isNamanganR ? "/namangan-article/" : "/article/"
+                    }?section=${section}`
                 );
                 setArticles(RESPONSE?.data?.results);
             } catch (error) {
                 console.log(error);
             }
         })();
-    }, [section]);
+    }, [section, isNamanganR]);
 
     return (
         <main>
@@ -38,7 +45,11 @@ const Articles = () => {
             <Article
                 articles={articles}
                 sections={sections}
-                title="Tashkent International Pedagogical Forum – Education: A Look Into The Future (TIPF 2023)"
+                title={
+                    isNamanganR
+                        ? "Socio-economic Development of Regions: International Experience, Problems, and Solutions"
+                        : "Tashkent International Pedagogical Forum – Education: A Look Into The Future (TIPF 2023)"
+                }
             />
         </main>
     );

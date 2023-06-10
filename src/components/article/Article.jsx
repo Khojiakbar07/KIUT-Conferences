@@ -13,7 +13,7 @@ const Article = ({ sections, articles, title }) => {
     return (
         <section className="article">
             <div className="container">
-                <h2 className="article-title line">{title}</h2>
+                <h2 className="article-title">{title}</h2>
                 <select
                     onChange={handleSelectChange}
                     className="article-select"
