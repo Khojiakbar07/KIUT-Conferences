@@ -1,34 +1,35 @@
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Article.scss";
 import ArticleItem from "./ArticleItem/ArticleItem";
 
-const Article = ({sections, articles}) => {
-    
+const Article = ({ sections, articles, title }) => {
+    console.log(sections);
+    const navigate = useNavigate();
+    const { pathname } = useLocation();
+    const handleSelectChange = (e) => {
+        console.log(e.target.value);
+        navigate(`${pathname}/?section=${e.target.value}`);
+    };
     return (
         <section className="article">
             <div className="container">
-                <h2 className="article-title line">
-                    Tashkent International Pedagogical Forum – Education: A Look
-                    Into The Future (TIPF 2023)
-                </h2>
-                {sections.map((section) => (
-                    <div key={section.id} className="article-section">
-                        <h5 className="article-section__name">
+                <h2 className="article-title line">{title}</h2>
+                <select
+                    onChange={handleSelectChange}
+                    className="article-select"
+                >
+                    {sections.map((section) => (
+                        <option key={section.id} value={section.id}>
                             {section.name}
-                        </h5>
-                        <ol className="article__list">
-                            {articles.map(
-                                (article, index) =>
-                                    article.section === section.id && (
-                                        <ArticleItem
-                                            key={article.id}
-                                            article={article}
-                                            index={index}
-                                        />
-                                    )
-                            )}
-                        </ol>
-                    </div>
-                ))}
+                        </option>
+                    ))}
+                </select>
+
+                <ol className="article__list">
+                    {articles.map((article) => (
+                        <ArticleItem key={article.id} article={article} />
+                    ))}
+                </ol>
             </div>
         </section>
     );

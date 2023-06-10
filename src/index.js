@@ -6,5 +6,5 @@ import "./locales/i18next";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <RouterProvider router={root} />
+    <RouterProvider router={root} />
 );

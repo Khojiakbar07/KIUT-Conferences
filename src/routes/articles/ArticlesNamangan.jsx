@@ -30,7 +30,11 @@ const ArticlesNamangan = () => {
     return (
         <main>
             <Intro />
-            <Article articles={articles} sections={sections} />
+            <Article
+                articles={articles}
+                sections={sections}
+                title="Socio-economic Development of Regions: International Experience, Problems, and Solutions"
+            />
         </main>
     );
 };

@@ -3,7 +3,6 @@ import Article from "../../components/article/Article";
 import Intro from "../../components/intro/Intro";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Pagination from "../../components/pagination/Pagination";
 
 const BASE_URL = "https://conference.kiut.uz/api/apps";
 
@@ -12,9 +11,8 @@ const useQuery = () => new URLSearchParams(useLocation().search);
 const Articles = () => {
     const [sections, setSections] = useState([]);
     const [articles, setArticles] = useState([]);
-    const [totalPageCount, setTotalPageCount] = useState(0);
     const query = useQuery();
-    const [page, setPage] = useState(query.get("page") || 1);
+    const section = query.get("section") || 1;
 
     useEffect(() => {
         (async () => {
@@ -22,27 +20,25 @@ const Articles = () => {
                 const { data } = await axios.get(
                     `${BASE_URL}/article/section/`
                 );
-                setSections(data.results);
+                setSections(data);
 
-                const {
-                    data: { results, page_count },
-                } = await axios.get(`${BASE_URL}/article/?page=${page}`);
-                setArticles(results);
-                setTotalPageCount(page_count);
+                const RESPONSE = await axios.get(
+                    `${BASE_URL}/article/?section=${section}`
+                );
+                setArticles(RESPONSE?.data?.results);
             } catch (error) {
                 console.log(error);
             }
         })();
-    }, [page]);
+    }, [section]);
 
     return (
         <main>
             <Intro />
-            <Article articles={articles} sections={sections} />
-            <Pagination
-                page={page}
-                setPage={setPage}
-                totalPageCount={totalPageCount}
+            <Article
+                articles={articles}
+                sections={sections}
+                title="Tashkent International Pedagogical Forum – Education: A Look Into The Future (TIPF 2023)"
             />
         </main>
     );

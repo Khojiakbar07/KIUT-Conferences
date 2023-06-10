@@ -16,13 +16,6 @@
         }
     }
 
-    &-section__name {
-        font-weight: 600;
-        font-size: var(--text-xl);
-        line-height: 40px;
-        color: #18216D;
-    }
-
     &__list {
         display: flex;
         flex-direction: column;
