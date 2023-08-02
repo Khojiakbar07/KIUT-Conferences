@@ -6,7 +6,7 @@ import conferenceImg from "../../assets/images/conference2.jpg";
 
 // data
 import confData from "../../dummy-data/mt-detail.json";
-import organizatorsData from "../../dummy-data/namangan-organizators.json";
+// import organizatorsData from "../../dummy-data/namangan-organizators.json";
 
 // style
 import "./ConferenceMT.scss";
