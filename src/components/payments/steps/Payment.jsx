@@ -1,5 +1,3 @@
-import "./Payment.scss";
-
 //images
 import click from "../../../assets/payment-types/click.png";
 import humo from "../../../assets/payment-types/Humo.png";
@@ -11,6 +9,9 @@ import {
   HiOutlineArrowLongRight,
 } from "react-icons/hi2";
 import { useTranslation } from "react-i18next";
+
+// stylesheet
+import "./Payment.scss";
 
 export default function Payment({ handleClick }) {
   const transaction_param = localStorage.getItem("email");

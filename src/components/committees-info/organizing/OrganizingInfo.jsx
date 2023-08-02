@@ -1,7 +1,10 @@
-import committeeData from "../../../dummy-data/committee-data.json";
 import { v4 as uuidv4 } from "uuid";
-import "./OrganizingInfo.scss";
 import { useTranslation } from "react-i18next";
+
+import committeeData from "../../../dummy-data/committee-data.json";
+
+import "./OrganizingInfo.scss";
+
 const lang = localStorage.getItem("lang");
 
 const OrganizingInfo = () => {

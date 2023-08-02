@@ -1,7 +1,7 @@
 import ConferenceDetail from "../../components/conference-detail/ConferenceDetail"
 import Intro from "../../components/intro/Intro"
 
-const Detail = () => {
+const DetailTipf = () => {
   return (
     <main>
       <Intro title={"Conference detail"}/>
@@ -10,4 +10,4 @@ const Detail = () => {
   )
 }
 
-export default Detail
+export default DetailTipf

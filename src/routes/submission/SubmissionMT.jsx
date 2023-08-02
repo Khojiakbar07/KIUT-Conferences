@@ -6,7 +6,7 @@ const Payment = () => {
     return (
         <main>
             <Intro />
-            <Payments title={"submission_tipf"} />
+            <Payments title="Modern CBT-2023" />
         </main>
     );
 };
