@@ -15,6 +15,7 @@ import HamburgerBtn from "./hamburger-btn/HamburgerBtn";
 // SCSS
 import "./Header.scss";
 import LanguageBtn from "./language-btn/LanguageBtn";
+import MobileNav from "./mobile-nav/MobileNav";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -23,6 +24,8 @@ const Header = () => {
   const [submissionListActive, setSubmissionActive] = useState(false);
   const [publicsListActive, setPublicsListActive] = useState(false);
   const [isNavActive, setNavActive] = useState(false);
+
+  document.body.style.overflow = isNavActive ? "hidden" : "auto";
 
   return (
     <header className="header">
@@ -170,6 +173,7 @@ const Header = () => {
         <div style={{ display: "flex", gap: "10px" }}>
           <LanguageBtn />
           <HamburgerBtn isNavActive={isNavActive} setNavActive={setNavActive} />
+          <MobileNav isNavActive={isNavActive} setNavActive={setNavActive} />
         </div>
       </div>
     </header>
