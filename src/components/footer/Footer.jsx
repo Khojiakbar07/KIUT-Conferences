@@ -42,8 +42,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="footer__links-list__item">
-                <Link to="/conference" className="footer__link">
-                  {t("conf")}
+                <Link
+                  to="/detail/modern-trends-in-the-development-of-chemical-and-biological-technologies"
+                  className="footer__link"
+                >
+                  Modern CBT-2023
                 </Link>
               </li>
               <li className="footer__links-list__item">
