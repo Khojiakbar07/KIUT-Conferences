@@ -1,37 +1,52 @@
 .payments {
-  padding: 65px 0 150px;
+    padding: 65px 0 150px;
 
-  &-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: var(--sm-title);
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: -0.02em;
-    color: var(--black-c);
-    margin-bottom: 110px;
-    position: relative;
-
-    &::after {
-      width: 550px !important;
+    &-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: var(--sm-title);
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: -0.02em;
+        color: var(--black-c);
+        margin-bottom: 110px;
+        position: relative;
     }
-  }
 
-  &__content {
-    max-width: 665px;
-    border-radius: 20px;
-    background: var(--white-c);
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    padding: 40px 20px 35px;
-  }
+    &__content {
+        max-width: 665px;
+        border-radius: 20px;
+        background: var(--white-c);
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        padding: 40px 20px 35px;
+    }
 
-  .progress-title {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: var(--text-xl);
-    color: var(--black-c);
-    margin-bottom: 48px;
-  }
+    .progress-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: var(--text-xl);
+        color: var(--black-c);
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .payments {
+        padding: 30px 0 100px;
+
+        &-title {
+            margin-bottom: 35px;
+        }
+
+        &__content {
+            padding: 35px 10px 50px;
+        }
+
+        .progress-title {
+            font-size: var(--text-base);
+            margin-bottom: 20px;
+        }
+    }
 }
