@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+
 //SCSS
 import "./index.scss";
 
@@ -21,7 +22,8 @@ const BackToTop = () => {
   useEffect(() => {
     window.onscroll = () => {
       if (window.scrollY > 200) {
-        button.current.style.bottom = "50px";
+        button.current.style.bottom =
+          window.screen.width > 520 ? "50px" : "20px";
       } else {
         button.current.style.bottom = "-50px";
       }
