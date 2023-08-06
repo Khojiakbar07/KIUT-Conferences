@@ -1,7 +1,6 @@
 // tools
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
 import { useTranslation } from "react-i18next";
 
 //icons
@@ -10,24 +9,20 @@ import { FiChevronDown } from "react-icons/fi";
 // Images
 import logo from "../../assets/logo/KiutLogo.png";
 
+// Components
+import HamburgerBtn from "./hamburger-btn/HamburgerBtn";
+
 // SCSS
 import "./Header.scss";
+import LanguageBtn from "./language-btn/LanguageBtn";
 
 const Header = () => {
-  const { i18n, t } = useTranslation();
-  const langs = ["en", "ru"];
-  const [activeLang, setActiveLang] = useState(localStorage.getItem("lang"));
-  const [isLangListMouseOver, setLangListMouseOver] = useState(false);
+  const { t } = useTranslation();
   const [aboutListActive, setAboutListActive] = useState(false);
   const [programListActive, setProgramListActive] = useState(false);
   const [submissionListActive, setSubmissionActive] = useState(false);
   const [publicsListActive, setPublicsListActive] = useState(false);
-
-  const changeLang = (e) => {
-    i18n.changeLanguage(e.target.textContent || "en");
-    setActiveLang(localStorage.getItem("lang"));
-    window.location.reload();
-  };
+  const [isNavActive, setNavActive] = useState(false);
 
   return (
     <header className="header">
@@ -172,41 +167,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div
-          className="lang"
-          onMouseOver={() => {
-            setLangListMouseOver(true);
-          }}
-          onMouseLeave={() => {
-            setLangListMouseOver(false);
-          }}
-        >
-          <button className="lang-btn">
-            <span>{localStorage.getItem("lang")}</span>
-            <FiChevronDown className="down-arrow" />
-          </button>
-          <div className="lang-collection">
-            <ul
-              onClick={() => {
-                setLangListMouseOver(false);
-              }}
-              style={
-                isLangListMouseOver ? { display: "block" } : { display: "none" }
-              }
-              className="lang-list nav__sub-list"
-            >
-              {langs.map((lang) => (
-                <li
-                  className="sub-list__item"
-                  style={activeLang === lang ? { display: "none" } : null}
-                  key={uuidv4()}
-                  onClick={changeLang}
-                >
-                  {lang}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div style={{ display: "flex", gap: "10px" }}>
+          <LanguageBtn />
+          <HamburgerBtn isNavActive={isNavActive} setNavActive={setNavActive} />
         </div>
       </div>
     </header>
