@@ -17,7 +17,7 @@
         position: absolute;
         text-align: center;
         padding: 48px 5px 38px;
-        margin: 0 10px;
+        margin: 0 5px;
         background-color: rgba(0, 0, 0, 0.47);
         top: 50%;
         left: 50%;
@@ -31,4 +31,24 @@
         line-height: 60px;
     }
 
+}
+
+@media screen and (max-width: 520px) {
+    .intro {
+
+        &-swiper {
+            img {
+                height: 300px;
+            }
+        }
+
+        &-title__wrap {
+            padding: 40px 10px;
+        }
+
+        &-title {
+            font-size: var(--text-2xl);
+            line-height: 40px
+        }
+    }
 }
