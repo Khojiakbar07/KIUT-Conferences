@@ -6,12 +6,11 @@ import conferenceImg from "../../assets/images/conference2.jpg";
 
 // data
 import confData from "../../dummy-data/mt-detail.json";
-// import organizatorsData from "../../dummy-data/namangan-organizators.json";
 
 // style
 import "./ConferenceMT.scss";
 
-export default function ConferenceN() {
+export default function ConferenceMT() {
   const { t } = useTranslation();
   const lang = localStorage.getItem("lang");
   return (
@@ -19,7 +18,7 @@ export default function ConferenceN() {
       <div className="container">
         <h3 className="conference-info__title line">{t("confdet")}</h3>
         <div className="conference-info__info">
-          <div className="conference-info__img namangan__conference-info__img">
+          <div className="conference-info__img mt__conference-info__img">
             <img src={conferenceImg} alt="Forum" />
           </div>
           <div className="conference-info__card">
@@ -47,7 +46,7 @@ export default function ConferenceN() {
           <div className="conference-info__text">
             {confData[0][lang].list.title}
           </div>
-          <ol style={{ marginBottom: "40px" }}>
+          <ol>
             {confData[0][lang].list.priorities.map((p, index) => (
               <li key={uuidv4()} className="conference-info__text">
                 {index + 1}. {p}
@@ -73,7 +72,6 @@ export default function ConferenceN() {
             {confData[0][lang].access_code}.
           </p>
         </div>
-
       </div>
     </section>
   );
