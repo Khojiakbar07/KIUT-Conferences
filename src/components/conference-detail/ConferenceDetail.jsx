@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import "./ConferenceDetail.scss";
 
 //image
-import forumImg from "../../assets/images/forum-img.png";
+// import forumImg from "../../assets/images/forum-img.png";
 import Accordion from "./accordion";
 
 const ConferenceDetail = () => {
@@ -139,7 +139,7 @@ const ConferenceDetail = () => {
         <h3 className="conference-info__title line">{t("confdet")}</h3>
         <div className="conference-info__info">
           <div className="conference-info__img">
-            <img src={forumImg} alt="Forum" />
+            <img alt="Forum" />
           </div>
           <div className="conference-info__card">
             <div className="conference-info__card-title">

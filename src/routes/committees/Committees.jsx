@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const Committees = () => {
   return (
-    <main className="primary-bg">
+    <main>
       <Outlet />
     </main>
   );
