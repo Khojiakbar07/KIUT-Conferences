@@ -1,48 +1,79 @@
 .about-info {
-  padding: 30px 0 120px;
+    padding: 30px 0 120px;
 
-  &__title {
-    text-align: center;
-    font-family: var(--ff-gothic);
-    font-size: var(--sm-title);
-    font-weight: 700;
-    line-height: 125%;
-    margin-bottom: 37px;
-    position: relative;
+    &__title {
+        text-align: center;
+        font-family: var(--ff-gothic);
+        font-size: var(--sm-title);
+        font-weight: 700;
+        line-height: 125%;
+        margin-bottom: 37px;
+        position: relative;
 
-    &::after {
-      max-width: 305px ;
-      bottom: -8px !important;
+        &::after {
+            max-width: 305px;
+            bottom: -8px !important;
+        }
     }
-  }
 
-  &-inner {
-    display: flex;
-    column-gap: 18px;
-  }
+    &-inner {
+        display: flex;
+        gap: 18px;
+    }
 
-  &__text {
-    text-align: justify;
-    font-size: 15px;
-    line-height: 125%;
-    color: var(--black-c);
-  }
+    &__text {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 125%;
+        color: var(--black-c);
+    }
 
-  .map-location {
-    display: flex;
-    align-items: center;
-  }
+    .map-location {
+        display: flex;
+        align-items: center;
+    }
 
-  .contact-type__list {
-    margin-top: 12px;
-  }
+    .contact-type__list {
+        margin-top: 12px;
+    }
 
-  a {
-    color: inherit;
-    font-size: inherit;
-  }
+    a {
+        color: inherit;
+        font-size: inherit;
+    }
 
-  .underline {
-    text-decoration: underline;
-  }
+    .underline {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .about-info {
+        padding-bottom: 60px;
+
+        &-inner {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .map-location iframe {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .about-info {
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-size: var(--text-xs);
+        }
+
+        .map-location iframe {
+            height: 300px;
+        }
+    }
 }
