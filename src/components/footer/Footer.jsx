@@ -2,9 +2,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-//SCSS
-import "./Footer.scss";
-
 //images
 import logo from "../../assets/logo/KiutLogo.png";
 
@@ -15,6 +12,9 @@ import {
   FaYoutube,
   FaFacebookF,
 } from "react-icons/fa";
+
+//SCSS
+import "./Footer.scss";
 
 const Footer = () => {
   const { t } = useTranslation();
