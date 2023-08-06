@@ -46,10 +46,19 @@ const PartnersSlider = () => {
       <h3 className="partners-title line">{t("patr")}</h3>
       <div className="container">
         <Swiper
-          spaceBetween={50}
-          slidesPerView={5}
+          slidesPerView={1}
           loop={true}
           grabCursor={true}
+          breakpoints={{
+            520: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            920: {
+              slidesPerView: 5,
+              spaceBetween: 50,
+            },
+          }}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
