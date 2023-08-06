@@ -1,68 +1,115 @@
 .home-info {
-  padding: 94px 0 237px;
+    padding: 94px 0 237px;
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__content {
-    flex: 1;
-  }
-
-  .dean-name {
-    font-size: var(--sm-title);
-    font-weight: 700;
-    color: var(--black-c);
-    margin-bottom: 28px;
-  }
-
-  .dean__sub-title {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  &__text {
-    text-align: justify;
-    color: var(--black-c);
-    font-size: var(--text-lg);
-    line-height: 29px;
-  }
-
-  .dean-img__wrap {
-    flex: 1;
-    display: flex;
-
-    justify-content: center;
-  }
-
-  .dean-img {
-    position: relative;
-    align-self: center;
-
-    &::after,
-    &::before {
-      position: absolute;
+    .container {
+        display: flex;
+        justify-content: space-between;
     }
 
-    &::after {
-      content: url("../../assets/images/kiut-img1.jpg");
-      top: -70px;
-      right: -136px;
+    &__content {
+        flex: 1;
     }
 
-    &::before {
-      content: url("../../assets/images/kiut-img2.jpg");
-      bottom: -145px;
-      left: -70px;
+    .dean-name {
+        font-size: var(--sm-title);
+        font-weight: 700;
+        color: var(--black-c);
+        margin-bottom: 28px;
     }
 
-    img {
-      width: 312px;
-      height: 408px;
-      object-fit: cover;
-      position: relative;
-      z-index: 2;
+    .dean__sub-title {
+        display: block;
+        margin-bottom: 20px;
     }
-  }
+
+    &__text {
+        text-align: justify;
+        color: var(--black-c);
+        font-size: var(--text-lg);
+        line-height: 29px;
+    }
+
+    .dean-img__wrap {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dean-img {
+        position: relative;
+        align-self: center;
+
+        &::after,
+        &::before {
+            position: absolute;
+        }
+
+        &::after {
+            content: url("../../assets/images/kiut-img1.jpg");
+            top: -70px;
+            right: -136px;
+        }
+
+        &::before {
+            content: url("../../assets/images/kiut-img2.jpg");
+            bottom: -145px;
+            left: -70px;
+        }
+
+        img {
+            width: 312px;
+            height: 408px;
+            object-fit: cover;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .home-info {
+        .dean-img {
+            &::after {
+                content: url("../../assets/images/kiut-img1.jpg");
+                top: -80px;
+                right: -90px;
+            }
+
+            &::before {
+                content: url("../../assets/images/kiut-img2.jpg");
+                bottom: -145px;
+                left: -90px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .home-info {
+        padding: 60px 0;
+
+        .dean-img__wrap {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .home-info {
+        padding: 20px 0;
+
+        .dean-name {
+            font-size: var(--text-xl);
+            margin-bottom: 20px;
+        }
+
+        .dean__sub-title {
+            margin-bottom: 5px
+        }
+
+        .home-info__text {
+            font-size: var(--text-base);
+            line-height: 135%
+        }
+    }
 }

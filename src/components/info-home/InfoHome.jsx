@@ -1,9 +1,10 @@
-//component
+import { useTranslation } from "react-i18next";
+
 //images
 import rectorImg from "../../assets/images/rector1.jpg";
+
 //SCSS
 import "./InfoHome.scss";
-import { useTranslation } from "react-i18next";
 
 const InfoHome = () => {
   const { t } = useTranslation();
