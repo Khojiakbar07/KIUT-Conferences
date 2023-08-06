@@ -106,6 +106,22 @@
   transform: translateX(-50%);
 }
 
+@media screen and (max-width: 520px) {
+  .line::after {
+    width: 88%;
+    height: 1px;
+    bottom: -4px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  :root {
+    --sm-title: 18px;
+  }
+}
+
 main {
   background-repeat: no-repeat;
   background-position: left 35%;

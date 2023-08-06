@@ -96,20 +96,22 @@
 
 @media screen and (max-width: 520px) {
     .home-info {
-        padding: 20px 0;
+        padding: 20px 0 38px;
 
         .dean-name {
-            font-size: var(--text-xl);
+            font-size: var(--text-lg);
             margin-bottom: 20px;
         }
 
         .dean__sub-title {
-            margin-bottom: 5px
+            margin-bottom: 5px;
         }
 
         .home-info__text {
-            font-size: var(--text-base);
+            font-size: var(--text-xs);
             line-height: 135%
         }
+
+        
     }
 }
