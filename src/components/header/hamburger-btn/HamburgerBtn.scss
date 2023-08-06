@@ -56,3 +56,32 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 520px) {
+    .header .hamburger {
+        &-line {
+            width: 24px;
+            height: 3px;
+        }
+
+        &-line::after {
+            top: -8px;
+        }
+
+        &-line::before {
+            bottom: -8px;
+        }
+    }
+
+    .header .hamburger.active {
+        .hamburger-line::after {
+            transform: rotate(45deg) translate(15px, -4px);
+        }
+
+        .hamburger-line::before {
+            transform: rotate(-45deg) translate(15px, 4px);
+        }
+    }
+
+
+}

@@ -90,36 +90,15 @@
         padding: 0;
     }
 
-    .lang {
-        position: relative;
-    }
-
-    .lang-list {
-        top: 100%;
-        border-radius: 5px;
-    }
-
-
-    .lang-btn {
-        display: flex;
-        align-items: center;
-        padding: 5px 12px;
-        border: 1px solid var(--primary-blue-c);
-        border-radius: 50px;
-        color: var(--primary-blue-c);
-
-        span {
-            text-transform: capitalize;
-            font-size: var(--text-lg);
-            font-weight: 500;
-            letter-spacing: -0.03em;
-        }
-    }
-
     .down-arrow {
         display: block;
         padding-top: 4px;
         font-size: var(--text-2xl);
+    }
+
+    &__right {
+        display: flex;
+        gap: 10px
     }
 
 }
@@ -146,6 +125,19 @@
 
         &-nav {
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header {
+        &-logo {
+            width: 178px;
+            height: 36px;
+        }
+
+        &__right {
+            gap: 6px
         }
     }
 }

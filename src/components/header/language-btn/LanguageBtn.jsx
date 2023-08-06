@@ -5,6 +5,8 @@ import { v4 as uuidv4 } from "uuid";
 //icons
 import { FiChevronDown } from "react-icons/fi";
 
+import "./LanguageBtn.scss"
+
 const LanguageBtn = () => {
   const langs = ["en", "ru"];
   const { i18n } = useTranslation();

@@ -170,7 +170,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div style={{ display: "flex", gap: "10px" }}>
+        <div className="header__right">
           <LanguageBtn />
           <HamburgerBtn isNavActive={isNavActive} setNavActive={setNavActive} />
           <MobileNav isNavActive={isNavActive} setNavActive={setNavActive} />
