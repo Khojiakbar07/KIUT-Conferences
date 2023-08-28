@@ -1,20 +1,15 @@
 import { useRef, useState } from "react";
 import "./LoginModal.scss";
 
-const LoginModal = () => {
+const LoginModal = ({ checkLogin, isLogged }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [isLogged, setIsLogged] = useState(false);
   const possibleError = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (
-      username === process.env.REACT_APP_USERNAME &&
-      password === process.env.REACT_APP_PASSWORD
-    ) {
-      setIsLogged(true);
-    }
+
+    checkLogin(username, password);
     possibleError.current.textContent = "* Incorrect username or password";
   };
 

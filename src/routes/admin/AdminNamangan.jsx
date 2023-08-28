@@ -9,8 +9,17 @@ class AdminNamangan extends Component {
     super(props);
     this.state = {
       participantList: [],
+      isLogged: false,
     };
   }
+
+  checkLogin = (username, password) => {
+    if (
+      username === process.env.REACT_APP_USERNAME &&
+      password === process.env.REACT_APP_PASSWORD
+    )
+      this.setState({ isLogged: true });
+  };
 
   refreshList = () => {
     axios
@@ -67,9 +76,10 @@ class AdminNamangan extends Component {
   };
 
   render() {
+    const { isLogged } = this.state;
     return (
       <div className={"admin"}>
-        <LoginModal />
+        <LoginModal checkLogin={this.checkLogin} isLogged={isLogged} />
         <table>
           <thead>
             <tr>

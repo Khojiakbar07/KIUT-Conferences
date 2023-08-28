@@ -9,8 +9,17 @@ class Admin extends Component {
     super(props);
     this.state = {
       participantList: [],
+      isLogged: false,
     };
   }
+
+  checkLogin = (username, password) => {
+    if (
+      username === process.env.REACT_APP_USERNAME &&
+      password === process.env.REACT_APP_PASSWORD
+    )
+      this.setState({ isLogged: true });
+  };
 
   refreshList = () => {
     axios
@@ -50,7 +59,7 @@ class Admin extends Component {
         <td>{item.phone}</td>
         <td>{item.email}</td>
         <td>{item.payment_amount}</td>
-        <td>{item.payment_id !== 'null' ? item.payment_id : 'NOT PAYED'}</td>
+        <td>{item.payment_id !== "null" ? item.payment_id : "NOT PAYED"}</td>
         <td>{item.conference_section}</td>
         <td>
           <a href={item.support_doc} rel="noreferrer" target="_blank">
@@ -67,26 +76,31 @@ class Admin extends Component {
   };
 
   render() {
+    const { isLogged } = this.state;
     return (
       <div className={"admin"}>
-        <LoginModal />
-        <table>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Full Name</th>
-              <th>Work Place</th>
-              <th>Phone</th>
-              <th>Email</th>
-              <th>Payed amount <br/> (UZS)</th>
-              <th>Payment ID</th>
-              <th>Conference Section</th>
-              <th>Support Doc.</th>
-              <th>Date submitted</th>
-            </tr>
-          </thead>
-          <tbody>{this.renderItems()}</tbody>
-        </table>
+        <LoginModal checkLogin={this.checkLogin} isLogged={isLogged} />
+        {isLogged && (
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Full Name</th>
+                <th>Work Place</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>
+                  Payed amount <br /> (UZS)
+                </th>
+                <th>Payment ID</th>
+                <th>Conference Section</th>
+                <th>Support Doc.</th>
+                <th>Date submitted</th>
+              </tr>
+            </thead>
+            <tbody>{this.renderItems()}</tbody>
+          </table>
+        )}
       </div>
     );
   }
