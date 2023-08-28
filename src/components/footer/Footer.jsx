@@ -1,4 +1,5 @@
 // tools
+import { useCallback } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -18,6 +19,7 @@ import "./Footer.scss";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const getCurrentYear = useCallback(() => new Date().getFullYear(), []);
 
   return (
     <footer className="footer">
@@ -108,7 +110,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="copyright">
-              All Rights Reserved <br />© KIUT 2022-2023
+              All Rights Reserved <br />© KIUT 2022-{getCurrentYear()}
             </p>
           </div>
         </div>
