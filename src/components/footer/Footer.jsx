@@ -77,7 +77,7 @@ const Footer = () => {
             <h3 className="footer__block-title">{t("follow_us")}</h3>
             <div className="footer__socials">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/kiut.uz_rasmiy/"
                 rel="noreferrer"
                 target="_blank"
                 className="footer__social-link instagram"
@@ -85,7 +85,7 @@ const Footer = () => {
                 <FaInstagram />
               </a>
               <a
-                href="https://telegram.com"
+                href="https://t.me/kiut_official"
                 rel="noreferrer"
                 target="_blank"
                 className="footer__social-link telegram"
@@ -93,7 +93,7 @@ const Footer = () => {
                 <FaTelegramPlane />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/channel/UC9ewNmt05rUSXoZHBsMBYjA"
                 rel="noreferrer"
                 target="_blank"
                 className="footer__social-link youtube"
@@ -101,7 +101,7 @@ const Footer = () => {
                 <FaYoutube />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/kiut.uz/"
                 rel="noreferrer"
                 target="_blank"
                 className="footer__social-link facebook"

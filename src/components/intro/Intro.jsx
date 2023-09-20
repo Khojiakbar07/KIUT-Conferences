@@ -30,7 +30,7 @@ const Intro = () => {
           {/* <Link to="/detail"> */}
             <img src={kiutBg} alt="KIUT Internation university" />
             <div className="intro-title__wrap">
-              <h1 className="intro-title">KIMYO INTERNATION UNIVERSITY IN TASHKENT</h1>
+              <h1 className="intro-title">KIMYO INTERNATIONAL UNIVERSITY IN TASHKENT</h1>
             </div>
           {/* </Link> */}
         </SwiperSlide>
