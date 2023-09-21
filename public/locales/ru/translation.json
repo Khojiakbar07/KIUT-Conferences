@@ -155,5 +155,6 @@
   "zoom_meeting": "Программа ZOOM для удаленного участия:",
   "zoom_id": "Идентификатор конференции:",
   "access_code": "Код доступа:",
-  "publications": "Публикации"
+  "publications": "Публикации",
+  "download_conference_program": "Скачать программу конференции"
 }

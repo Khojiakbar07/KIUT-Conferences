@@ -154,5 +154,6 @@
   "zoom_meeting": "Zoom link of meeting:",
   "zoom_id": "ID conference:",
   "access_code": "Access code:",
-  "publications": "Publications"
+  "publications": "Publications",
+  "download_conference_program": "Download Conference Program"
 }

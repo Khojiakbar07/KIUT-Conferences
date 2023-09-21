@@ -6,13 +6,21 @@ import conferenceImg from "../../assets/images/conference2.jpg";
 
 // data
 import confData from "../../dummy-data/mt-detail.json";
+import documentEN from "../../documents/CONFERENCE_PROGRAM_EN.pdf";
+import documentRU from "../../documents/CONFERENCE_PROGRAM_RU.pdf";
 
-// style
-import "./ConferenceMT.scss";
+// icon
+import { FaFileDownload } from "react-icons/fa";
 
 export default function ConferenceMT() {
   const { t } = useTranslation();
   const lang = localStorage.getItem("lang");
+
+  const conferenceDocuments = {
+    en: documentEN,
+    ru: documentRU,
+  };
+
   return (
     <section className="conference-info">
       <div className="container">
@@ -67,10 +75,20 @@ export default function ConferenceMT() {
           >
             {confData[0][lang].link}
           </a>
-          <p style={{ marginBottom: "0" }} className="conference-info__text">
+          <p className="conference-info__text">
             {t("zoom_id")} {confData[0][lang].id} {t("access_code")}{" "}
             {confData[0][lang].access_code}.
           </p>
+
+          <a
+            href={conferenceDocuments[lang]}
+            download
+            style={{ marginBottom: "0" }}
+          >
+            <strong className="conference-info__text underlined">
+              {t("download_conference_program")} <FaFileDownload />
+            </strong>
+          </a>
         </div>
       </div>
     </section>
